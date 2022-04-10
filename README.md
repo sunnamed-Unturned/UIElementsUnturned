@@ -92,7 +92,7 @@ public class CloseUIButton : IButton
     /// </summary>
     public CloseUIButton(IAsset<UIElementsLibPluginExampleConfiguration> configurationAsset)
     {
-        this.configurationAsset = configurationAsset ?? throw new System.ArgumentNullException(nameof(configurationAsset));
+        this.configurationAsset = configurationAsset ?? throw new ArgumentNullException(nameof(configurationAsset));
     }
 
 
@@ -111,7 +111,7 @@ public class CloseUIButton : IButton
     void IButton.OnClick(UPlayer executor)
     {
         // Example of using player.
-         // executor.Player - this is UnturnedPlayer
+        // executor.Player - this is UnturnedPlayer
 
         // Clearing our test effect
             

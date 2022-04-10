@@ -1,5 +1,6 @@
 ﻿using Rocket.API;
 using SDG.Unturned;
+using System;
 using UIElementsLib.Core.Player;
 using UIElementsLib.Core.UI.Button;
 using UIElementsLibPluginExample.Configuration;
@@ -23,7 +24,7 @@ namespace UIElementsLibPluginExample.UI.Elements.Buttons
         /// </summary>
         public CloseUIButton(IAsset<UIElementsLibPluginExampleConfiguration> configurationAsset)
         {
-            this.configurationAsset = configurationAsset ?? throw new System.ArgumentNullException(nameof(configurationAsset));
+            this.configurationAsset = configurationAsset ?? throw new ArgumentNullException(nameof(configurationAsset));
         }
 
 
