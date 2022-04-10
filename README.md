@@ -133,7 +133,8 @@ public class CloseUIButton : IButton
         // executor.Player - this is UnturnedPlayer
 
         // Clearing our test effect
-            
+        EffectManager.askEffectClearByID(this.configurationAsset.Instance.TestEffectArguments.Id, Provider.findTransportConnection(executor.Player.CSteamID));
+    
 
         // Making player screen not blurry
         executor.Player.Player.setPluginWidgetFlag(EPluginWidgetFlags.Modal, false);
