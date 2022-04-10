@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "f0491072-8370-4232-8776-8a1c6918a326": {
+      "ProjectGuid": "f0491072-8370-4232-8776-8a1c6918a326",
+      "DisplayName": "UIElementsUnturned",
+      "ColorIndex": 0
+    },
+    "75fe6864-2d24-447e-b5a7-8dcc1f4bf9c9": {
+      "ProjectGuid": "75fe6864-2d24-447e-b5a7-8dcc1f4bf9c9",
+      "DisplayName": "UIElementsLib",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

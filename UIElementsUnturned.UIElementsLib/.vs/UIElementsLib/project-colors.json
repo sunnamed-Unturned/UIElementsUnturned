@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "07514b51-a058-421a-84fa-a20c32b5f355": {
+      "ProjectGuid": "07514b51-a058-421a-84fa-a20c32b5f355",
+      "DisplayName": "UIElementsLib",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIElementsLib", "UIElementsUnturned.UIElementsLib\UIElementsLib\UIElementsLib.csproj", "{07514B51-A058-421A-84FA-A20C32B5F355}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIElementsLibPluginExample", "UIElementsUnturned.UIElementsLibPluginExample\UIElementsLibPluginExample.csproj", "{D22FC3E9-C0B7-4D55-99F0-14141F473BC7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07514B51-A058-421A-84FA-A20C32B5F355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07514B51-A058-421A-84FA-A20C32B5F355}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07514B51-A058-421A-84FA-A20C32B5F355}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07514B51-A058-421A-84FA-A20C32B5F355}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D22FC3E9-C0B7-4D55-99F0-14141F473BC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D22FC3E9-C0B7-4D55-99F0-14141F473BC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D22FC3E9-C0B7-4D55-99F0-14141F473BC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D22FC3E9-C0B7-4D55-99F0-14141F473BC7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A774B81-90E6-4011-916E-8EC45859F26E}
+	EndGlobalSection
+EndGlobal
