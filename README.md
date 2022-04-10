@@ -26,7 +26,7 @@ public sealed class UIElementsLibPluginExample : RocketPlugin<UIElementsLibPlugi
     }
 }
 ```
-## Configuration
+### Configuration
 ```cs
 public sealed class UIElementsLibPluginExampleConfiguration : IRocketPluginConfiguration
 {
@@ -45,7 +45,7 @@ public sealed class UIElementsLibPluginExampleConfiguration : IRocketPluginConfi
     }
 }
 ```
-## UI Listener Component the Heart of it
+### UI Listener Component the Heart of it
 ```cs
 /// <summary>
 /// Example how to subscribe it all holders.
@@ -92,7 +92,7 @@ public sealed class PlayerUIListenerComponent : UnturnedPlayerComponent
     }
 }
 ```
-## Example of using Button
+### Example of using Button
 ```cs
 /// <summary>
 /// Example usage of Button.
@@ -140,7 +140,7 @@ public class CloseUIButton : IButton
     }
 }
 ```
-## Example of using InputField
+### Example of using InputField
 ```cs
 // <summary>
 /// One more example, better check CloseUIButton.
@@ -161,7 +161,7 @@ public sealed class SearchInputField : IInputField
     }
 }
 ```
-## Button Holder
+### Button Holder
 ```cs
 public sealed class ButtonUIHolder : UIHolderBase<IButton>
 {
@@ -175,7 +175,7 @@ public sealed class ButtonUIHolder : UIHolderBase<IButton>
 }
 ```
 
-## InputField Holder
+### InputField Holder
 ```cs
 public sealed class InputFieldUIHolder : UIHolderBase<IInputField>
 {
