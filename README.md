@@ -134,7 +134,6 @@ public class CloseUIButton : IButton
 
         // Clearing our test effect
         EffectManager.askEffectClearByID(this.configurationAsset.Instance.TestEffectArguments.Id, Provider.findTransportConnection(executor.Player.CSteamID));
-    
 
         // Making player screen not blurry
         executor.Player.Player.setPluginWidgetFlag(EPluginWidgetFlags.Modal, false);
