@@ -10,7 +10,22 @@
       "ProjectGuid": "75fe6864-2d24-447e-b5a7-8dcc1f4bf9c9",
       "DisplayName": "UIElementsLib",
       "ColorIndex": 1
+    },
+    "d22fc3e9-c0b7-4d55-99f0-14141f473bc7": {
+      "ProjectGuid": "d22fc3e9-c0b7-4d55-99f0-14141f473bc7",
+      "DisplayName": "UIElementsLibPluginExample",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "07514b51-a058-421a-84fa-a20c32b5f355": {
+      "ProjectGuid": "07514b51-a058-421a-84fa-a20c32b5f355",
+      "DisplayName": "UIElementsLib",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 4
 }
