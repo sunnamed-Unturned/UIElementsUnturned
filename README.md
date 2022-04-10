@@ -1,11 +1,11 @@
 # UIElementsUnturned
 This lib will help you to easy communicate UI in Unturned with Rocket!
 
-# About this library
+## About this library
 This is Rocket based library that makes easy listening player UI button clicks and inputfield entering text and more.
 
-# Examples
-## Plugin
+## Examples
+### Plugin
 ```cs
 /// <summary>
 /// Example how to use UIElementsLib
@@ -26,7 +26,26 @@ public sealed class UIElementsLibPluginExample : RocketPlugin<UIElementsLibPlugi
     }
 }
 ```
-## UI Listener Component the Heart of it
+### Configuration
+```cs
+public sealed class UIElementsLibPluginExampleConfiguration : IRocketPluginConfiguration
+{
+    /// <summary>
+    /// Best practice to use your effects.
+    /// </summary>
+    public SerializableEffectArguments TestEffectArguments;
+
+
+
+    public void LoadDefaults()
+    {
+        // Creating it.
+        // Your effect id, and key.
+        TestEffectArguments = new SerializableEffectArguments(id: 4500, key: 600);
+    }
+}
+```
+### UI Listener Component the Heart of it
 ```cs
 /// <summary>
 /// Example how to subscribe it all holders.
@@ -73,7 +92,7 @@ public sealed class PlayerUIListenerComponent : UnturnedPlayerComponent
     }
 }
 ```
-## Example of using Button
+### Example of using Button
 ```cs
 /// <summary>
 /// Example usage of Button.
@@ -114,14 +133,14 @@ public class CloseUIButton : IButton
         // executor.Player - this is UnturnedPlayer
 
         // Clearing our test effect
-            
+        EffectManager.askEffectClearByID(this.configurationAsset.Instance.TestEffectArguments.Id, Provider.findTransportConnection(executor.Player.CSteamID));
 
         // Making player screen not blurry
         executor.Player.Player.setPluginWidgetFlag(EPluginWidgetFlags.Modal, false);
     }
 }
 ```
-## Example of using InputField
+### Example of using InputField
 ```cs
 // <summary>
 /// One more example, better check CloseUIButton.
@@ -142,7 +161,7 @@ public sealed class SearchInputField : IInputField
     }
 }
 ```
-## Button Holder
+### Button Holder
 ```cs
 public sealed class ButtonUIHolder : UIHolderBase<IButton>
 {
@@ -156,7 +175,7 @@ public sealed class ButtonUIHolder : UIHolderBase<IButton>
 }
 ```
 
-## InputField Holder
+### InputField Holder
 ```cs
 public sealed class InputFieldUIHolder : UIHolderBase<IInputField>
 {
