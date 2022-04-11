@@ -1,7 +1,7 @@
-﻿using UIElementsLib.Core.Player;
-using UIElementsLib.Core.UI.InputField;
+﻿using UIElementsLib.Core.UI.InputField;
+using UIElementsUnturned.UIElementsLib.Core.Player;
 
-namespace UIElementsLibPluginExample.UI.Elements.InputFields
+namespace UIElementsUnturned.UIElementsLibPluginExample.UI.Elements.InputFields
 {
     /// <summary>
     /// One more example, better check CloseUIButton.

@@ -1,8 +1,7 @@
 ﻿using Rocket.Core.Plugins;
-using UIElementsLib.Core.UI.Holder.InputField;
-using UIElementsLibPluginExample.Configuration;
+using UIElementsUnturned.UIElementsLibPluginExample.Configuration;
 
-namespace UIElementsLibPluginExample
+namespace UIElementsUnturned.UIElementsLibPluginExample
 {
     /// <summary>
     /// Example how to use UIElementsLib

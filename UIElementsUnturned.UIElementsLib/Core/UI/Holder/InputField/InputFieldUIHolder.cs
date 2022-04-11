@@ -2,7 +2,7 @@
 using UIElementsLib.Core.UI.InputField;
 using UIElementsUnturned.UIElementsLib.Core.UI.Holder.Base;
 
-namespace UIElementsUnturned.UIElementsLibPluginExample.UI.InputField.Holders
+namespace UIElementsUnturned.UIElementsLib.Core.UI.Holder.InputField
 {
     public sealed class InputFieldUIHolder : UIHolderBase<IInputField>
     {

@@ -1,11 +1,11 @@
 ﻿using Rocket.API;
 using SDG.Unturned;
 using System;
-using UIElementsLib.Core.Player;
-using UIElementsLib.Core.UI.Button;
-using UIElementsLibPluginExample.Configuration;
+using UIElementsUnturned.UIElementsLibPluginExample.Configuration;
+using UIElementsUnturned.UIElementsLib.Core.Player;
+using UIElementsUnturned.UIElementsLib.Core.UI.Button;
 
-namespace UIElementsLibPluginExample.UI.Elements.Buttons
+namespace UIElementsUnturned.UIElementsLibPluginExample.UI.Elements.Buttons
 {
     /// <summary>
     /// Example usage of Button.

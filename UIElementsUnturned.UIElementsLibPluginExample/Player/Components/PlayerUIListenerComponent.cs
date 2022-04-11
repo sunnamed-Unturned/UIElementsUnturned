@@ -1,16 +1,15 @@
 ﻿using Rocket.Unturned.Player;
 using SDG.Unturned;
-using System;
 using System.Collections.Generic;
-using UIElementsLib.Core.Player;
-using UIElementsLib.Core.UI.Button;
-using UIElementsLib.Core.UI.Holder.Button;
-using UIElementsLib.Core.UI.Holder.InputField;
 using UIElementsLib.Core.UI.InputField;
-using UIElementsLibPluginExample.UI.Elements.Buttons;
-using UIElementsLibPluginExample.UI.Elements.InputFields;
+using UIElementsUnturned.UIElementsLibPluginExample.UI.Elements.Buttons;
+using UIElementsUnturned.UIElementsLibPluginExample.UI.Elements.InputFields;
+using UIElementsUnturned.UIElementsLibPluginExample.UI.Holders.Button;
+using UIElementsUnturned.UIElementsLibPluginExample.UI.InputField.Holders;
+using UIElementsUnturned.UIElementsLib.Core.Player;
+using UIElementsUnturned.UIElementsLib.Core.UI.Button;
 
-namespace UIElementsLibPluginExample.Player.Components
+namespace UIElementsUnturned.UIElementsLibPluginExample.Player.Components
 {
     /// <summary>
     /// Example how to subscribe it all holders.

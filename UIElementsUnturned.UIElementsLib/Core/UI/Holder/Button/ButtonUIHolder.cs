@@ -2,7 +2,7 @@
 using UIElementsUnturned.UIElementsLib.Core.UI.Button;
 using UIElementsUnturned.UIElementsLib.Core.UI.Holder.Base;
 
-namespace UIElementsUnturned.UIElementsLibPluginExample.UI.Holders.Button
+namespace UIElementsUnturned.UIElementsLib.Core.UI.Holder.Button
 {
     public sealed class ButtonUIHolder : UIHolderBase<IButton>
     {

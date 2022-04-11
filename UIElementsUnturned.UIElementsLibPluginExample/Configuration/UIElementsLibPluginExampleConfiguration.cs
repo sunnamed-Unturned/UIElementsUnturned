@@ -1,7 +1,7 @@
 ﻿using Rocket.API;
-using UIElementsLib.Core.UI.Arguments;
+using UIElementsUnturned.UIElementsLib.Core.UI.Arguments;
 
-namespace UIElementsLibPluginExample.Configuration
+namespace UIElementsUnturned.UIElementsLibPluginExample.Configuration
 {
     public sealed class UIElementsLibPluginExampleConfiguration : IRocketPluginConfiguration
     {
