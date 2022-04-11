@@ -12,12 +12,12 @@ See the library in the NuGet gallery [here](https://www.nuget.org/packages/UIEle
 
 Package Manager:
 ````
-Install-Package UIElementsUnturned.UIElementsLib -Version 1.0.0
+Install-Package UIElementsUnturned.UIElementsLib
 ````
 
 .NET Core CLI:
 ````
-dotnet add package UIElementsUnturned.UIElementsLib --version 1.0.0
+dotnet add package UIElementsUnturned.UIElementsLib
 ````
 
 ## Examples
