@@ -7,6 +7,19 @@ This is Rocket based library that makes easy listening player UI button clicks a
 ## Getting Started ->
 [Documentation](https://sunnamed.gitbook.io/uielementsunturned/)
 
+## Install the Library from NuGet
+See the library in the NuGet gallery [here](https://www.nuget.org/packages/UIElementsUnturned.UIElementsLib/).
+
+Package Manager:
+````
+Install-Package UIElementsUnturned.UIElementsLib -Version 1.0.0
+````
+
+.NET Core CLI:
+````
+dotnet add package UIElementsUnturned.UIElementsLib --version 1.0.0
+````
+
 ## Examples
 ### Plugin
 ```cs
