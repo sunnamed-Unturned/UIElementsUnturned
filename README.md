@@ -15,7 +15,7 @@ Package Manager:
 Install-Package UIElementsUnturned.UIElementsLib
 ````
 
-.NET Core CLI:
+.NET CLI:
 ````
 dotnet add package UIElementsUnturned.UIElementsLib
 ````
