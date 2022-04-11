@@ -50,7 +50,6 @@ namespace UIElementsLib.Core.UI.Arguments
 
         public SerializableEffectArguments()
         {
-
         }
     }
 }
