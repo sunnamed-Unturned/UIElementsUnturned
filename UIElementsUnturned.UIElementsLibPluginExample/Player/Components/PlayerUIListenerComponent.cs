@@ -1,5 +1,6 @@
 ﻿using Rocket.Unturned.Player;
 using SDG.Unturned;
+using System;
 using System.Collections.Generic;
 using UIElementsLib.Core.Player;
 using UIElementsLib.Core.UI.Button;
@@ -24,14 +25,29 @@ namespace UIElementsLibPluginExample.Player.Components
 
         protected override void Load()
         {
-            inputFieldUIHolder = new InputFieldUIHolder(new List<IInputField>()
+            // Creating Input Fields holder
+            inputFieldUIHolder = new InputFieldUIHolder(items: new List<IInputField>
             {
                 new SearchInputField(),
             });
-            buttonUIHolder = new ButtonUIHolder(new List<IButton>
+
+            // Creating Buttons holder
+            buttonUIHolder = new ButtonUIHolder(items: new List<IButton>
             {
                 new CloseUIButton(UIElementsLibPluginExample.Instance.Configuration),
             });
+
+            // Adding new Button, for special tests or fast work you can use ActionButton
+            buttonUIHolder.AddNew(new ActionButton(childObjectName: "Testing", onClickCallback: (uPlayer) =>
+            {
+                // Code
+            }));
+
+            // Or like that same with input field
+            inputFieldUIHolder.AddNew(new ActionInputField(childObjectName: "MyInputField", onEnterInputCallback: onEnterInputInMyInputFieldCallback));
+
+            // Removing input field
+            inputFieldUIHolder.Remove(inputFieldUIHolder.FindItem("MyInputField"));
 
             EffectManager.onEffectTextCommitted += onInputFieldTextCommitted;
             EffectManager.onEffectButtonClicked += onButtonClicked;
@@ -47,12 +63,20 @@ namespace UIElementsLibPluginExample.Player.Components
 
         private void onInputFieldTextCommitted(SDG.Unturned.Player player, string inputField, string text)
         {
+            // When player writes something searching for input field and executing it
             inputFieldUIHolder.FindItem(inputField)?.OnEnterInput(new UPlayer(player), text);
         }
 
         private void onButtonClicked(SDG.Unturned.Player player, string button)
         {
+            // When clicks button searching for button and executing it
             buttonUIHolder.FindItem(button)?.OnClick(new UPlayer(player));
+        }
+
+        // Called from (MyInputField)
+        private void onEnterInputInMyInputFieldCallback(UPlayer uPlayer, string text)
+        {
+
         }
     }
 }

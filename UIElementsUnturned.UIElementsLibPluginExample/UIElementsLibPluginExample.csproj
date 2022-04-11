@@ -32,22 +32,22 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\UIElementsLib\lib\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\UIElementsUnturned.UIElementsLib\lib\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Rocket.API">
-      <HintPath>..\..\..\UIElementsLib\lib\Rocket.API.dll</HintPath>
+      <HintPath>..\UIElementsUnturned.UIElementsLib\lib\Rocket.API.dll</HintPath>
     </Reference>
     <Reference Include="Rocket.Core">
-      <HintPath>..\..\..\UIElementsLib\lib\Rocket.Core.dll</HintPath>
+      <HintPath>..\UIElementsUnturned.UIElementsLib\lib\Rocket.Core.dll</HintPath>
     </Reference>
     <Reference Include="Rocket.Unturned">
-      <HintPath>..\..\..\UIElementsLib\lib\Rocket.Unturned.dll</HintPath>
+      <HintPath>..\UIElementsUnturned.UIElementsLib\lib\Rocket.Unturned.dll</HintPath>
     </Reference>
     <Reference Include="SDG.NetTransport">
-      <HintPath>..\..\..\UIElementsLib\lib\SDG.NetTransport.dll</HintPath>
+      <HintPath>..\UIElementsUnturned.UIElementsLib\lib\SDG.NetTransport.dll</HintPath>
     </Reference>
     <Reference Include="Steamworks.NET">
-      <HintPath>..\..\..\UIElementsLib\lib\Steamworks.NET.dll</HintPath>
+      <HintPath>..\UIElementsUnturned.UIElementsLib\lib\Steamworks.NET.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -61,10 +61,10 @@
       <HintPath>..\UIElementsUnturned.UIElementsLib\UIElementsLib\bin\Release\UIElementsLib.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>..\..\..\UIElementsLib\lib\UnityEngine.dll</HintPath>
+      <HintPath>..\UIElementsUnturned.UIElementsLib\lib\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\UIElementsLib\lib\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>..\UIElementsUnturned.UIElementsLib\lib\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

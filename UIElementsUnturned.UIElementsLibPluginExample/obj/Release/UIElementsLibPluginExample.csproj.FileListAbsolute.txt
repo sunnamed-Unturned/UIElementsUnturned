@@ -1,0 +1,2 @@
+D:\Github\UIElementsUnturned\UIElementsUnturned\UIElementsUnturned.UIElementsLibPluginExample\obj\Release\UIElementsLibPluginExample.csproj.AssemblyReference.cache
+D:\Github\UIElementsUnturned\UIElementsUnturned\UIElementsUnturned.UIElementsLibPluginExample\obj\Release\UIElementsLibPluginExample.csproj.CoreCompileInputs.cache

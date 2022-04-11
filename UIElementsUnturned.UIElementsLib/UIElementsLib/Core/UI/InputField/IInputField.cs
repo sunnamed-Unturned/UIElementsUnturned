@@ -11,8 +11,8 @@ namespace UIElementsLib.Core.UI.InputField
         /// <summary>
         /// Executes when player input text.
         /// </summary>
-        /// <param name="executor">container of a player</param>
-        /// <param name="text">written text in inputfield</param>
+        /// <param name="executor">Container of a player</param>
+        /// <param name="text">Written text in inputfield</param>
         void OnEnterInput(UPlayer executor, string text);
     }
 }
