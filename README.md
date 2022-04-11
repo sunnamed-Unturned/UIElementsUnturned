@@ -48,72 +48,72 @@ public sealed class UIElementsLibPluginExampleConfiguration : IRocketPluginConfi
 ### UI Listener Component the Heart of it System
 ```cs
 /// <summary>
-    /// Example how to subscribe it all holders.
-    /// </summary>
-    public sealed class PlayerUIListenerComponent : UnturnedPlayerComponent
+/// Example how to subscribe it all holders.
+/// </summary>
+public sealed class PlayerUIListenerComponent : UnturnedPlayerComponent
+{
+    private InputFieldUIHolder inputFieldUIHolder;
+
+    private ButtonUIHolder buttonUIHolder;
+
+
+
+    protected override void Load()
     {
-        private InputFieldUIHolder inputFieldUIHolder;
-
-        private ButtonUIHolder buttonUIHolder;
-
-
-
-        protected override void Load()
+        // Creating Input Fields holder
+        inputFieldUIHolder = new InputFieldUIHolder(items: new List<IInputField>
         {
-            // Creating Input Fields holder
-            inputFieldUIHolder = new InputFieldUIHolder(items: new List<IInputField>
-            {
-                new SearchInputField(),
-            });
+            new SearchInputField(),
+        });
 
-            // Creating Buttons holder
-            buttonUIHolder = new ButtonUIHolder(items: new List<IButton>
-            {
-                new CloseUIButton(UIElementsLibPluginExample.Instance.Configuration),
-            });
-
-            // Adding new Button, for special tests or fast work you can use ActionButton
-            buttonUIHolder.AddNew(new ActionButton(childObjectName: "Testing", onClickCallback: (uPlayer) =>
-            {
-                // Code
-            }));
-
-            // Or like that same with input field
-            inputFieldUIHolder.AddNew(new ActionInputField(childObjectName: "MyInputField", onEnterInputCallback: onEnterInputInMyInputFieldCallback));
-
-            // Removing input field
-            inputFieldUIHolder.Remove(inputFieldUIHolder.FindItem("MyInputField"));
-
-            EffectManager.onEffectTextCommitted += onInputFieldTextCommitted;
-            EffectManager.onEffectButtonClicked += onButtonClicked;
-        }
-
-        protected override void Unload()
+        // Creating Buttons holder
+        buttonUIHolder = new ButtonUIHolder(items: new List<IButton>
         {
-            EffectManager.onEffectTextCommitted -= onInputFieldTextCommitted;
-            EffectManager.onEffectButtonClicked -= onButtonClicked;
-        }
+            new CloseUIButton(UIElementsLibPluginExample.Instance.Configuration),
+        });
 
-
-
-        private void onInputFieldTextCommitted(SDG.Unturned.Player player, string inputField, string text)
+        // Adding new Button, for special tests or fast work you can use ActionButton
+        buttonUIHolder.AddNew(new ActionButton(childObjectName: "Testing", onClickCallback: (uPlayer) =>
         {
-            // When player writes something searching for input field and executing it
-            inputFieldUIHolder.FindItem(inputField)?.OnEnterInput(new UPlayer(player), text);
-        }
+            // Code
+        }));
 
-        private void onButtonClicked(SDG.Unturned.Player player, string button)
-        {
-            // When clicks button searching for button and executing it
-            buttonUIHolder.FindItem(button)?.OnClick(new UPlayer(player));
-        }
+        // Or like that same with input field
+        inputFieldUIHolder.AddNew(new ActionInputField(childObjectName: "MyInputField", onEnterInputCallback: onEnterInputInMyInputFieldCallback));
 
-        // Called from (MyInputField)
-        private void onEnterInputInMyInputFieldCallback(UPlayer uPlayer, string text)
-        {
+        // Removing input field
+        inputFieldUIHolder.Remove(inputFieldUIHolder.FindItem("MyInputField"));
 
-        }
+        EffectManager.onEffectTextCommitted += onInputFieldTextCommitted;
+        EffectManager.onEffectButtonClicked += onButtonClicked;
     }
+
+    protected override void Unload()
+    {
+        EffectManager.onEffectTextCommitted -= onInputFieldTextCommitted;
+        EffectManager.onEffectButtonClicked -= onButtonClicked;
+    }
+
+
+
+    private void onInputFieldTextCommitted(SDG.Unturned.Player player, string inputField, string text)
+    {
+        // When player writes something searching for input field and executing it
+        inputFieldUIHolder.FindItem(inputField)?.OnEnterInput(new UPlayer(player), text);
+    }
+
+    private void onButtonClicked(SDG.Unturned.Player player, string button)
+    {
+        // When clicks button searching for button and executing it
+        buttonUIHolder.FindItem(button)?.OnClick(new UPlayer(player));
+    }
+
+    // Called from (MyInputField)
+    private void onEnterInputInMyInputFieldCallback(UPlayer uPlayer, string text)
+    {
+
+    }
+}
 ```
 ### Example of using Button
 ```cs
