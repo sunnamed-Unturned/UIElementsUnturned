@@ -1,16 +1,16 @@
 ﻿using Rocket.API;
 using SDG.Unturned;
 using System;
-using UIElementsUnturned.UIElementsLibPluginExample.Configuration;
 using UIElementsUnturned.UIElementsLib.Core.Player;
 using UIElementsUnturned.UIElementsLib.Core.UI.Button;
+using UIElementsUnturned.UIElementsLibPluginExample.Configuration;
 
 namespace UIElementsUnturned.UIElementsLibPluginExample.UI.Elements.Buttons
 {
     /// <summary>
     /// Example usage of Button.
     /// </summary>
-    public class CloseUIButton : IButton
+    public sealed class CloseUIButton : IButton
     {
         /// <summary>
         /// Configuration asset field.

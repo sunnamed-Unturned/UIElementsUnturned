@@ -2,12 +2,12 @@
 using SDG.Unturned;
 using System.Collections.Generic;
 using UIElementsLib.Core.UI.InputField;
+using UIElementsUnturned.UIElementsLib.Core.Player;
+using UIElementsUnturned.UIElementsLib.Core.UI.Button;
 using UIElementsUnturned.UIElementsLibPluginExample.UI.Elements.Buttons;
 using UIElementsUnturned.UIElementsLibPluginExample.UI.Elements.InputFields;
 using UIElementsUnturned.UIElementsLibPluginExample.UI.Holders.Button;
 using UIElementsUnturned.UIElementsLibPluginExample.UI.InputField.Holders;
-using UIElementsUnturned.UIElementsLib.Core.Player;
-using UIElementsUnturned.UIElementsLib.Core.UI.Button;
 
 namespace UIElementsUnturned.UIElementsLibPluginExample.Player.Components
 {
@@ -25,6 +25,7 @@ namespace UIElementsUnturned.UIElementsLibPluginExample.Player.Components
         protected override void Load()
         {
             // Creating Input Fields holder
+
             inputFieldUIHolder = new InputFieldUIHolder(items: new List<IInputField>
             {
                 new SearchInputField(),

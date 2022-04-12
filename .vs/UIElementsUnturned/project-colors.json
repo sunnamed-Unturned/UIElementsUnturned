@@ -30,7 +30,12 @@
       "ProjectGuid": "02f95051-4a90-45f7-87ce-4f6ddda5eec4",
       "DisplayName": "UIElements.Testing",
       "ColorIndex": 4
+    },
+    "4f29f87a-52dd-4c33-bc71-0b2103a7d976": {
+      "ProjectGuid": "4f29f87a-52dd-4c33-bc71-0b2103a7d976",
+      "DisplayName": "UIElementsUnturned.SimpleUIElementsLibPluginExample",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 5
+  "NextColorIndex": 6
 }

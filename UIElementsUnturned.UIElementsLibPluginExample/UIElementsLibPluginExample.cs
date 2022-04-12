@@ -1,5 +1,12 @@
 ﻿using Rocket.Core.Plugins;
+using Rocket.Unturned.Player;
+using UIElementsLib.Core.UI.InputField;
+using UIElementsUnturned.UIElementsLib.Core.Player;
+using UIElementsUnturned.UIElementsLib.Core.UI.Button;
+using UIElementsUnturned.UIElementsLib.Core.UI.User.Container.Component;
 using UIElementsUnturned.UIElementsLibPluginExample.Configuration;
+using UIElementsUnturned.UIElementsLibPluginExample.UI.Elements.Buttons;
+using UIElementsUnturned.UIElementsLibPluginExample.UI.Elements.InputFields;
 
 namespace UIElementsUnturned.UIElementsLibPluginExample
 {
