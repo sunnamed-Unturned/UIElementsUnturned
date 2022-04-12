@@ -1,4 +1,4 @@
-## Example how use lib by Default
+## Example how use lib by Hard
 
 [Full Example Project](https://github.com/sunnamed434/UIElementsUnturned/tree/main/UIElementsUnturned.UIElementsLibPluginExample)
 
