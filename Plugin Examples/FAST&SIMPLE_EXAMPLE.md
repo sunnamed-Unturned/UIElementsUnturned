@@ -111,5 +111,5 @@ public sealed class SearchInputField : IInputField
 }
 ```
 
-### Default
+### Hardest way (but giving full control on it)
 [Another example](https://github.com/sunnamed434/UIElementsUnturned/blob/main/Plugin%20Examples/DEFAULT_EXAMPLE.md)
