@@ -207,4 +207,4 @@ public sealed class InputFieldUIHolder : UIHolderBase<IInputField>
 ```
 
 ### Easiest way
-[Another example](https://github.com/sunnamed434/UIElementsUnturned/tree/main/Plugin Examples\FAST&SIMPLE_EXAMPLE.md)
+[Another example](https://github.com/sunnamed434/UIElementsUnturned/blob/main/Plugin%20Examples/FAST%26SIMPLE_EXAMPLE.md)
