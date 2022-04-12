@@ -1,4 +1,4 @@
-## Example how use lib by fast & simple
+## Example how use lib by Fast & Simple
 
 [Full Example Project](https://github.com/sunnamed434/UIElementsUnturned/tree/main/UIElementsUnturned.SimpleUIElementsLibPluginExample)
 
