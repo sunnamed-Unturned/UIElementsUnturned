@@ -1,5 +1,7 @@
 ## Example how use lib by fast & simple
 
+[Full Example Project](https://github.com/sunnamed434/UIElementsUnturned/tree/main/UIElementsUnturned.SimpleUIElementsLibPluginExample)
+
 ```cs
 /// <summary>
 /// Example of fast and simple way how to use UIElementsLib
