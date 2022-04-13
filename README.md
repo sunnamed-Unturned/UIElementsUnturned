@@ -39,6 +39,8 @@ dotnet add package UIElementsUnturned.UIElementsLib
 	<a href="https://sunnamed.gitbook.io/uielementsunturned/">
 		<img src="https://img.shields.io/badge/documentation-%F0%9F%94%8D-blue?style=flat" />
 	</a>
+</p>
+<p align="center">
 	<a href="../../blob/master/LICENSE/">
 		<img src="https://img.shields.io/github/license/sunnamed434/UIElementsUnturned?style=flat" />
 	</a>
