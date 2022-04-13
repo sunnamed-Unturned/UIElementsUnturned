@@ -5,7 +5,7 @@ This lib will help you to easy communicate UI in Unturned with Rocket!
 This is Rocket based library that makes easy listening player UI button clicks and inputfield entering text and more.
 
 ### Documentation
-Please check out the [documentation](https://sunnamed.gitbook.io/uielementsunturned/)
+Please check out the [documentation](https://sunnamed.gitbook.io/uielementsunturned/).
 
 ### Installation
 Download lib here [UIElementsUnturned.UIElementsLib.dll](https://github.com/sunnamed434/UIElementsUnturned/releases) or by using the [UIElementsUnturned.UIElementsLib](https://www.nuget.org/packages/UIElementsUnturned.UIElementsLib/) nuget package.
