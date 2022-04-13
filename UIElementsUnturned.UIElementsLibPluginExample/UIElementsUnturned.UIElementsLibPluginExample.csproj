@@ -34,22 +34,28 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\RustSleeper\RustSleeper\RustSleeper\lib\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\lib\Unturned\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="com.rlabrecque.steamworks.net">
-      <HintPath>..\..\..\RustSleeper\RustSleeper\RustSleeper\lib\com.rlabrecque.steamworks.net.dll</HintPath>
+      <HintPath>..\lib\Unturned\com.rlabrecque.steamworks.net.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Rocket.API">
-      <HintPath>..\..\..\RustSleeper\RustSleeper\RustSleeper\lib\Rocket.API.dll</HintPath>
+      <HintPath>..\lib\Rocket\Rocket.API.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Rocket.Core">
-      <HintPath>..\..\..\RustSleeper\RustSleeper\RustSleeper\lib\Rocket.Core.dll</HintPath>
+      <HintPath>..\lib\Rocket\Rocket.Core.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Rocket.Unturned">
-      <HintPath>..\..\..\RustSleeper\RustSleeper\RustSleeper\lib\Rocket.Unturned.dll</HintPath>
+      <HintPath>..\lib\Rocket\Rocket.Unturned.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="SDG.NetTransport">
-      <HintPath>..\..\..\RustSleeper\RustSleeper\RustSleeper\lib\SDG.NetTransport.dll</HintPath>
+      <HintPath>..\lib\Unturned\SDG.NetTransport.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -60,13 +66,16 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="UIElementsUnturned.UIElementsLib">
-      <HintPath>..\lib\UIElementsUnturned.UIElementsLib.dll</HintPath>
+      <HintPath>..\lib\build\UIElementsUnturned.UIElementsLib.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>..\..\..\RustSleeper\RustSleeper\RustSleeper\lib\UnityEngine.dll</HintPath>
+      <HintPath>..\lib\Unity\UnityEngine.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\RustSleeper\RustSleeper\RustSleeper\lib\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>..\lib\Unity\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>

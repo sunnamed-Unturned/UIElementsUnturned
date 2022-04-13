@@ -112,4 +112,4 @@ public sealed class SearchInputField : IInputField
 ```
 
 ### Hardest way (but giving full control on it)
-[Another example](https://github.com/sunnamed434/UIElementsUnturned/blob/main/Plugin%20Examples/DEFAULT_EXAMPLE.md)
+[Another example](https://github.com/sunnamed434/UIElementsUnturned/blob/main/Plugin%20Examples/HARD_EXAMPLE.md)
