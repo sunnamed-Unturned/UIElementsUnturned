@@ -18,17 +18,24 @@ When contributing to this repository, please first discuss the change you wish t
 
 ### Bad contribution example
 ```cs
+// my formatter class
 public class UIElementsManagerControllerProcessor
 {
+    // format string and try get magic
     public static bool trygetmagicfromtext(string value)
     {
+        // checking if value equals to magic!
         if (value == "magic")
         {
+            // returning result!
             return value != null;
         }
 
+        // code end! =)
         return false;
+        //bye!
     }
+    //bye ! 0:
 }
 ```
 
