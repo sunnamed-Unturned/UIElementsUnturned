@@ -57,14 +57,14 @@ namespace UIElementsUnturned.SimpleUIElementsLibPluginExample
         private void onMyUIButtonClicked(UPlayer player)
         {
             // How to get UnturnedPlayer
-            UnturnedPlayer unturnedPlayer = player.Player;
+            UnturnedPlayer unturnedPlayer = UnturnedPlayer.FromPlayer(player.Player);
         }
 
         // MyUIObject
         private void onEnterInputInMyUIObjectInputField(UPlayer player, string text)
         {
             // How to get UnturnedPlayer
-            UnturnedPlayer unturnedPlayer = player.Player;
+            UnturnedPlayer unturnedPlayer = UnturnedPlayer.FromPlayer(player.Player);
 
             Rocket.Core.Logging.Logger.Log("The text: " + text);
         }

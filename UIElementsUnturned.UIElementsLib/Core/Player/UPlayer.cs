@@ -1,31 +1,22 @@
-﻿using Rocket.Unturned.Player;
-using System;
+﻿using System;
 
 namespace UIElementsUnturned.UIElementsLib.Core.Player
 {
     /// <summary>
-    /// Container of a UnturnedPlayer.
+    /// Container of a SDG.Unturned.Player.
     /// </summary>
     public struct UPlayer
     {
-        public readonly UnturnedPlayer Player;
+        public readonly SDG.Unturned.Player Player;
 
 
-
-        public UPlayer(UnturnedPlayer player)
-        {
-            if (player is null)
-                throw new ArgumentNullException(nameof(player));
-
-            Player = player;
-        }
 
         public UPlayer(SDG.Unturned.Player player)
         {
             if (player is null)
                 throw new ArgumentNullException(nameof(player));
 
-            Player = UnturnedPlayer.FromPlayer(player);
+            Player = player;
         }
     }
 }

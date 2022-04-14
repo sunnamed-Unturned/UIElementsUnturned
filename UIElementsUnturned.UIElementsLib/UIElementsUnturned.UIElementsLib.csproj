@@ -44,18 +44,6 @@
       <HintPath>..\lib\Unturned\com.rlabrecque.steamworks.net.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Rocket.API">
-      <HintPath>..\lib\Rocket\Rocket.API.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Rocket.Core">
-      <HintPath>..\lib\Rocket\Rocket.Core.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Rocket.Unturned">
-      <HintPath>..\lib\Rocket\Rocket.Unturned.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="SDG.NetTransport">
       <HintPath>..\lib\Unturned\SDG.NetTransport.dll</HintPath>
       <Private>False</Private>
