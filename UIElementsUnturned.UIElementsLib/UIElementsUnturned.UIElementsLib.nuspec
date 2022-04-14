@@ -2,16 +2,16 @@
 <package >
   <metadata>
     <id>$id$</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <title>UIElementsUnturned</title>
     <authors>sunnamed434</authors>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <license type="expression">MIT</license>
     <!-- <icon>icon.png</icon> -->
     <projectUrl>https://github.com/sunnamed434/UIElementsUnturned/</projectUrl>
-    <description>Powerful lib to easy communicate with UI in Unturned with Rocket!</description>
+    <description>Powerful lib to easy communicate with UI in Unturned with RocketMod & OpenMod!</description>
     <releaseNotes>Changelog here: https://github.com/sunnamed434/UIElementsUnturned/blob/main/CHANGELOG.md</releaseNotes>
     <copyright>Copyright 2022</copyright>
-    <tags>ui lib rocket unturned effect</tags>
+    <tags>ui lib rocketmod openmod unturned effect</tags>
   </metadata>
 </package>
