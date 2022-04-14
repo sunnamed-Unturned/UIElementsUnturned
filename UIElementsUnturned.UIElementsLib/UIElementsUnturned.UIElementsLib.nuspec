@@ -9,7 +9,7 @@
     <license type="expression">MIT</license>
     <!-- <icon>icon.png</icon> -->
     <projectUrl>https://github.com/sunnamed434/UIElementsUnturned/</projectUrl>
-    <description>Powerful lib to easy communicate with UI in Unturned with RocketMod & OpenMod!</description>
+    <description>Powerful lib to easy communicate with UI in Unturned with RocketMod and OpenMod!</description>
     <releaseNotes>Changelog here: https://github.com/sunnamed434/UIElementsUnturned/blob/main/CHANGELOG.md</releaseNotes>
     <copyright>Copyright 2022</copyright>
     <tags>ui lib rocketmod openmod unturned effect</tags>
