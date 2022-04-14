@@ -51,18 +51,19 @@ public sealed class SimpleUIElementsLibPluginExample : RocketPlugin
     private void onMyUIButtonClicked(UPlayer player)
     {
         // How to get UnturnedPlayer
-        UnturnedPlayer unturnedPlayer = player.Player;
+        UnturnedPlayer unturnedPlayer = UnturnedPlayer.FromPlayer(player.Player);
     }
 
     // MyUIObject
     private void onEnterInputInMyUIObjectInputField(UPlayer player, string text)
     {
         // How to get UnturnedPlayer
-        UnturnedPlayer unturnedPlayer = player.Player;
+        UnturnedPlayer unturnedPlayer = UnturnedPlayer.FromPlayer(player.Player);
 
         Rocket.Core.Logging.Logger.Log("The text: " + text);
     }
 }
+
 ```
 
 ```cs
@@ -105,7 +106,12 @@ public sealed class SearchInputField : IInputField
         // executor is unturnedplayer who called it
         // text - the text which player enter in input field
 
-        Rocket.Core.Logging.Logger.Log("Executor Name: " + executor.Player.CharacterName);
+        Rocket.Core.Logging.Logger.Log("Executor Name: " + executor.Player.channel.owner.playerID.characterName);
+
+        // UnturnedPlayer example
+        UnturnedPlayer unturnedPlayer = UnturnedPlayer.FromPlayer(executor.Player);
+
+        Rocket.Core.Logging.Logger.Log("Executor Name: " + unturnedPlayer.CharacterName);
         Rocket.Core.Logging.Logger.Log("Wrote in inputfield next text: " + text);
     }
 }

@@ -57,6 +57,7 @@ public sealed class PlayerUIListenerComponent : UnturnedPlayerComponent
     protected override void Load()
     {
         // Creating Input Fields holder
+
         inputFieldUIHolder = new InputFieldUIHolder(items: new List<IInputField>
         {
             new SearchInputField(),
@@ -116,7 +117,7 @@ public sealed class PlayerUIListenerComponent : UnturnedPlayerComponent
 /// <summary>
 /// Example usage of Button.
 /// </summary>
-public class CloseUIButton : IButton
+public sealed class CloseUIButton : IButton
 {
     /// <summary>
     /// Configuration asset field.
@@ -145,23 +146,35 @@ public class CloseUIButton : IButton
     /// <summary>
     /// Best practice to use it explicitly, but you can use it by default.
     /// </summary>
-    /// <param name="executor"></param>
     void IButton.OnClick(UPlayer executor)
     {
         // Example of using player.
-        // executor.Player - this is UnturnedPlayer
+        // executor.Player - this is SDG.Unturned.Player
 
         // Clearing our test effect
-        EffectManager.askEffectClearByID(this.configurationAsset.Instance.TestEffectArguments.Id, Provider.findTransportConnection(executor.Player.CSteamID));
+        EffectManager.askEffectClearByID(
+            this.configurationAsset.Instance.TestEffectArguments.Id, 
+            Provider.findTransportConnection(executor.Player.channel.owner.playerID.steamID));
 
         // Making player screen not blurry
-        executor.Player.Player.setPluginWidgetFlag(EPluginWidgetFlags.Modal, false);
+        executor.Player.setPluginWidgetFlag(EPluginWidgetFlags.Modal, false);
+
+        // How to get UnturnedPlayer
+        UnturnedPlayer unturnedPlayer = UnturnedPlayer.FromPlayer(executor.Player);
+
+        // Clearing our test effect using UnturnedPlayer
+        EffectManager.askEffectClearByID(
+            this.configurationAsset.Instance.TestEffectArguments.Id, 
+            Provider.findTransportConnection(unturnedPlayer.CSteamID));
+
+        // Making player screen not blurry using UnturnedPlayer
+        unturnedPlayer.Player.setPluginWidgetFlag(EPluginWidgetFlags.Modal, false);
     }
 }
 ```
 ### Example of using InputField
 ```cs
-// <summary>
+/// <summary>
 /// One more example, better check CloseUIButton.
 /// </summary>
 public sealed class SearchInputField : IInputField
@@ -175,7 +188,12 @@ public sealed class SearchInputField : IInputField
         // executor is unturnedplayer who called it
         // text - the text which player enter in input field
 
-        Rocket.Core.Logging.Logger.Log("Executor Name: " + executor.Player.CharacterName);
+        Rocket.Core.Logging.Logger.Log("Executor Name: " + executor.Player.channel.owner.playerID.characterName);
+
+        // UnturnedPlayer example
+        UnturnedPlayer unturnedPlayer = UnturnedPlayer.FromPlayer(executor.Player);
+
+        Rocket.Core.Logging.Logger.Log("Executor Name: " + unturnedPlayer.CharacterName);
         Rocket.Core.Logging.Logger.Log("Wrote in inputfield next text: " + text);
     }
 }
