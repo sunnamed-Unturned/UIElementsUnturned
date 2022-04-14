@@ -43,13 +43,13 @@ public class UIElementsManagerControllerProcessor
 
 ### Good contribution example
 ```cs
-public class SimpleStringFormatter
+public class SimpleStringFormatter : IFormatter
 {
     private const string MagicText = "magic";
 
 
 
-    public static bool TryGetMagicFromText(string value)
+    public bool TryFormat(string value)
     {
         if (string.IsNullOrEmpty(value))
             throw new ArgumentNullException(nameof(value));
@@ -61,6 +61,19 @@ public class SimpleStringFormatter
 
         return false;
     }
+}
+
+/// <summary>
+/// Formatter of strings.
+/// </summary>
+public interface IFormatter
+{
+    /// <summary>
+    /// Formatting method.
+    /// </summary>
+    /// <param name="value">string what you want to format</param>
+    /// <returns>the result of formatting</returns>
+    bool TryFormat(string value);
 }
 ```
 
