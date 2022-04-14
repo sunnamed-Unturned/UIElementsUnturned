@@ -9,6 +9,8 @@ When contributing to this repository, please first discuss the change you wish t
 ### How to be sure that my contribution will be accepted 100%
 * Write your code simple and readable.
 * Abide by .NET Microsoft advices how to write code better.
+* Abide by "SOLID" principles.
+* Abide by "OOP".
 * Abide by "code style" in project.
 * Use desing patterns if is it requires.
 * Surely for all interfaces you did write XMLDoc documentation (`/// \<summary\>`) or (`//`).
