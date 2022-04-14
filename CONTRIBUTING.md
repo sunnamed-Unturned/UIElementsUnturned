@@ -13,7 +13,7 @@ When contributing to this repository, please first discuss the change you wish t
 * Use desing patterns if is it requires.
 * Surely for all interfaces you did write XMLDoc documentation (`/// \<summary\>`) or (`//`).
 * Avoid to many comments. (do not add comments to all classes or line of your code you did)
-* Surely avoid classes with name "Manager" or "Controller" which controll or your code.
+* Surely avoid classes with name "Manager" or "Controller" which controll all your code.
 * All commits you did describe it properly. ("Added class", "Fixed bug" not a "new commit is here! =)")
 
 # Bad contribution example
