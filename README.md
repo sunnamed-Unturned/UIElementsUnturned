@@ -27,6 +27,9 @@ dotnet add package UIElementsUnturned.UIElementsLib
 * [Fast and simple](https://github.com/sunnamed434/UIElementsUnturned/blob/main/Plugin%20Examples/FAST%26SIMPLE_EXAMPLE.md)
 * [Hardest way](https://github.com/sunnamed434/UIElementsUnturned/blob/main/Plugin%20Examples/HARD_EXAMPLE.md)
 
+### Contributing!
+For more info click [here](https://github.com/sunnamed434/UIElementsUnturned/blob/main/CONTRIBUTING.md).
+
 <br>&nbsp;
 
 <p align="center">
