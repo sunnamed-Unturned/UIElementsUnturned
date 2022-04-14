@@ -65,6 +65,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="UIElementsUnturned.UIElementsLib">
       <HintPath>..\lib\build\UIElementsUnturned.UIElementsLib.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine">
       <HintPath>..\lib\Unity\UnityEngine.dll</HintPath>
