@@ -12,6 +12,7 @@ When contributing to this repository, please first discuss the change you wish t
 * Abide by "SOLID" principles.
 * Abide by "OOP".
 * Abide by "code style" in project.
+* Clean all not used usings.
 * Use desing patterns if is it requires.
 * Surely for all interfaces you did write XMLDoc documentation (`/// \<summary\>`) or (`//`).
 * Avoid to many comments. (do not add comments to all classes or line of your code you did)
