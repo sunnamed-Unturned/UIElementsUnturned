@@ -56,5 +56,5 @@ public class SimpleStringFormatter
 ```
 
 # Testing
-* If after your changes project is building without errors and you followed the rules how to contribute properly.
+* If after your changes project is building without errors and you followed the [rules](https://github.com/sunnamed434/UIElementsUnturned/blob/main/CONTRIBUTING.md#how-to-be-sure-that-my-contribution-will-be-accepted-100) how to contribute properly.
 * Pull your request, and if your pull request was successful passed our CI workflow you are welcome!
