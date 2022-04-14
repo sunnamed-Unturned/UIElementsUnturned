@@ -44,6 +44,9 @@ For more info click [here](https://github.com/sunnamed434/UIElementsUnturned/blo
 	</a>
 </p>
 <p align="center">
+	<a href="https://github.com/sunnamed434/UIElementsUnturned/workflows/CI/badge.svg">
+		<img src="https://github.com/sunnamed434/UIElementsUnturned/actions/workflows/NET_Framework_CI.yml?style=flat" />
+	</a>
 	<a href="../../blob/master/LICENSE/">
 		<img src="https://img.shields.io/github/license/sunnamed434/UIElementsUnturned?style=flat" />
 	</a>
