@@ -1,12 +1,12 @@
 # Contirbuting
 
-# Introduction
+### Introduction
 First of all, big thanks for taking your time to contributing =) 
 
-# Important for all Contributors
+### Important for all Contributors
 When contributing to this repository, please first discuss the change you wish to make via issues or any method with the owners of this repository before making a change.
 
-# How to be sure that my contribution will be accepted 100%
+### How to be sure that my contribution will be accepted 100%
 * Write your code simple and readable.
 * Abide by .NET Microsoft advices how to write code better.
 * Abide by "code style" in project.
@@ -16,7 +16,7 @@ When contributing to this repository, please first discuss the change you wish t
 * Surely avoid classes with name "Manager" or "Controller" which controll all your code.
 * All commits you did describe it properly. ("Added class", "Fixed bug" not a "new commit is here! =)")
 
-# Bad contribution example
+### Bad contribution example
 ```cs
 public class UIElementsManagerControllerProcessor
 {
@@ -32,7 +32,7 @@ public class UIElementsManagerControllerProcessor
 }
 ```
 
-# Good contribution example
+### Good contribution example
 ```cs
 public class SimpleStringFormatter
 {
@@ -55,6 +55,6 @@ public class SimpleStringFormatter
 }
 ```
 
-# Testing
+### Testing
 * If after your changes project is building without errors and you followed the [rules](https://github.com/sunnamed434/UIElementsUnturned/blob/main/CONTRIBUTING.md#how-to-be-sure-that-my-contribution-will-be-accepted-100) how to contribute properly.
 * Pull your request, and if your pull request was successful passed our CI workflow you are welcome!
