@@ -68,6 +68,7 @@
     <Reference Include="UIElementsUnturned.UIElementsLib, Version=1.0.0.3, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\build\UIElementsUnturned.UIElementsLib.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine">
       <HintPath>..\lib\Unity\UnityEngine.dll</HintPath>
