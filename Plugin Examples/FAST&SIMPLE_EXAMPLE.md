@@ -6,9 +6,6 @@
 /// <summary>
 /// Example of fast and simple way how to use UIElementsLib
 /// </summary>
-/// <summary>
-/// Example of fast and simple way how to use UIElementsLib
-/// </summary>
 public sealed class SimpleUIElementsLibPluginExample : RocketPlugin
 {
     public static SimpleUIElementsLibPluginExample Instance { get; private set; }
