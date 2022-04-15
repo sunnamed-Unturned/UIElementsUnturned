@@ -1,8 +1,10 @@
 ﻿using System;
 using UIElementsUnturned.UIElementsLib.Core.Player;
+using UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.Button;
 
 namespace UIElementsLib.Core.UI.InputField
 {
+    [Obsolete("Use " + nameof(ActionableButton))]
     public class ActionInputField : IInputField
     {
         public string ChildObjectName { get; }

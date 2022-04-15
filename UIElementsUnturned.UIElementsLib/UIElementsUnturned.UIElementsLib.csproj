@@ -69,6 +69,9 @@
     <Compile Include="Core\UI\Arguments\IEffectArguments.cs" />
     <Compile Include="Core\UI\Button\ActionButton.cs" />
     <Compile Include="Core\UI\Button\IButton.cs" />
+    <Compile Include="Core\UI\Callbackable\Button\ActionableButton.cs" />
+    <Compile Include="Core\UI\Callbackable\IActionableUIElement.cs" />
+    <Compile Include="Core\UI\Callbackable\InputField\ActionableInputField.cs" />
     <Compile Include="Core\UI\Data\IUIObjectDataContainer.cs" />
     <Compile Include="Core\UI\Element\IUIElement.cs" />
     <Compile Include="Core\UI\Holder\Base\UIHolderBase.cs" />
@@ -86,5 +89,6 @@
   <ItemGroup>
     <None Include="UIElementsUnturned.UIElementsLib.nuspec" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

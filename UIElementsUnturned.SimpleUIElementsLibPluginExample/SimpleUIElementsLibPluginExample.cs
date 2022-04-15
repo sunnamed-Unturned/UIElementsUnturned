@@ -5,6 +5,9 @@ using UIElementsUnturned.SimpleUIElementsLibPluginExample.UI.Buttons;
 using UIElementsUnturned.SimpleUIElementsLibPluginExample.UI.InputFields;
 using UIElementsUnturned.UIElementsLib.Core.Player;
 using UIElementsUnturned.UIElementsLib.Core.UI.Button;
+using UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.Button;
+using UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.InputField;
+using UIElementsUnturned.UIElementsLib.Core.UI.Data;
 using UIElementsUnturned.UIElementsLib.Core.UI.User.Container.Component;
 
 namespace UIElementsUnturned.SimpleUIElementsLibPluginExample
@@ -35,36 +38,38 @@ namespace UIElementsUnturned.SimpleUIElementsLibPluginExample
             container.InputFieldsHolder.AddNew(new SearchInputField());
 
             // Simple way how to add button without creating any classes in the project
-            container.ButtonsHolder.AddNew(new ActionButton(childObjectName: "MyButton", onClickCallback: (uPlayer) =>
+            container.ButtonsHolder.AddNew(new ActionableButton(childObjectName: "MyButton", callback: (data, uPlayer) =>
             {
 
             }));
 
-            container.ButtonsHolder.AddNew(new ActionButton(childObjectName: "MyUI", onClickCallback: onMyUIButtonClicked));
+            container.ButtonsHolder.AddNew(new ActionableButton(childObjectName: "MyUI", callback: onMyUIButtonClicked));
 
             // Simple way how to add input field without creating any classes in the project
-            container.InputFieldsHolder.AddNew(new ActionInputField(childObjectName: "MyUIObject", onEnterInputCallback: (uPlayer, text) =>
+            container.InputFieldsHolder.AddNew(new ActionableInputField(childObjectName: "MyUIObject", callback: (data, uPlayer, text) =>
             {
 
             }));
 
-            container.InputFieldsHolder.AddNew(new ActionInputField(childObjectName: "MyUITest", onEnterInputCallback: onEnterInputInMyUIObjectInputField));
+            container.InputFieldsHolder.AddNew(new ActionableInputField(childObjectName: "MyUITest", callback: onEnterInputInMyUIObjectInputField));
         }
 
 
 
         // MyUI
-        private void onMyUIButtonClicked(UPlayer player)
+        private void onMyUIButtonClicked(IUIObjectDataContainer data, UPlayer player)
         {
             // How to get UnturnedPlayer
             UnturnedPlayer unturnedPlayer = UnturnedPlayer.FromPlayer(player.Player);
         }
 
         // MyUIObject
-        private void onEnterInputInMyUIObjectInputField(UPlayer player, string text)
+        private void onEnterInputInMyUIObjectInputField(IUIObjectDataContainer data, UPlayer player, string text)
         {
             // How to get UnturnedPlayer
             UnturnedPlayer unturnedPlayer = UnturnedPlayer.FromPlayer(player.Player);
+
+            string uiName = data.ChildObjectName;
 
             Rocket.Core.Logging.Logger.Log("The text: " + text);
         }

@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using UIElementsLib.Core.UI.InputField;
 using UIElementsUnturned.UIElementsLib.Core.Player;
 using UIElementsUnturned.UIElementsLib.Core.UI.Button;
+using UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.Button;
+using UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.InputField;
+using UIElementsUnturned.UIElementsLib.Core.UI.Data;
 using UIElementsUnturned.UIElementsLibPluginExample.UI.Elements.Buttons;
 using UIElementsUnturned.UIElementsLibPluginExample.UI.Elements.InputFields;
 using UIElementsUnturned.UIElementsLibPluginExample.UI.Holders.Button;
@@ -38,13 +41,13 @@ namespace UIElementsUnturned.UIElementsLibPluginExample.Player.Components
             });
 
             // Adding new Button, for special tests or fast work you can use ActionButton
-            buttonUIHolder.AddNew(new ActionButton(childObjectName: "Testing", onClickCallback: (uPlayer) =>
+            buttonUIHolder.AddNew(new ActionableButton(childObjectName: "MyUIObjectName", callback: (data, uPlayer) =>
             {
-                // Code
+
             }));
 
             // Or like that same with input field
-            inputFieldUIHolder.AddNew(new ActionInputField(childObjectName: "MyInputField", onEnterInputCallback: onEnterInputInMyInputFieldCallback));
+            inputFieldUIHolder.AddNew(new ActionableInputField(childObjectName: "MyInputField", callback: onEnterInputInMyInputFieldCallback));
 
             // Removing input field
             inputFieldUIHolder.Remove(inputFieldUIHolder.FindItem("MyInputField"));
@@ -64,19 +67,22 @@ namespace UIElementsUnturned.UIElementsLibPluginExample.Player.Components
         private void onInputFieldTextCommitted(SDG.Unturned.Player player, string inputField, string text)
         {
             // When player writes something searching for input field and executing it
-            inputFieldUIHolder.FindItem(inputField)?.OnEnterInput(new UPlayer(player), text);
+            inputFieldUIHolder.FindItem(inputField)?
+                .OnEnterInput(new UPlayer(player), text);
         }
 
         private void onButtonClicked(SDG.Unturned.Player player, string button)
         {
             // When clicks button searching for button and executing it
-            buttonUIHolder.FindItem(button)?.OnClick(new UPlayer(player));
+            buttonUIHolder.FindItem(button)?
+                .OnClick(new UPlayer(player));
         }
 
         // Called from (MyInputField)
-        private void onEnterInputInMyInputFieldCallback(UPlayer uPlayer, string text)
+        private void onEnterInputInMyInputFieldCallback(IUIObjectDataContainer data, UPlayer player, string text)
         {
-
+            // UI Name
+            string uiName = data.ChildObjectName;
         }
     }
 }
