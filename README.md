@@ -47,6 +47,9 @@ For more info click [here](https://github.com/sunnamed434/UIElementsUnturned/blo
 	<a href="https://github.com/sunnamed434/UIElementsUnturned/actions/workflows/NET_Framework_CI.yml">
 		<img src="https://github.com/sunnamed434/UIElementsUnturned/workflows/CI/badge.svg?style=flat" />
 	</a>
+	<a href="https://discord.gg/UXwAZdzD">
+		<img src="https://img.shields.io/discord/964476306647568454.svg?style=flat&logo=discord&label=discord" />
+	</a>
 	<a href="../../blob/master/LICENSE/">
 		<img src="https://img.shields.io/github/license/sunnamed434/UIElementsUnturned?style=flat" />
 	</a>

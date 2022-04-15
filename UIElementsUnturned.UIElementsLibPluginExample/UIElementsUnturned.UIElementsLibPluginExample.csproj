@@ -65,8 +65,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="UIElementsUnturned.UIElementsLib, Version=1.0.0.3, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="UIElementsUnturned.UIElementsLib">
       <HintPath>..\lib\build\UIElementsUnturned.UIElementsLib.dll</HintPath>
       <Private>False</Private>
     </Reference>
