@@ -48,9 +48,6 @@ public sealed class UIElementsLibPluginExampleConfiguration : IRocketPluginConfi
 /// <summary>
 /// Example how to subscribe it all holders.
 /// </summary>
-/// <summary>
-/// Example how to subscribe it all holders.
-/// </summary>
 public sealed class PlayerUIListenerComponent : UnturnedPlayerComponent
 {
     private InputFieldUIHolder inputFieldUIHolder;
