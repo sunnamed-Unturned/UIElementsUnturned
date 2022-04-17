@@ -8,9 +8,11 @@
 /// </summary>
 public sealed class UIElementsLibPluginExample : RocketPlugin<UIElementsLibPluginExampleConfiguration>
 {
-    // Examples by next namespaces
-    // UI.Elements
-    // Player.Components.PlayerUIListenerComponent
+    private InputFieldUIHolder inputFieldUIHolder;
+
+    private ButtonUIHolder buttonUIHolder;
+
+
 
     public static UIElementsLibPluginExample Instance { get; private set; }
 
@@ -18,48 +20,7 @@ public sealed class UIElementsLibPluginExample : RocketPlugin<UIElementsLibPlugi
 
     protected override void Load()
     {
-        Instance = this;
-    }
-}
-```
-
-### Configuration
-```cs
-public sealed class UIElementsLibPluginExampleConfiguration : IRocketPluginConfiguration
-{
-    /// <summary>
-    /// Best practice to use your effects.
-    /// </summary>
-    public SerializableEffectArguments TestEffectArguments;
-
-
-
-    public void LoadDefaults()
-    {
-        // Creating it.
-        // Your effect id, and key.
-        TestEffectArguments = new SerializableEffectArguments(id: 4500, key: 600);
-    }
-}
-```
-
-### UI Listener Component the Heart of it System
-```cs
-/// <summary>
-/// Example how to subscribe it all holders.
-/// </summary>
-public sealed class PlayerUIListenerComponent : UnturnedPlayerComponent
-{
-    private InputFieldUIHolder inputFieldUIHolder;
-
-    private ButtonUIHolder buttonUIHolder;
-
-
-
-    protected override void Load()
-    {
         // Creating Input Fields holder
-
         inputFieldUIHolder = new InputFieldUIHolder(items: new List<IInputField>
         {
             new SearchInputField(),
@@ -68,7 +29,7 @@ public sealed class PlayerUIListenerComponent : UnturnedPlayerComponent
         // Creating Buttons holder
         buttonUIHolder = new ButtonUIHolder(items: new List<IButton>
         {
-            new CloseUIButton(UIElementsLibPluginExample.Instance.Configuration),
+            new CloseUIButton(configurationAsset: Instance.Configuration),
         });
 
         // Adding new Button, for special tests or fast work you can use ActionButton
@@ -95,14 +56,14 @@ public sealed class PlayerUIListenerComponent : UnturnedPlayerComponent
 
 
 
-    private void onInputFieldTextCommitted(SDG.Unturned.Player player, string inputField, string text)
+    private void onInputFieldTextCommitted(Player player, string inputField, string text)
     {
         // When player writes something searching for input field and executing it
         inputFieldUIHolder.FindItem(inputField)?
             .OnEnterInput(new UPlayer(player), text);
     }
 
-    private void onButtonClicked(SDG.Unturned.Player player, string button)
+    private void onButtonClicked(Player player, string button)
     {
         // When clicks button searching for button and executing it
         buttonUIHolder.FindItem(button)?
@@ -114,6 +75,26 @@ public sealed class PlayerUIListenerComponent : UnturnedPlayerComponent
     {
         // UI Name
         string uiName = data.ChildObjectName;
+    }
+}
+```
+
+### Configuration
+```cs
+public sealed class UIElementsLibPluginExampleConfiguration : IRocketPluginConfiguration
+{
+    /// <summary>
+    /// Best practice to use your effects.
+    /// </summary>
+    public SerializableEffectArguments TestEffectArguments;
+
+
+
+    public void LoadDefaults()
+    {
+        // Creating it.
+        // Your effect id, and key.
+        TestEffectArguments = new SerializableEffectArguments(id: 4500, key: 600);
     }
 }
 ```
