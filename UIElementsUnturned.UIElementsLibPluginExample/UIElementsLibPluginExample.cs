@@ -32,6 +32,8 @@ namespace UIElementsUnturned.UIElementsLibPluginExample
 
         protected override void Load()
         {
+            Instance = this;
+
             // Creating Input Fields holder
             inputFieldUIHolder = new InputFieldUIHolder(items: new List<IInputField>
             {
