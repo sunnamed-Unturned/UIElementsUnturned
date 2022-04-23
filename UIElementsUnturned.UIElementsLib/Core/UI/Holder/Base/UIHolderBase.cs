@@ -7,7 +7,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Holder.Base
 {
     public abstract class UIHolderBase<TUIHolder> : IUIHolder<TUIHolder> where TUIHolder : IUIElement
     {
-        private IList<TUIHolder> holders;
+        private readonly IList<TUIHolder> holders;
 
 
 
@@ -53,10 +53,10 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Holder.Base
 
         public TUIHolder FindItem(string childObjectName)
         {
-            if (childObjectName == null)
+            if (string.IsNullOrEmpty(childObjectName))
                 throw new ArgumentNullException(nameof(childObjectName));
 
-            return holders.FirstOrDefault(h => h.ChildObjectName.Equals(childObjectName));
+            return Holders.FirstOrDefault(h => h.ChildObjectName.Equals(childObjectName));
         }
     }
 }
