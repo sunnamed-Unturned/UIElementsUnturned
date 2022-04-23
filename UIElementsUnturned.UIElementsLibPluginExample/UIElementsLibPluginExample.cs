@@ -16,7 +16,7 @@ using UIElementsUnturned.UIElementsLibPluginExample.UI.Elements.InputFields;
 namespace UIElementsUnturned.UIElementsLibPluginExample
 {
     /// <summary>
-    /// Example how to use UIElementsLib
+    /// Example how to use UIElementsLib.
     /// </summary>
     public sealed class UIElementsLibPluginExample : RocketPlugin<UIElementsLibPluginExampleConfiguration>
     {

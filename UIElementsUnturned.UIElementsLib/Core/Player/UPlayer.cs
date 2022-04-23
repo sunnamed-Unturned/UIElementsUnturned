@@ -11,12 +11,14 @@ namespace UIElementsUnturned.UIElementsLib.Core.Player
 
 
 
+        /// <summary>
+        /// Constructor of <see cref="UPlayer"/>
+        /// </summary>
+        /// <param name="player"></param>
+        /// <exception cref="ArgumentNullException"></exception>
         public UPlayer(SDG.Unturned.Player player)
         {
-            if (player is null)
-                throw new ArgumentNullException(nameof(player));
-
-            Player = player;
+            Player = player ?? throw new ArgumentNullException(nameof(player));
         }
     }
 }

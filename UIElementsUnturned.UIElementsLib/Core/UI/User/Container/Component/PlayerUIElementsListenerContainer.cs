@@ -2,6 +2,7 @@
 using UIElementsLib.Core.UI.InputField;
 using UIElementsUnturned.UIElementsLib.Core.Player;
 using UIElementsUnturned.UIElementsLib.Core.UI.Button;
+using UIElementsUnturned.UIElementsLib.Core.UI.ChildObjectName.String;
 using UIElementsUnturned.UIElementsLib.Core.UI.Holder;
 using UnityEngine;
 
@@ -37,14 +38,14 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.User.Container.Component
 
         private void onInputFieldTextCommitted(SDG.Unturned.Player player, string inputField, string text)
         {
-            InputFieldsHolder.FindItem(inputField)?
-                .OnEnterInput(new UPlayer(player), text);
+            if (InputFieldsHolder.TryFindItem(new ChildObjectNameString(inputField), out IInputField holder))
+                holder.OnEnterInput(new UPlayer(player), text);
         }
 
         private void onButtonClicked(SDG.Unturned.Player player, string button)
         {
-            ButtonsHolder.FindItem(button)?
-                .OnClick(new UPlayer(player));
+            if (ButtonsHolder.TryFindItem(new ChildObjectNameString(button), out IButton holder))
+                holder.OnClick(new UPlayer(player));
         }
     }
 }

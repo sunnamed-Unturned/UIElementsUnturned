@@ -67,11 +67,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\UI\Arguments\IEffectArguments.cs" />
-    <Compile Include="Core\UI\Button\ActionButton.cs" />
     <Compile Include="Core\UI\Button\IButton.cs" />
     <Compile Include="Core\UI\Callbackable\Button\ActionableButton.cs" />
     <Compile Include="Core\UI\Callbackable\IActionableUIElement.cs" />
     <Compile Include="Core\UI\Callbackable\InputField\ActionableInputField.cs" />
+    <Compile Include="Core\UI\ChildObjectName\String\ChildObjectNameString.cs" />
+    <Compile Include="Core\UI\ChildObjectName\String\IChildObjectNameString.cs" />
     <Compile Include="Core\UI\Data\IUIObjectDataContainer.cs" />
     <Compile Include="Core\UI\Element\IUIElement.cs" />
     <Compile Include="Core\UI\Holder\Base\UIHolderBase.cs" />
@@ -79,7 +80,6 @@
     <Compile Include="Core\UI\Holder\InputField\InputFieldUIHolder.cs" />
     <Compile Include="Core\UI\Holder\IUIHolder.cs" />
     <Compile Include="Core\UI\Holder\UIHolder.cs" />
-    <Compile Include="Core\UI\InputField\ActionInputField.cs" />
     <Compile Include="Core\UI\InputField\IInputField.cs" />
     <Compile Include="Core\Player\UPlayer.cs" />
     <Compile Include="Core\UI\User\Container\Component\PlayerUIElementsListenerContainer.cs" />
