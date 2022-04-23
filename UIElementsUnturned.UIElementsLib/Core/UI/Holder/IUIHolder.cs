@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
 using UIElementsLib.Core.UI.Element;
+using UIElementsUnturned.UIElementsLib.Core.UI.ChildObjectName.String;
 
 namespace UIElementsUnturned.UIElementsLib.Core.UI.Holder
 {
     /// <summary>
     /// Container for UI Elements.
     /// </summary>
-    /// <typeparam name="TUIHolder">Holder type</typeparam>
     public interface IUIHolder<TUIHolder> where TUIHolder : IUIElement
     {
         /// <summary>
@@ -15,22 +15,53 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Holder
         IEnumerable<TUIHolder> Holders { get; }
 
         /// <summary>
-        /// Add new holder.
+        /// Adding new holder.
         /// </summary>
-        /// <param name="item">UI Holder what you want to add</param>
+        /// <param name="item">UI Holder for adding.</param>
+        /// <exception cref="System.ArgumentNullException"></exception>
         void AddNew(TUIHolder item);
 
         /// <summary>
-        /// Remove holder.
+        /// Removing holder.
         /// </summary>
-        /// <param name="item">For removing UI Holder</param>
+        /// <param name="item">UI Holder for removing.</param>
+        /// <exception cref="System.ArgumentNullException"></exception>
         void Remove(TUIHolder item);
 
         /// <summary>
-        /// Search an item in list.
+        /// Trying to find item safely. 
+        /// Working same as <see cref="TryFindItem(string, out TUIHolder)"/>, but parameter <paramref name="childObjectNameString"/> doing visible exactly what needs to be used.
         /// </summary>
-        /// <param name="childObjectName">Search by child object name</param>
-        /// <returns>Found UI Holder</returns>
+        /// <param name="childObjectNameString">Child object name string for searching.</param>
+        /// <param name="holder">Found UI Holder.</param>
+        /// <returns>Found UI Holder.</returns>
+        /// <exception cref="System.ArgumentNullException"></exception>
+        bool TryFindItem(IChildObjectNameString childObjectNameString, out TUIHolder holder);
+
+        /// <summary>
+        /// Trying to find item safely by calling <see cref="TryFindItem(IChildObjectNameString, out TUIHolder)"/>.
+        /// </summary>
+        /// <param name="childObjectName">Child object name for searching.</param>
+        /// <param name="holder">Found UI Holder.</param>
+        /// <returns>Found UI Holder.</returns>
+        /// <exception cref="System.ArgumentException"></exception>
+        bool TryFindItem(string childObjectName, out TUIHolder holder);
+
+        /// <summary>
+        /// Searching an item.
+        /// Working same as <see cref="FindItem(string)"/>, but parameter <paramref name="childObjectNameString"/> doing visible exactly what needs to be used.
+        /// </summary>
+        /// <param name="childObjectNameString">Child object name string for searching.</param>
+        /// <returns>Found UI Holder.</returns>
+        /// <exception cref="System.ArgumentNullException"></exception>
+        TUIHolder FindItem(IChildObjectNameString childObjectNameString);
+
+        /// <summary>
+        /// Searching an item by calling <see cref="FindItem(IChildObjectNameString)"/>
+        /// </summary>
+        /// <param name="childObjectName">Child object name for searching.</param>
+        /// <returns>Found UI Holder.</returns>
+        /// <exception cref="System.ArgumentException"></exception>
         TUIHolder FindItem(string childObjectName);
     }
 }

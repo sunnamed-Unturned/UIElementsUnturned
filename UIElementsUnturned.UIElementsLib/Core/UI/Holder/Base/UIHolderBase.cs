@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UIElementsLib.Core.UI.Element;
+using UIElementsUnturned.UIElementsLib.Core.UI.ChildObjectName.String;
 
 namespace UIElementsUnturned.UIElementsLib.Core.UI.Holder.Base
 {
@@ -51,12 +52,36 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Holder.Base
                 holders.Remove(item);
         }
 
+        public bool TryFindItem(IChildObjectNameString childObjectNameString, out TUIHolder holder)
+        {
+            if (childObjectNameString == null)
+                throw new ArgumentNullException(nameof(childObjectNameString));
+
+            return (holder = FindItem(childObjectNameString)) != null;
+        }
+
+        public bool TryFindItem(string childObjectName, out TUIHolder holder)
+        {
+            if (string.IsNullOrWhiteSpace(childObjectName))
+                throw new ArgumentException(nameof(childObjectName));
+
+            return TryFindItem(new ChildObjectNameString(childObjectName), out holder);
+        }
+
+        public TUIHolder FindItem(IChildObjectNameString childObjectNameString)
+        {
+            if (childObjectNameString == null)
+                throw new ArgumentNullException(nameof(childObjectNameString));
+
+            return Holders.FirstOrDefault(h => h.ChildObjectName.Equals(childObjectNameString.Name));
+        }
+
         public TUIHolder FindItem(string childObjectName)
         {
-            if (string.IsNullOrEmpty(childObjectName))
-                throw new ArgumentNullException(nameof(childObjectName));
+            if (string.IsNullOrWhiteSpace(childObjectName))
+                throw new ArgumentException(nameof(childObjectName));
 
-            return Holders.FirstOrDefault(h => h.ChildObjectName.Equals(childObjectName));
+            return FindItem(new ChildObjectNameString(childObjectName));
         }
     }
 }
