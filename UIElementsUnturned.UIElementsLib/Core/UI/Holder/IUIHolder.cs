@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
-using UIElementsLib.Core.UI.Element;
 using UIElementsUnturned.UIElementsLib.Core.UI.ChildObjectName.String;
+using UIElementsUnturned.UIElementsLib.Core.UI.Element;
 
 namespace UIElementsUnturned.UIElementsLib.Core.UI.Holder
 {
@@ -10,7 +10,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Holder
     public interface IUIHolder<TUIHolder> where TUIHolder : IUIElement
     {
         /// <summary>
-        /// Returns All holders.
+        /// All holders.
         /// </summary>
         IEnumerable<TUIHolder> Holders { get; }
 
@@ -22,6 +22,14 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Holder
         void AddNew(TUIHolder item);
 
         /// <summary>
+        /// Adding new holders by calling <see cref="AddNew(TUIHolder)"/>
+        /// </summary>
+        /// <param name="items">UI Holders for adding.</param>
+        /// <exception cref="System.ArgumentNullException"></exception>
+        /// <exception cref="System.InvalidOperationException"></exception>
+        void AddNew(IEnumerable<TUIHolder> items);
+
+        /// <summary>
         /// Removing holder.
         /// </summary>
         /// <param name="item">UI Holder for removing.</param>
@@ -29,12 +37,20 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Holder
         void Remove(TUIHolder item);
 
         /// <summary>
+        /// Removing holders by calling <see cref="Remove(TUIHolder)"/>
+        /// </summary>
+        /// <param name="items">UI Holders for removing.</param>
+        /// <exception cref="System.ArgumentNullException"></exception>
+        /// <exception cref="System.InvalidOperationException"></exception>
+        void Remove(IEnumerable<TUIHolder> items);
+
+        /// <summary>
         /// Trying to find item safely. 
         /// Working same as <see cref="TryFindItem(string, out TUIHolder)"/>, but parameter <paramref name="childObjectNameString"/> doing visible exactly what needs to be used.
         /// </summary>
         /// <param name="childObjectNameString">Child object name string for searching.</param>
         /// <param name="holder">Found UI Holder.</param>
-        /// <returns>Found UI Holder.</returns>
+        /// <returns>Success of searching.</returns>
         /// <exception cref="System.ArgumentNullException"></exception>
         bool TryFindItem(IChildObjectNameString childObjectNameString, out TUIHolder holder);
 
@@ -43,7 +59,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Holder
         /// </summary>
         /// <param name="childObjectName">Child object name for searching.</param>
         /// <param name="holder">Found UI Holder.</param>
-        /// <returns>Found UI Holder.</returns>
+        /// <returns>Success of searching.</returns>
         /// <exception cref="System.ArgumentException"></exception>
         bool TryFindItem(string childObjectName, out TUIHolder holder);
 

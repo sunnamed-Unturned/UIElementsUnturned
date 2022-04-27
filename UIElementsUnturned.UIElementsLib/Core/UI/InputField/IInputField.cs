@@ -1,7 +1,7 @@
-﻿using UIElementsLib.Core.UI.Element;
-using UIElementsUnturned.UIElementsLib.Core.Player;
+﻿using UIElementsUnturned.UIElementsLib.Core.Player;
+using UIElementsUnturned.UIElementsLib.Core.UI.Element;
 
-namespace UIElementsLib.Core.UI.InputField
+namespace UIElementsUnturned.UIElementsLib.Core.UI.InputField
 {
     /// <summary>
     /// InputField UI Element.

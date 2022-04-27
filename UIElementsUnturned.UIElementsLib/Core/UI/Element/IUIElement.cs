@@ -1,6 +1,6 @@
 ﻿using UIElementsUnturned.UIElementsLib.Core.UI.Data;
 
-namespace UIElementsLib.Core.UI.Element
+namespace UIElementsUnturned.UIElementsLib.Core.UI.Element
 {
     /// <summary>
     /// UI Element which describes model of data.

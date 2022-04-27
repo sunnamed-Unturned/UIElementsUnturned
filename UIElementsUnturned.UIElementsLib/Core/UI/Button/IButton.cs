@@ -1,5 +1,5 @@
-﻿using UIElementsLib.Core.UI.Element;
-using UIElementsUnturned.UIElementsLib.Core.Player;
+﻿using UIElementsUnturned.UIElementsLib.Core.Player;
+using UIElementsUnturned.UIElementsLib.Core.UI.Element;
 
 namespace UIElementsUnturned.UIElementsLib.Core.UI.Button
 {
