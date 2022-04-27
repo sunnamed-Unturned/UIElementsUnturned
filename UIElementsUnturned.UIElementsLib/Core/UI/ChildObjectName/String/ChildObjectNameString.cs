@@ -11,7 +11,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.ChildObjectName.String
         public ChildObjectNameString(string name)
         {
             if (string.IsNullOrWhiteSpace(name))
-                throw new ArgumentException(nameof(name) + ", cannot be null or white space.");
+                throw new ArgumentException(nameof(name));
 
             Name = name;
         }
