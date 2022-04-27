@@ -50,7 +50,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Holder
         /// </summary>
         /// <param name="childObjectNameString">Child object name string for searching.</param>
         /// <param name="holder">Found UI Holder.</param>
-        /// <returns>Found UI Holder.</returns>
+        /// <returns>Success of searching.</returns>
         /// <exception cref="System.ArgumentNullException"></exception>
         bool TryFindItem(IChildObjectNameString childObjectNameString, out TUIHolder holder);
 
@@ -59,7 +59,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Holder
         /// </summary>
         /// <param name="childObjectName">Child object name for searching.</param>
         /// <param name="holder">Found UI Holder.</param>
-        /// <returns>Found UI Holder.</returns>
+        /// <returns>Success of searching.</returns>
         /// <exception cref="System.ArgumentException"></exception>
         bool TryFindItem(string childObjectName, out TUIHolder holder);
 

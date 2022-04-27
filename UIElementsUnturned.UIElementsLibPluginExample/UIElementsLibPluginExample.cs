@@ -1,7 +1,6 @@
 ﻿using Rocket.Core.Plugins;
 using SDG.Unturned;
 using System.Collections.Generic;
-using UIElementsLib.Core.UI.InputField;
 using UIElementsUnturned.UIElementsLib.Core.Player;
 using UIElementsUnturned.UIElementsLib.Core.UI.Button;
 using UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.Button;
@@ -9,6 +8,7 @@ using UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.InputField;
 using UIElementsUnturned.UIElementsLib.Core.UI.Data;
 using UIElementsUnturned.UIElementsLib.Core.UI.Holder.Button;
 using UIElementsUnturned.UIElementsLib.Core.UI.Holder.InputField;
+using UIElementsUnturned.UIElementsLib.Core.UI.InputField;
 using UIElementsUnturned.UIElementsLibPluginExample.Configuration;
 using UIElementsUnturned.UIElementsLibPluginExample.UI.Elements.Buttons;
 using UIElementsUnturned.UIElementsLibPluginExample.UI.Elements.InputFields;
