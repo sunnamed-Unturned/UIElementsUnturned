@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using UIElementsLib.Core.UI.Element;
 using UIElementsUnturned.UIElementsLib.Core.UI.ChildObjectName.String;
+using UIElementsUnturned.UIElementsLib.Core.UI.Element;
 
 namespace UIElementsUnturned.UIElementsLib.Core.UI.Holder.Base
 {
@@ -21,12 +21,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Holder.Base
             holders = new List<TUIHolder>();
 
             if (items != null && items.Any())
-            {
-                foreach (TUIHolder item in items)
-                {
-                    AddNew(item);
-                }
-            }
+                AddNew(items);
         }
 
         public UIHolderBase() : this(null)
@@ -43,6 +38,18 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Holder.Base
             holders.Add(item);
         }
 
+        public void AddNew(IEnumerable<TUIHolder> items)
+        {
+            if (items == null)
+                throw new ArgumentNullException(nameof(items));
+
+            if (items.Any() == false)
+                throw new InvalidOperationException(nameof(items));
+
+            foreach (TUIHolder holder in items)
+                AddNew(holder);
+        }
+
         public virtual void Remove(TUIHolder item)
         {
             if (item == null)
@@ -50,6 +57,18 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Holder.Base
 
             if (holders.Contains(item))
                 holders.Remove(item);
+        }
+
+        public void Remove(IEnumerable<TUIHolder> items)
+        {
+            if (items == null)
+                throw new ArgumentNullException(nameof(items));
+
+            if (items.Any() == false)
+                throw new InvalidOperationException(nameof(items));
+
+            foreach (TUIHolder holder in items)
+                Remove(holder);
         }
 
         public bool TryFindItem(IChildObjectNameString childObjectNameString, out TUIHolder holder)

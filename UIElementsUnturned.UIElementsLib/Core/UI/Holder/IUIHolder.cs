@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
-using UIElementsLib.Core.UI.Element;
 using UIElementsUnturned.UIElementsLib.Core.UI.ChildObjectName.String;
+using UIElementsUnturned.UIElementsLib.Core.UI.Element;
 
 namespace UIElementsUnturned.UIElementsLib.Core.UI.Holder
 {
@@ -10,7 +10,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Holder
     public interface IUIHolder<TUIHolder> where TUIHolder : IUIElement
     {
         /// <summary>
-        /// Returns All holders.
+        /// All holders.
         /// </summary>
         IEnumerable<TUIHolder> Holders { get; }
 
@@ -22,11 +22,27 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Holder
         void AddNew(TUIHolder item);
 
         /// <summary>
+        /// Adding new holders by calling <see cref="AddNew(TUIHolder)"/>
+        /// </summary>
+        /// <param name="items">UI Holders for adding.</param>
+        /// <exception cref="System.ArgumentNullException"></exception>
+        /// <exception cref="System.InvalidOperationException"></exception>
+        void AddNew(IEnumerable<TUIHolder> items);
+
+        /// <summary>
         /// Removing holder.
         /// </summary>
         /// <param name="item">UI Holder for removing.</param>
         /// <exception cref="System.ArgumentNullException"></exception>
         void Remove(TUIHolder item);
+
+        /// <summary>
+        /// Removing holders by calling <see cref="Remove(TUIHolder)"/>
+        /// </summary>
+        /// <param name="items">UI Holders for removing.</param>
+        /// <exception cref="System.ArgumentNullException"></exception>
+        /// <exception cref="System.InvalidOperationException"></exception>
+        void Remove(IEnumerable<TUIHolder> items);
 
         /// <summary>
         /// Trying to find item safely. 
