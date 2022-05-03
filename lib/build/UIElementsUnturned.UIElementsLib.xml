@@ -1,0 +1,315 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UIElementsUnturned.UIElementsLib</name>
+    </assembly>
+    <members>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Arguments.IEffectArguments">
+            <summary>
+            Model of Effect Arguments.
+            </summary>
+        </member>
+        <member name="P:UIElementsUnturned.UIElementsLib.Core.UI.Arguments.IEffectArguments.Id">
+            <summary>
+            Effect id.
+            </summary>
+        </member>
+        <member name="P:UIElementsUnturned.UIElementsLib.Core.UI.Arguments.IEffectArguments.Key">
+            <summary>
+            Effect key.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Button.IButton">
+            <summary>
+            Button UI Element.
+            </summary>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Button.IButton.OnClick(UIElementsUnturned.UIElementsLib.Core.Player.UPlayer)">
+            <summary>
+            Executes when player clicks.
+            </summary>
+            <param name="executor">Container of a player.</param>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.Button.ActionableButton.#ctor(UIElementsUnturned.UIElementsLib.Core.UI.ChildObjectName.String.ChildObjectNameString,System.Action{UIElementsUnturned.UIElementsLib.Core.UI.Data.IUIObjectDataContainer,UIElementsUnturned.UIElementsLib.Core.Player.UPlayer})">
+            <summary>
+            Constructor of <see cref="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.Button.ActionableButton"/>.
+            Working same as another constructor, but parameter <paramref name="childObjectNameString"/> doing visible exactly what needs to be used.
+            </summary>
+            <param name="childObjectNameString">Child object name string.</param>
+            <param name="callback">Callback.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.Button.ActionableButton.#ctor(System.String,System.Action{UIElementsUnturned.UIElementsLib.Core.UI.Data.IUIObjectDataContainer,UIElementsUnturned.UIElementsLib.Core.Player.UPlayer})">
+            <summary>
+            Constructor of <see cref="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.Button.ActionableButton"/>.
+            Uses another Constructor.
+            </summary>
+            <param name="childObjectName">Child object name.</param>
+            <param name="callback">Callback.</param>
+            <exception cref="T:System.ArgumentException"></exception>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.IActionableUIElement">
+            <summary>
+            Empty Callback for UI Elements.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.IActionableUIElement`1">
+            <summary>
+            Callback for UI Elements with 1 generic parameters.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.IActionableUIElement`2">
+            <summary>
+            Callback for UI Elements with 2 generic parameters.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.IActionableUIElement`3">
+            <summary>
+            Callback for UI Elements with 3 generic parameters.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.IActionableUIElement`4">
+            <summary>
+            Callback for UI Elements with 4 generic parameters.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.IActionableUIElement`5">
+            <summary>
+            Callback for UI Elements with 5 generic parameters.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.IActionableUIElement`6">
+            <summary>
+            Callback for UI Elements with 6 generic parameters.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.IActionableUIElement`7">
+            <summary>
+            Callback for UI Elements with 7 generic parameters.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.IActionableUIElement`8">
+            <summary>
+            Callback for UI Elements with 8 generic parameters.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.IActionableUIElement`9">
+            <summary>
+            Callback for UI Elements with 9 generic parameters.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.IActionableUIElement`10">
+            <summary>
+            Callback for UI Elements with 10 generic parameters.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.IActionableUIElement`11">
+            <summary>
+            Callback for UI Elements with 11 generic parameters.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.IActionableUIElement`12">
+            <summary>
+            Callback for UI Elements with 12 generic parameters.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.IActionableUIElement`13">
+            <summary>
+            Callback for UI Elements with 13 generic parameters.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.IActionableUIElement`14">
+            <summary>
+            Callback for UI Elements with 14 generic parameters.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.IActionableUIElement`15">
+            <summary>
+            Callback for UI Elements with 15 generic parameters.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.IActionableUIElement`16">
+            <summary>
+            Callback for UI Elements with 16 generic parameters.
+            </summary>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.InputField.ActionableInputField.#ctor(UIElementsUnturned.UIElementsLib.Core.UI.ChildObjectName.String.ChildObjectNameString,System.Action{UIElementsUnturned.UIElementsLib.Core.UI.Data.IUIObjectDataContainer,UIElementsUnturned.UIElementsLib.Core.Player.UPlayer,System.String})">
+            <summary>
+            Constructor of <see cref="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.InputField.ActionableInputField"/>.
+            Working same as another constructor, but parameter <paramref name="childObjectNameString"/> doing visible exactly what needs to be used.
+            </summary>
+            <param name="childObjectNameString">Child object name string.</param>
+            <param name="callback">Callback.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.InputField.ActionableInputField.#ctor(System.String,System.Action{UIElementsUnturned.UIElementsLib.Core.UI.Data.IUIObjectDataContainer,UIElementsUnturned.UIElementsLib.Core.Player.UPlayer,System.String})">
+            <summary>
+            Constructor of <see cref="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.InputField.ActionableInputField"/>.
+            Uses another Constructor.
+            </summary>
+            <param name="childObjectName">Child object name.</param>
+            <param name="callback">Callback.</param>
+            <exception cref="T:System.ArgumentException"></exception>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.ChildObjectName.String.IChildObjectNameString">
+            <summary>
+            Describes a model with name of child object.
+            </summary>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="P:UIElementsUnturned.UIElementsLib.Core.UI.ChildObjectName.String.IChildObjectNameString.Name">
+            <summary>
+            Name of child object.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Data.IUIObjectDataContainer">
+            <summary>
+            Describes a simple model of data with Child object name of gameobject in Unity.
+            </summary>
+        </member>
+        <member name="P:UIElementsUnturned.UIElementsLib.Core.UI.Data.IUIObjectDataContainer.ChildObjectName">
+            <summary>
+            Child GameObject name in Unity.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Element.IUIElement">
+            <summary>
+            UI Element which describes model of data.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Holder.IUIHolder`1">
+            <summary>
+            Container for UI Elements.
+            </summary>
+        </member>
+        <member name="P:UIElementsUnturned.UIElementsLib.Core.UI.Holder.IUIHolder`1.Holders">
+            <summary>
+            All holders.
+            </summary>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Holder.IUIHolder`1.AddNew(`0)">
+            <summary>
+            Adding new holder.
+            </summary>
+            <param name="item">UI Holder for adding.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Holder.IUIHolder`1.AddNew(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Adding new holders by calling <see cref="M:UIElementsUnturned.UIElementsLib.Core.UI.Holder.IUIHolder`1.AddNew(`0)"/>
+            </summary>
+            <param name="items">UI Holders for adding.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Holder.IUIHolder`1.Remove(`0)">
+            <summary>
+            Removing holder.
+            </summary>
+            <param name="item">UI Holder for removing.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Holder.IUIHolder`1.Remove(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Removing holders by calling <see cref="M:UIElementsUnturned.UIElementsLib.Core.UI.Holder.IUIHolder`1.Remove(`0)"/>
+            </summary>
+            <param name="items">UI Holders for removing.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Holder.IUIHolder`1.TryFindItem(System.Predicate{`0},`0@)">
+            <summary>
+            Trying to find item safely with <paramref name="predicate"/> by calling <see cref="M:UIElementsUnturned.UIElementsLib.Core.UI.Holder.IUIHolder`1.FindItem(System.Predicate{`0})"/>
+            </summary>
+            <param name="predicate">Predicate.</param>
+            <param name="holder">Found UI Holder.</param>
+            <returns>Success of searching.</returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Holder.IUIHolder`1.TryFindItemByName(UIElementsUnturned.UIElementsLib.Core.UI.ChildObjectName.String.IChildObjectNameString,`0@)">
+            <summary>
+            Trying to find item safely. 
+            Working same as <see cref="M:UIElementsUnturned.UIElementsLib.Core.UI.Holder.IUIHolder`1.TryFindItemByName(System.String,`0@)"/>, but parameter <paramref name="childObjectNameString"/> doing visible exactly what needs to be used.
+            </summary>
+            <param name="childObjectNameString">Child object name string for searching.</param>
+            <param name="holder">Found UI Holder.</param>
+            <returns>Success of searching.</returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Holder.IUIHolder`1.TryFindItemByName(System.String,`0@)">
+            <summary>
+            Trying to find item safely by calling <see cref="M:UIElementsUnturned.UIElementsLib.Core.UI.Holder.IUIHolder`1.TryFindItemByName(UIElementsUnturned.UIElementsLib.Core.UI.ChildObjectName.String.IChildObjectNameString,`0@)"/>.
+            </summary>
+            <param name="childObjectName">Child object name for searching.</param>
+            <param name="holder">Found UI Holder.</param>
+            <returns>Success of searching.</returns>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Holder.IUIHolder`1.FindItem(System.Predicate{`0})">
+            <summary>
+            Searching an item with <paramref name="predicate"/> 
+            </summary>
+            <param name="predicate">Predicate.</param>
+            <returns>Found UI Holder.</returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Holder.IUIHolder`1.FindItemByName(UIElementsUnturned.UIElementsLib.Core.UI.ChildObjectName.String.IChildObjectNameString)">
+            <summary>
+            Searching an item.
+            Working same as <see cref="M:UIElementsUnturned.UIElementsLib.Core.UI.Holder.IUIHolder`1.FindItemByName(System.String)"/>, but parameter <paramref name="childObjectNameString"/> doing visible exactly what needs to be used.
+            </summary>
+            <param name="childObjectNameString">Child object name string for searching.</param>
+            <returns>Found UI Holder.</returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Holder.IUIHolder`1.FindItemByName(System.String)">
+            <summary>
+            Searching an item by calling <see cref="M:UIElementsUnturned.UIElementsLib.Core.UI.Holder.IUIHolder`1.FindItemByName(UIElementsUnturned.UIElementsLib.Core.UI.ChildObjectName.String.IChildObjectNameString)"/>
+            </summary>
+            <param name="childObjectName">Child object name for searching.</param>
+            <returns>Found UI Holder.</returns>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.InputField.IInputField">
+            <summary>
+            InputField UI Element.
+            </summary>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.InputField.IInputField.OnEnterInput(UIElementsUnturned.UIElementsLib.Core.Player.UPlayer,System.String)">
+            <summary>
+            Executes when player input text.
+            </summary>
+            <param name="executor">Container of a player.</param>
+            <param name="text">Written text in inputfield.</param>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.User.Container.IUIElementsContainer">
+            <summary>
+            Container of UI Elements.
+            </summary>
+        </member>
+        <member name="P:UIElementsUnturned.UIElementsLib.Core.UI.User.Container.IUIElementsContainer.InputFieldsHolder">
+            <summary>
+            Input Field Holder.
+            </summary>
+        </member>
+        <member name="P:UIElementsUnturned.UIElementsLib.Core.UI.User.Container.IUIElementsContainer.ButtonsHolder">
+            <summary>
+            Buttons Holder.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.Player.UPlayer">
+            <summary>
+            Container of a SDG.Unturned.Player.
+            </summary>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.Player.UPlayer.#ctor(SDG.Unturned.Player)">
+            <summary>
+            Constructor of <see cref="T:UIElementsUnturned.UIElementsLib.Core.Player.UPlayer"/>
+            </summary>
+            <param name="player"></param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+    </members>
+</doc>

@@ -38,13 +38,13 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.User.Container.Component
 
         private void onInputFieldTextCommitted(SDG.Unturned.Player player, string inputField, string text)
         {
-            if (InputFieldsHolder.TryFindItem(new ChildObjectNameString(inputField), out IInputField holder))
+            if (InputFieldsHolder.TryFindItemByName(new ChildObjectNameString(inputField), out IInputField holder))
                 holder.OnEnterInput(new UPlayer(player), text);
         }
 
         private void onButtonClicked(SDG.Unturned.Player player, string button)
         {
-            if (ButtonsHolder.TryFindItem(new ChildObjectNameString(button), out IButton holder))
+            if (ButtonsHolder.TryFindItemByName(new ChildObjectNameString(button), out IButton holder))
                 holder.OnClick(new UPlayer(player));
         }
     }
