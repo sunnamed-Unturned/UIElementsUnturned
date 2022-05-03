@@ -56,7 +56,7 @@ namespace UIElementsUnturned.UIElementsLibPluginExample
             inputFieldUIHolder.AddNew(new ActionableInputField(childObjectName: "MyInputField", callback: onEnterInputInMyInputFieldCallback));
 
             // Removing input field
-            inputFieldUIHolder.Remove(inputFieldUIHolder.FindItem("MyInputField"));
+            inputFieldUIHolder.Remove(inputFieldUIHolder.FindItemByName("MyInputField"));
 
             EffectManager.onEffectTextCommitted += onInputFieldTextCommitted;
             EffectManager.onEffectButtonClicked += onButtonClicked;
@@ -73,14 +73,14 @@ namespace UIElementsUnturned.UIElementsLibPluginExample
         private void onInputFieldTextCommitted(Player player, string inputField, string text)
         {
             // When player writes something searching for input field and executing it
-            inputFieldUIHolder.FindItem(inputField)?
+            inputFieldUIHolder.FindItemByName(inputField)?
                 .OnEnterInput(new UPlayer(player), text);
         }
 
         private void onButtonClicked(Player player, string button)
         {
             // When clicks button searching for button and executing it
-            buttonUIHolder.FindItem(button)?
+            buttonUIHolder.FindItemByName(button)?
                 .OnClick(new UPlayer(player));
         }
 

@@ -71,36 +71,58 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Holder.Base
                 Remove(holder);
         }
 
-        public bool TryFindItem(IChildObjectNameString childObjectNameString, out TUIHolder holder)
+        public bool TryFindItem(Predicate<TUIHolder> predicate, out TUIHolder holder)
+        {
+            if (predicate == null)
+                throw new ArgumentNullException(nameof(predicate));
+
+            return (holder = FindItem(predicate)) != null;
+        }
+
+        public bool TryFindItemByName(IChildObjectNameString childObjectNameString, out TUIHolder holder)
         {
             if (childObjectNameString == null)
                 throw new ArgumentNullException(nameof(childObjectNameString));
 
-            return (holder = FindItem(childObjectNameString)) != null;
+            return (holder = FindItemByName(childObjectNameString)) != null;
         }
 
-        public bool TryFindItem(string childObjectName, out TUIHolder holder)
+        public bool TryFindItemByName(string childObjectName, out TUIHolder holder)
         {
             if (string.IsNullOrWhiteSpace(childObjectName))
                 throw new ArgumentException(nameof(childObjectName));
 
-            return TryFindItem(new ChildObjectNameString(childObjectName), out holder);
+            return TryFindItemByName(new ChildObjectNameString(childObjectName), out holder);
         }
 
-        public TUIHolder FindItem(IChildObjectNameString childObjectNameString)
+        public TUIHolder FindItem(Predicate<TUIHolder> predicate)
+        {
+            if (predicate == null)
+                throw new ArgumentNullException(nameof(predicate));
+
+            foreach (TUIHolder item in holders)
+            {
+                if (predicate.Invoke(item))
+                    return item;
+            }
+
+            return default(TUIHolder);
+        }
+
+        public TUIHolder FindItemByName(IChildObjectNameString childObjectNameString)
         {
             if (childObjectNameString == null)
                 throw new ArgumentNullException(nameof(childObjectNameString));
 
-            return Holders.FirstOrDefault(h => h.ChildObjectName.Equals(childObjectNameString.Name));
+            return FindItem(p => string.Equals(p.ChildObjectName, childObjectNameString.Name));
         }
 
-        public TUIHolder FindItem(string childObjectName)
+        public TUIHolder FindItemByName(string childObjectName)
         {
             if (string.IsNullOrWhiteSpace(childObjectName))
                 throw new ArgumentException(nameof(childObjectName));
 
-            return FindItem(new ChildObjectNameString(childObjectName));
+            return FindItemByName(new ChildObjectNameString(childObjectName));
         }
     }
 }

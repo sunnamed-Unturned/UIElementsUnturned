@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UIElementsUnturned.UIElementsLib.Core.UI.ChildObjectName.String;
 using UIElementsUnturned.UIElementsLib.Core.UI.Element;
 
@@ -45,39 +46,56 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Holder
         void Remove(IEnumerable<TUIHolder> items);
 
         /// <summary>
+        /// Trying to find item safely with <paramref name="predicate"/> by calling <see cref="FindItem(Predicate{TUIHolder})"/>
+        /// </summary>
+        /// <param name="predicate">Predicate.</param>
+        /// <param name="holder">Found UI Holder.</param>
+        /// <returns>Success of searching.</returns>
+        /// <exception cref="System.ArgumentNullException"></exception>
+        bool TryFindItem(Predicate<TUIHolder> predicate, out TUIHolder holder);
+
+        /// <summary>
         /// Trying to find item safely. 
-        /// Working same as <see cref="TryFindItem(string, out TUIHolder)"/>, but parameter <paramref name="childObjectNameString"/> doing visible exactly what needs to be used.
+        /// Working same as <see cref="TryFindItemByName(string, out TUIHolder)"/>, but parameter <paramref name="childObjectNameString"/> doing visible exactly what needs to be used.
         /// </summary>
         /// <param name="childObjectNameString">Child object name string for searching.</param>
         /// <param name="holder">Found UI Holder.</param>
         /// <returns>Success of searching.</returns>
         /// <exception cref="System.ArgumentNullException"></exception>
-        bool TryFindItem(IChildObjectNameString childObjectNameString, out TUIHolder holder);
+        bool TryFindItemByName(IChildObjectNameString childObjectNameString, out TUIHolder holder);
 
         /// <summary>
-        /// Trying to find item safely by calling <see cref="TryFindItem(IChildObjectNameString, out TUIHolder)"/>.
+        /// Trying to find item safely by calling <see cref="TryFindItemByName(IChildObjectNameString, out TUIHolder)"/>.
         /// </summary>
         /// <param name="childObjectName">Child object name for searching.</param>
         /// <param name="holder">Found UI Holder.</param>
         /// <returns>Success of searching.</returns>
         /// <exception cref="System.ArgumentException"></exception>
-        bool TryFindItem(string childObjectName, out TUIHolder holder);
+        bool TryFindItemByName(string childObjectName, out TUIHolder holder);
+
+        /// <summary>
+        /// Searching an item with <paramref name="predicate"/> 
+        /// </summary>
+        /// <param name="predicate">Predicate.</param>
+        /// <returns>Found UI Holder.</returns>
+        /// <exception cref="System.ArgumentNullException"></exception>
+        TUIHolder FindItem(Predicate<TUIHolder> predicate);
 
         /// <summary>
         /// Searching an item.
-        /// Working same as <see cref="FindItem(string)"/>, but parameter <paramref name="childObjectNameString"/> doing visible exactly what needs to be used.
+        /// Working same as <see cref="FindItemByName(string)"/>, but parameter <paramref name="childObjectNameString"/> doing visible exactly what needs to be used.
         /// </summary>
         /// <param name="childObjectNameString">Child object name string for searching.</param>
         /// <returns>Found UI Holder.</returns>
         /// <exception cref="System.ArgumentNullException"></exception>
-        TUIHolder FindItem(IChildObjectNameString childObjectNameString);
+        TUIHolder FindItemByName(IChildObjectNameString childObjectNameString);
 
         /// <summary>
-        /// Searching an item by calling <see cref="FindItem(IChildObjectNameString)"/>
+        /// Searching an item by calling <see cref="FindItemByName(IChildObjectNameString)"/>
         /// </summary>
         /// <param name="childObjectName">Child object name for searching.</param>
         /// <returns>Found UI Holder.</returns>
         /// <exception cref="System.ArgumentException"></exception>
-        TUIHolder FindItem(string childObjectName);
+        TUIHolder FindItemByName(string childObjectName);
     }
 }
