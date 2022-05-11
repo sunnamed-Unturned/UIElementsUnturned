@@ -30,7 +30,7 @@
             </summary>
             <param name="executor">Container of a player.</param>
         </member>
-        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.Button.ActionableButton.#ctor(UIElementsUnturned.UIElementsLib.Core.UI.ChildObjectName.String.ChildObjectNameString,System.Action{UIElementsUnturned.UIElementsLib.Core.UI.Data.IUIObjectDataContainer,UIElementsUnturned.UIElementsLib.Core.Player.UPlayer})">
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.Button.ActionableButton.#ctor(UIElementsUnturned.UIElementsLib.Core.UI.ChildObjectName.String.ChildObjectNameString,System.Action{System.Object,UIElementsUnturned.UIElementsLib.Core.Player.UPlayer})">
             <summary>
             Constructor of <see cref="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.Button.ActionableButton"/>.
             Working same as another constructor, but parameter <paramref name="childObjectNameString"/> doing visible exactly what needs to be used.
@@ -39,7 +39,7 @@
             <param name="callback">Callback.</param>
             <exception cref="T:System.ArgumentNullException"></exception>
         </member>
-        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.Button.ActionableButton.#ctor(System.String,System.Action{UIElementsUnturned.UIElementsLib.Core.UI.Data.IUIObjectDataContainer,UIElementsUnturned.UIElementsLib.Core.Player.UPlayer})">
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.Button.ActionableButton.#ctor(System.String,System.Action{System.Object,UIElementsUnturned.UIElementsLib.Core.Player.UPlayer})">
             <summary>
             Constructor of <see cref="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.Button.ActionableButton"/>.
             Uses another Constructor.
@@ -134,7 +134,7 @@
             Callback for UI Elements with 16 generic parameters.
             </summary>
         </member>
-        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.InputField.ActionableInputField.#ctor(UIElementsUnturned.UIElementsLib.Core.UI.ChildObjectName.String.ChildObjectNameString,System.Action{UIElementsUnturned.UIElementsLib.Core.UI.Data.IUIObjectDataContainer,UIElementsUnturned.UIElementsLib.Core.Player.UPlayer,System.String})">
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.InputField.ActionableInputField.#ctor(UIElementsUnturned.UIElementsLib.Core.UI.ChildObjectName.String.ChildObjectNameString,System.Action{System.Object,UIElementsUnturned.UIElementsLib.Core.Player.UPlayer,System.String})">
             <summary>
             Constructor of <see cref="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.InputField.ActionableInputField"/>.
             Working same as another constructor, but parameter <paramref name="childObjectNameString"/> doing visible exactly what needs to be used.
@@ -143,7 +143,7 @@
             <param name="callback">Callback.</param>
             <exception cref="T:System.ArgumentNullException"></exception>
         </member>
-        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.InputField.ActionableInputField.#ctor(System.String,System.Action{UIElementsUnturned.UIElementsLib.Core.UI.Data.IUIObjectDataContainer,UIElementsUnturned.UIElementsLib.Core.Player.UPlayer,System.String})">
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.InputField.ActionableInputField.#ctor(System.String,System.Action{System.Object,UIElementsUnturned.UIElementsLib.Core.Player.UPlayer,System.String})">
             <summary>
             Constructor of <see cref="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.InputField.ActionableInputField"/>.
             Uses another Constructor.

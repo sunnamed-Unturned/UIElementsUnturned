@@ -55,19 +55,21 @@ namespace UIElementsUnturned.SimpleUIElementsLibPluginExample
 
 
         // MyUI
-        private void onMyUIButtonClicked(IUIObjectDataContainer data, UPlayer player)
+        private void onMyUIButtonClicked(object caller, UPlayer player)
         {
             // How to get UnturnedPlayer
+
             UnturnedPlayer unturnedPlayer = UnturnedPlayer.FromPlayer(player.Player);
         }
 
         // MyUIObject
-        private void onEnterInputInMyUIObjectInputField(IUIObjectDataContainer data, UPlayer player, string text)
+        private void onEnterInputInMyUIObjectInputField(object caller, UPlayer player, string text)
         {
             // How to get UnturnedPlayer
             UnturnedPlayer unturnedPlayer = UnturnedPlayer.FromPlayer(player.Player);
 
-            string uiName = data.ChildObjectName;
+            IUIObjectDataContainer dataContainer = (IUIObjectDataContainer)caller;
+            string uiName = dataContainer.ChildObjectName;
 
             Rocket.Core.Logging.Logger.Log("The text: " + text);
         }
