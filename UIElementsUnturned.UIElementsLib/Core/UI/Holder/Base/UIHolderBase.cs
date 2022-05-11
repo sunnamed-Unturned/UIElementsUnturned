@@ -12,10 +12,6 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Holder.Base
 
 
 
-        public virtual IEnumerable<TUIHolder> Holders => holders;
-
-
-
         public UIHolderBase(IEnumerable<TUIHolder> items)
         {
             holders = new List<TUIHolder>();
@@ -27,6 +23,10 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Holder.Base
         public UIHolderBase() : this(null)
         {
         }
+
+
+
+        public virtual IEnumerable<TUIHolder> Holders => holders;
 
 
 

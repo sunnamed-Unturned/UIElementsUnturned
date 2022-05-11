@@ -1,19 +1,12 @@
 ﻿using System;
 using UIElementsUnturned.UIElementsLib.Core.Player;
 using UIElementsUnturned.UIElementsLib.Core.UI.ChildObjectName.String;
-using UIElementsUnturned.UIElementsLib.Core.UI.Data;
 using UIElementsUnturned.UIElementsLib.Core.UI.InputField;
 
 namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.InputField
 {
     public sealed class ActionableInputField : IActionableUIElement<object, UPlayer, string>, IInputField
     {
-        public string ChildObjectName { get; }
-
-        public Action<object, UPlayer, string> Callback { get; }
-
-
-
         /// <summary>
         /// Constructor of <see cref="ActionableInputField"/>.
         /// Working same as another constructor, but parameter <paramref name="childObjectNameString"/> doing visible exactly what needs to be used.
@@ -30,8 +23,6 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.InputField
             Callback = callback ?? throw new ArgumentNullException(nameof(callback));
         }
 
-
-
         /// <summary>
         /// Constructor of <see cref="ActionableInputField"/>.
         /// Uses another Constructor.
@@ -43,6 +34,12 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.InputField
         public ActionableInputField(string childObjectName, Action<object, UPlayer, string> callback) : this(new ChildObjectNameString(childObjectName), callback)
         {
         }
+
+
+
+        public string ChildObjectName { get; }
+
+        public Action<object, UPlayer, string> Callback { get; }
 
 
 

@@ -2,16 +2,16 @@
 {
     public sealed class EffectArguments : IEffectArguments
     {
-        public ushort Id { get; }
-
-        public short Key { get; }
-
-
-
         public EffectArguments(ushort id, short key)
         {
             Id = id;
             Key = key;
         }
+
+
+
+        public ushort Id { get; }
+
+        public short Key { get; }
     }
 }
