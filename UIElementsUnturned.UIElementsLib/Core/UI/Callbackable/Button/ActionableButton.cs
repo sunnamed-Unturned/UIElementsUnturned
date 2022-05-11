@@ -6,11 +6,11 @@ using UIElementsUnturned.UIElementsLib.Core.UI.Data;
 
 namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.Button
 {
-    public sealed class ActionableButton : IActionableUIElement<IUIObjectDataContainer, UPlayer>, IButton
+    public sealed class ActionableButton : IActionableUIElement<object, UPlayer>, IButton
     {
         public string ChildObjectName { get; }
 
-        public Action<IUIObjectDataContainer, UPlayer> Callback { get; }
+        public Action<object, UPlayer> Callback { get; }
 
 
 
@@ -21,7 +21,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.Button
         /// <param name="childObjectNameString">Child object name string.</param>
         /// <param name="callback">Callback.</param>
         /// <exception cref="ArgumentNullException"></exception>
-        public ActionableButton(ChildObjectNameString childObjectNameString, Action<IUIObjectDataContainer, UPlayer> callback)
+        public ActionableButton(ChildObjectNameString childObjectNameString, Action<object, UPlayer> callback)
         {
             if (childObjectNameString == null)
                 throw new ArgumentNullException(nameof(childObjectNameString));
@@ -40,7 +40,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.Button
         /// <param name="callback">Callback.</param>
         /// <exception cref="ArgumentException"></exception>
         /// <exception cref="ArgumentNullException"></exception>
-        public ActionableButton(string childObjectName, Action<IUIObjectDataContainer, UPlayer> callback) : this(new ChildObjectNameString(childObjectName), callback)
+        public ActionableButton(string childObjectName, Action<object, UPlayer> callback) : this(new ChildObjectNameString(childObjectName), callback)
         {
         }
 

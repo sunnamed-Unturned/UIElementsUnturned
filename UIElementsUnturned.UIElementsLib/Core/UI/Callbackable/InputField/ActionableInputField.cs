@@ -6,11 +6,11 @@ using UIElementsUnturned.UIElementsLib.Core.UI.InputField;
 
 namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.InputField
 {
-    public sealed class ActionableInputField : IActionableUIElement<IUIObjectDataContainer, UPlayer, string>, IInputField
+    public sealed class ActionableInputField : IActionableUIElement<object, UPlayer, string>, IInputField
     {
         public string ChildObjectName { get; }
 
-        public Action<IUIObjectDataContainer, UPlayer, string> Callback { get; }
+        public Action<object, UPlayer, string> Callback { get; }
 
 
 
@@ -21,7 +21,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.InputField
         /// <param name="childObjectNameString">Child object name string.</param>
         /// <param name="callback">Callback.</param>
         /// <exception cref="ArgumentNullException"></exception>
-        public ActionableInputField(ChildObjectNameString childObjectNameString, Action<IUIObjectDataContainer, UPlayer, string> callback)
+        public ActionableInputField(ChildObjectNameString childObjectNameString, Action<object, UPlayer, string> callback)
         {
             if (childObjectNameString == null)
                 throw new ArgumentNullException(nameof(childObjectNameString));
@@ -40,7 +40,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackable.InputField
         /// <param name="callback">Callback.</param>
         /// <exception cref="ArgumentException"></exception>
         /// <exception cref="ArgumentNullException"></exception>
-        public ActionableInputField(string childObjectName, Action<IUIObjectDataContainer, UPlayer, string> callback) : this(new ChildObjectNameString(childObjectName), callback)
+        public ActionableInputField(string childObjectName, Action<object, UPlayer, string> callback) : this(new ChildObjectNameString(childObjectName), callback)
         {
         }
 

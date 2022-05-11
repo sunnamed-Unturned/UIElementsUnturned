@@ -83,10 +83,12 @@ namespace UIElementsUnturned.UIElementsLibPluginExample
         }
 
         // Called from (MyInputField)
-        private void onEnterInputInMyInputFieldCallback(IUIObjectDataContainer data, UPlayer player, string text)
+        private void onEnterInputInMyInputFieldCallback(object caller, UPlayer player, string text)
         {
             // UI Name
-            string uiName = data.ChildObjectName;
+
+            IUIObjectDataContainer dataContainer = (IUIObjectDataContainer)caller;
+            string uiName = dataContainer.ChildObjectName;
         }
     }
 }
