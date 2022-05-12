@@ -18,12 +18,12 @@
 * Updated PlayerUIElementsListenerContainer.
 * Changed UPlayer.
 * Added ChildObjectNameString. 
-* Fixed IUIHolder not right describes documentation [issue 16](https://github.com/sunnamed434/UIElementsUnturned/issues/16)
-* Added IUIHolder add new methods [issue 17](https://github.com/sunnamed434/UIElementsUnturned/issues/17)
-* Fixed Scatter classes and do it visible in folder, avoid contain it under interface [issue 18](https://github.com/sunnamed434/UIElementsUnturned/issues/18)
-* Fixed IUIElement and IInputField are have incorrect namespace [issue 19](https://github.com/sunnamed434/UIElementsUnturned/issues/19)
+* Fixed IUIHolder not right describes documentation [issue 16](https://github.com/sunnamed434/UIElementsUnturned/issues/16).
+* Added IUIHolder add new methods [issue 17](https://github.com/sunnamed434/UIElementsUnturned/issues/17).
+* Fixed Scatter classes and do it visible in folder, avoid contain it under interface [issue 18](https://github.com/sunnamed434/UIElementsUnturned/issues/18).
+* Fixed IUIElement and IInputField are have incorrect namespace [issue 19](https://github.com/sunnamed434/UIElementsUnturned/issues/19).
 * Everywhere in code updated documentation comments [issue #9](https://github.com/sunnamed434/UIElementsUnturned/issues/9).
-* Now Actionables accepts object instance instead of IUIObjectDataContainer
+* Now Actionables accepts object instance instead of IUIObjectDataContainer.
 * Project migration to .NET Core (lib and plugins still on .NET Framework 4.7.2), made only to simplify work with new C# versions and nuget packages pushes.
 * Migrated to C# 9.0.
 
