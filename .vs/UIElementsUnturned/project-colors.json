@@ -13,7 +13,7 @@
     },
     "d22fc3e9-c0b7-4d55-99f0-14141f473bc7": {
       "ProjectGuid": "d22fc3e9-c0b7-4d55-99f0-14141f473bc7",
-      "DisplayName": "UIElementsUnturned.UIElementsLibPluginExample",
+      "DisplayName": "UIElementsUnturned.PluginHardSample",
       "ColorIndex": 2
     },
     "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
@@ -33,9 +33,29 @@
     },
     "4f29f87a-52dd-4c33-bc71-0b2103a7d976": {
       "ProjectGuid": "4f29f87a-52dd-4c33-bc71-0b2103a7d976",
-      "DisplayName": "UIElementsUnturned.SimpleUIElementsLibPluginExample",
+      "DisplayName": "UIElementsUnturned.Samples.Easy.PluginEasySample",
       "ColorIndex": 5
+    },
+    "44234e1f-a67d-4c86-960e-a67fab1614fc": {
+      "ProjectGuid": "44234e1f-a67d-4c86-960e-a67fab1614fc",
+      "DisplayName": "EasyHardSample",
+      "ColorIndex": 6
+    },
+    "b710a63d-77c7-4eb0-b944-a661dab82d2c": {
+      "ProjectGuid": "b710a63d-77c7-4eb0-b944-a661dab82d2c",
+      "DisplayName": "Samples",
+      "ColorIndex": 7
+    },
+    "c1212590-6e98-4d81-ae05-0d6e7a424f58": {
+      "ProjectGuid": "c1212590-6e98-4d81-ae05-0d6e7a424f58",
+      "DisplayName": "Easy",
+      "ColorIndex": 8
+    },
+    "235115d6-c999-4078-ac1f-13ab909853d7": {
+      "ProjectGuid": "235115d6-c999-4078-ac1f-13ab909853d7",
+      "DisplayName": "Hard",
+      "ColorIndex": 9
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 10
 }
