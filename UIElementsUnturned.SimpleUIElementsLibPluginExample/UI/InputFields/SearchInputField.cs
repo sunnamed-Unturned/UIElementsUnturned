@@ -1,8 +1,8 @@
 ﻿using Rocket.Unturned.Player;
 using UIElementsUnturned.UIElementsLib.Core.Player;
-using UIElementsUnturned.UIElementsLib.Core.UI.InputField;
+using UIElementsUnturned.UIElementsLib.Core.UI.InputFields;
 
-namespace UIElementsUnturned.SimpleUIElementsLibPluginExample.UI.InputFields
+namespace UIElementsUnturned.Samples.Easy.PluginEasySample.UI.InputFields
 {
     /// <summary>
     /// One more example, better check CloseUIButton.

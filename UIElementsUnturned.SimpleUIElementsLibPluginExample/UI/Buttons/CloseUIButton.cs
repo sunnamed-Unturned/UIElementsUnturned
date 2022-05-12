@@ -1,7 +1,7 @@
 ﻿using UIElementsUnturned.UIElementsLib.Core.Player;
-using UIElementsUnturned.UIElementsLib.Core.UI.Button;
+using UIElementsUnturned.UIElementsLib.Core.UI.Buttons;
 
-namespace UIElementsUnturned.SimpleUIElementsLibPluginExample.UI.Buttons
+namespace UIElementsUnturned.Samples.Easy.PluginEasySample.UI.Buttons
 {
     /// <summary>
     /// Example usage of Button.

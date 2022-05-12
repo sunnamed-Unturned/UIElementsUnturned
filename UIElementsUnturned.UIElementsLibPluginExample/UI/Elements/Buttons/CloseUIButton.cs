@@ -3,10 +3,10 @@ using Rocket.Unturned.Player;
 using SDG.Unturned;
 using System;
 using UIElementsUnturned.UIElementsLib.Core.Player;
-using UIElementsUnturned.UIElementsLib.Core.UI.Button;
-using UIElementsUnturned.UIElementsLibPluginExample.Configuration;
+using UIElementsUnturned.UIElementsLib.Core.UI.Buttons;
+using UIElementsUnturned.Samples.Hard.PluginHardSample.Configuration;
 
-namespace UIElementsUnturned.UIElementsLibPluginExample.UI.Elements.Buttons
+namespace UIElementsUnturned.Samples.Hard.PluginHardSample.UI.Elements.Buttons
 {
     /// <summary>
     /// Example usage of Button.

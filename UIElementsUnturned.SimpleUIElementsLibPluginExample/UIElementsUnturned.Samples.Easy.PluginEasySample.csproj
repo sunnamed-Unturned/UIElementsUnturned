@@ -4,16 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{07514B51-A058-421A-84FA-A20C32B5F355}</ProjectGuid>
+    <ProjectGuid>{4F29F87A-52DD-4C33-BC71-0B2103A7D976}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UIElementsUnturned.UIElementsLib</RootNamespace>
-    <AssemblyName>UIElementsUnturned.UIElementsLib</AssemblyName>
+    <RootNamespace>UIElementsUnturned.Samples.Easy.PluginEasySample</RootNamespace>
+    <AssemblyName>UIElementsUnturned.Samples.Easy.PluginEasySample</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -27,14 +25,10 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\lib\build\</OutputPath>
+    <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\lib\build\UIElementsUnturned.UIElementsLib.xml</DocumentationFile>
-  </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
@@ -43,6 +37,18 @@
     </Reference>
     <Reference Include="com.rlabrecque.steamworks.net">
       <HintPath>..\lib\Unturned\com.rlabrecque.steamworks.net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Rocket.API">
+      <HintPath>..\lib\Rocket\Rocket.API.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Rocket.Core">
+      <HintPath>..\lib\Rocket\Rocket.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Rocket.Unturned">
+      <HintPath>..\lib\Rocket\Rocket.Unturned.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="SDG.NetTransport">
@@ -57,6 +63,10 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIElementsUnturned.UIElementsLib, Version=2.3.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\build\UIElementsUnturned.UIElementsLib.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine">
       <HintPath>..\lib\Unity\UnityEngine.dll</HintPath>
       <Private>False</Private>
@@ -67,30 +77,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core\UI\Arguments\EffectsArguments.cs" />
-    <Compile Include="Core\UI\Arguments\IEffectArguments.cs" />
-    <Compile Include="Core\UI\Arguments\SerializableEffectArguments.cs" />
-    <Compile Include="Core\UI\Buttons\IButton.cs" />
-    <Compile Include="Core\UI\Callbackables\Buttons\ActionableButton.cs" />
-    <Compile Include="Core\UI\Callbackables\IActionableUIElement.cs" />
-    <Compile Include="Core\UI\Callbackables\InputFields\ActionableInputField.cs" />
-    <Compile Include="Core\UI\ChildObjectName\String\ChildObjectNameString.cs" />
-    <Compile Include="Core\UI\ChildObjectName\String\IChildObjectNameString.cs" />
-    <Compile Include="Core\UI\Data\IUIObjectDataContainer.cs" />
-    <Compile Include="Core\UI\Elements\IUIElement.cs" />
-    <Compile Include="Core\UI\Holders\Base\UIHolderBase.cs" />
-    <Compile Include="Core\UI\Holders\Buttons\ButtonUIHolder.cs" />
-    <Compile Include="Core\UI\Holders\InputFields\InputFieldUIHolder.cs" />
-    <Compile Include="Core\UI\Holders\IUIHolder.cs" />
-    <Compile Include="Core\UI\Holders\UIHolder.cs" />
-    <Compile Include="Core\UI\InputFields\IInputField.cs" />
-    <Compile Include="Core\Player\UPlayer.cs" />
-    <Compile Include="Core\UI\User\Containers\Components\PlayerUIElementsListenerContainer.cs" />
-    <Compile Include="Core\UI\User\Containers\IUIElementsContainer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="UIElementsUnturned.UIElementsLib.nuspec" />
+    <Compile Include="PluginEasySample.cs" />
+    <Compile Include="UI\Buttons\CloseUIButton.cs" />
+    <Compile Include="UI\InputFields\SearchInputField.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
