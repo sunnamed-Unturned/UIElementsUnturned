@@ -4,6 +4,18 @@
         <name>UIElementsUnturned.UIElementsLib</name>
     </assembly>
     <members>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.Player.UPlayer">
+            <summary>
+            Container of a SDG.Unturned.Player.
+            </summary>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.Player.UPlayer.#ctor(SDG.Unturned.Player)">
+            <summary>
+            Constructor of <see cref="T:UIElementsUnturned.UIElementsLib.Core.Player.UPlayer"/>
+            </summary>
+            <param name="player"></param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
         <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Arguments.IEffectArguments">
             <summary>
             Model of Effect Arguments.
@@ -296,18 +308,6 @@
             <summary>
             Buttons Holder.
             </summary>
-        </member>
-        <member name="T:UIElementsUnturned.UIElementsLib.Core.Player.UPlayer">
-            <summary>
-            Container of a SDG.Unturned.Player.
-            </summary>
-        </member>
-        <member name="M:UIElementsUnturned.UIElementsLib.Core.Player.UPlayer.#ctor(SDG.Unturned.Player)">
-            <summary>
-            Constructor of <see cref="T:UIElementsUnturned.UIElementsLib.Core.Player.UPlayer"/>
-            </summary>
-            <param name="player"></param>
-            <exception cref="T:System.ArgumentNullException"></exception>
         </member>
     </members>
 </doc>
