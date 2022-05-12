@@ -27,8 +27,6 @@
 * Project migration to .NET Core (lib and plugins still on .NET Framework 4.7.2), made only to simplify work with new C# versions and nuget packages pushes.
 * Migrated to C# 9.0.
 
----
-
 ### v1.1.0:
 
 * Now lib follow [Semantic Versioning (issue)](https://github.com/sunnamed434/UIElementsUnturned/issues/7).
