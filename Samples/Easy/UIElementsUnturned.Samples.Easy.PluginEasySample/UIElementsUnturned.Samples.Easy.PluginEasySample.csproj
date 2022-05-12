@@ -3,56 +3,45 @@
   <PropertyGroup>
     <TargetFramework>net472</TargetFramework>
     <ImplicitUsings>disable</ImplicitUsings>
-    <Nullable>disable</Nullable>
-    <BaseOutputPath>D:\repos\UIElementsUnturned\lib\build</BaseOutputPath>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
-	<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Nullable>enable</Nullable>
 	<LangVersion>9.0</LangVersion>
-	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	<PackageProjectUrl>https://github.com/sunnamed434/UIElementsUnturned</PackageProjectUrl>
-	<PackageReadmeFile>README.md</PackageReadmeFile>
-	<RepositoryUrl>https://github.com/sunnamed434/UIElementsUnturned</RepositoryUrl>
-	<Authors>sunnamed434</Authors>
-	<Description>Powerful lib to easy communicate with UI in Unturned with RocketMod and OpenMod!</Description>
-	<Copyright>Copyright 2022</Copyright>
-	<PackageTags>ui lib rocketmod openmod unturned effect plugins nuget</PackageTags>
-	<PackageReleaseNotes>Changelog here: https://github.com/sunnamed434/UIElementsUnturned/blob/main/CHANGELOG.md</PackageReleaseNotes>
-	<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-	<Version>3.3.0</Version>
-	<PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\lib\Unturned\Assembly-CSharp.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\lib\Unturned\Assembly-CSharp.dll</HintPath>
       <CopyLocal>False</CopyLocal>
     </Reference>
     <Reference Include="com.rlabrecque.steamworks.net">
-      <HintPath>..\lib\Unturned\com.rlabrecque.steamworks.net.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\lib\Unturned\com.rlabrecque.steamworks.net.dll</HintPath>
+      <CopyLocal>False</CopyLocal>
+    </Reference>
+    <Reference Include="Rocket.API">
+      <HintPath>..\..\..\lib\Rocket\Rocket.API.dll</HintPath>
+      <CopyLocal>False</CopyLocal>
+    </Reference>
+    <Reference Include="Rocket.Core">
+      <HintPath>..\..\..\lib\Rocket\Rocket.Core.dll</HintPath>
+      <CopyLocal>False</CopyLocal>
+    </Reference>
+    <Reference Include="Rocket.Unturned">
+      <HintPath>..\..\..\lib\Rocket\Rocket.Unturned.dll</HintPath>
       <CopyLocal>False</CopyLocal>
     </Reference>
     <Reference Include="SDG.NetTransport">
-      <HintPath>..\lib\Unturned\SDG.NetTransport.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\lib\Unturned\SDG.NetTransport.dll</HintPath>
       <CopyLocal>False</CopyLocal>
     </Reference>
-    <Reference Include="UnityEngine">
-      <HintPath>..\lib\Unity\UnityEngine.dll</HintPath>
+    <Reference Include="UIElementsUnturned.UIElementsLib">
+      <HintPath>..\..\..\lib\build\Release\net472\UIElementsUnturned.UIElementsLib.dll</HintPath>
       <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\lib\Unity\UnityEngine.dll</HintPath>
       <CopyLocal>False</CopyLocal>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\lib\Unity\UnityEngine.CoreModule.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\lib\Unity\UnityEngine.CoreModule.dll</HintPath>
       <CopyLocal>False</CopyLocal>
     </Reference>
   </ItemGroup>
