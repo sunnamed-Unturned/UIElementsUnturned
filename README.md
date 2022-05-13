@@ -7,6 +7,12 @@ This library makes easy listening player UI button clicks and inputfield enterin
 ### Documentation
 Please check out the [documentation](https://sunnamed.gitbook.io/uielementsunturned/).
 
+### Real Plugins Samples
+See all samples [here](https://github.com/sunnamed434/UIElementsUnturned/tree/main/Samples)
+
+- [Easy](https://github.com/sunnamed434/UIElementsUnturned/tree/main/Samples/Easy/UIElementsUnturned.Samples.Easy.PluginEasySample)
+- [Hard](https://github.com/sunnamed434/UIElementsUnturned/tree/main/Samples/Hard/UIElementsUnturned.PluginHardSample)
+
 ### Installation
 Download lib here [UIElementsUnturned.UIElementsLib.dll](https://github.com/sunnamed434/UIElementsUnturned/releases) or by using the [UIElementsUnturned.UIElementsLib](https://www.nuget.org/packages/UIElementsUnturned.UIElementsLib/) nuget package.
 
@@ -22,10 +28,6 @@ Install-Package UIElementsUnturned.UIElementsLib
 ````
 dotnet add package UIElementsUnturned.UIElementsLib
 ````
-
-### Lib Plugin Examples
-* [Fast and simple](https://github.com/sunnamed434/UIElementsUnturned/blob/main/Plugin%20Examples/FAST%26SIMPLE_EXAMPLE.md)
-* [Hardest way](https://github.com/sunnamed434/UIElementsUnturned/blob/main/Plugin%20Examples/HARD_EXAMPLE.md)
 
 ### Contributing!
 For more info click [here](https://github.com/sunnamed434/UIElementsUnturned/blob/main/CONTRIBUTING.md).
