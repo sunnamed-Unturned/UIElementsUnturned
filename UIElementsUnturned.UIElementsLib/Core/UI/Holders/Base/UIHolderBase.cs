@@ -101,10 +101,8 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Holders.Base
                 throw new ArgumentNullException(nameof(predicate));
 
             foreach (TUIHolder item in holders)
-            {
                 if (predicate.Invoke(item))
                     return item;
-            }
 
             return default(TUIHolder);
         }

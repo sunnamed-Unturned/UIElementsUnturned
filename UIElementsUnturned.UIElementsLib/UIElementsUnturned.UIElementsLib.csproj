@@ -5,8 +5,8 @@
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>disable</Nullable>
     <BaseOutputPath>D:\repos\UIElementsUnturned\lib\build</BaseOutputPath>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
-	<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+	<GenerateAssemblyInfo>False</GenerateAssemblyInfo>
 	<LangVersion>9.0</LangVersion>
 	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	<PackageProjectUrl>https://github.com/sunnamed434/UIElementsUnturned</PackageProjectUrl>
