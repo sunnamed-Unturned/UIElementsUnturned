@@ -20,6 +20,7 @@
 	<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 	<Version>3.3.0</Version>
 	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<DocumentationFile>D:\Github\UIElementsUnturned\UIElementsUnturned\lib\build\Release\net472\UIElementsUnturned.UIElementsLib.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

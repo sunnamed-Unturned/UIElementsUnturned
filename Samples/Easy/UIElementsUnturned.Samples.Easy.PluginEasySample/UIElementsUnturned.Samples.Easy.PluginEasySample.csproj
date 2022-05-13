@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="UIElementsUnturned.UIElementsLib" Version="3.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\lib\Unturned\Assembly-CSharp.dll</HintPath>
       <CopyLocal>False</CopyLocal>
@@ -31,10 +35,6 @@
     <Reference Include="SDG.NetTransport">
       <HintPath>..\..\..\lib\Unturned\SDG.NetTransport.dll</HintPath>
       <CopyLocal>False</CopyLocal>
-    </Reference>
-    <Reference Include="UIElementsUnturned.UIElementsLib">
-      <HintPath>..\..\..\lib\build\Release\net472\UIElementsUnturned.UIElementsLib.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine">
       <HintPath>..\..\..\lib\Unity\UnityEngine.dll</HintPath>
