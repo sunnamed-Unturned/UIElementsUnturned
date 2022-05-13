@@ -8,7 +8,7 @@ This library makes easy listening player UI button clicks and inputfield enterin
 Please check out the [documentation](https://sunnamed.gitbook.io/uielementsunturned/).
 
 ### Real Plugins Samples
-See all samples [here](https://github.com/sunnamed434/UIElementsUnturned/tree/main/Samples)
+See all samples [here](https://github.com/sunnamed434/UIElementsUnturned/tree/main/Samples).
 
 - [Easy](https://github.com/sunnamed434/UIElementsUnturned/tree/main/Samples/Easy/UIElementsUnturned.Samples.Easy.PluginEasySample)
 - [Hard](https://github.com/sunnamed434/UIElementsUnturned/tree/main/Samples/Hard/UIElementsUnturned.PluginHardSample)
