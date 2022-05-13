@@ -16,14 +16,14 @@ namespace UIElementsUnturned.Samples.Hard.PluginHardSample.UI.Elements.Buttons
         /// <summary>
         /// Configuration asset field.
         /// </summary>
-        private readonly IAsset<UIElementsLibPluginExampleConfiguration> configurationAsset;
+        private readonly IAsset<PluginHardSampleConfiguration> configurationAsset;
 
 
 
         /// <summary>
         /// Injecting dependencies.
         /// </summary>
-        public CloseUIButton(IAsset<UIElementsLibPluginExampleConfiguration> configurationAsset)
+        public CloseUIButton(IAsset<PluginHardSampleConfiguration> configurationAsset)
         {
             this.configurationAsset = configurationAsset ?? throw new ArgumentNullException(nameof(configurationAsset));
         }

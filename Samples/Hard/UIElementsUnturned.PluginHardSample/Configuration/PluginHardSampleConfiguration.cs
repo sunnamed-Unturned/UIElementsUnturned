@@ -3,7 +3,7 @@ using UIElementsUnturned.UIElementsLib.Core.UI.Arguments;
 
 namespace UIElementsUnturned.Samples.Hard.PluginHardSample.Configuration
 {
-    public sealed class UIElementsLibPluginExampleConfiguration : IRocketPluginConfiguration
+    public sealed class PluginHardSampleConfiguration : IRocketPluginConfiguration
     {
         /// <summary>
         /// Best practice to use your effects.

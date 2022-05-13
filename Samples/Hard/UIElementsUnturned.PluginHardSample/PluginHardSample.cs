@@ -8,6 +8,7 @@ using UIElementsUnturned.UIElementsLib.Core.Player;
 using UIElementsUnturned.UIElementsLib.Core.UI.Buttons;
 using UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.Buttons;
 using UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.InputFields;
+using UIElementsUnturned.UIElementsLib.Core.UI.ChildObjectName.String;
 using UIElementsUnturned.UIElementsLib.Core.UI.Data;
 using UIElementsUnturned.UIElementsLib.Core.UI.Holders.Buttons;
 using UIElementsUnturned.UIElementsLib.Core.UI.Holders.InputFields;
@@ -18,7 +19,7 @@ namespace UIElementsUnturned.Samples.Hard.PluginHardSample
     /// <summary>
     /// Example how to use UIElementsLib.
     /// </summary>
-    public sealed class PluginHardSample : RocketPlugin<UIElementsLibPluginExampleConfiguration>
+    public sealed class PluginHardSample : RocketPlugin<PluginHardSampleConfiguration>
     {
         private InputFieldUIHolder inputFieldUIHolder;
 
@@ -71,15 +72,19 @@ namespace UIElementsUnturned.Samples.Hard.PluginHardSample
         private void onInputFieldTextCommitted(Player player, string inputField, string text)
         {
             // When player writes something searching for input field and executing it
-            inputFieldUIHolder.FindItemByName(inputField)?
-                .OnEnterInput(new UPlayer(player), text);
+            if (inputFieldUIHolder.TryFindItemByName(new ChildObjectNameString(inputField), out IInputField holder))
+            {
+                holder.OnEnterInput(new UPlayer(player), text);
+            }
         }
 
         private void onButtonClicked(Player player, string button)
         {
             // When clicks button searching for button and executing it
-            buttonUIHolder.FindItemByName(button)?
-                .OnClick(new UPlayer(player));
+            if (buttonUIHolder.TryFindItemByName(new ChildObjectNameString(button), out IButton holder))
+            {
+                holder.OnClick(new UPlayer(player));
+            }
         }
 
         // Called from (MyInputField)

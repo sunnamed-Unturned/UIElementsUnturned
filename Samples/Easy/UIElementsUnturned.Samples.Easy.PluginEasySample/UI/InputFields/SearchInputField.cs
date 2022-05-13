@@ -5,26 +5,33 @@ using UIElementsUnturned.UIElementsLib.Core.UI.InputFields;
 namespace UIElementsUnturned.Samples.Easy.PluginEasySample.UI.InputFields
 {
     /// <summary>
-    /// One more example, better check CloseUIButton.
+    /// Sample how to use it with InputField.
     /// </summary>
     public sealed class SearchInputField : IInputField
     {
+        /// <summary>
+        /// Equal this property same name of your GameObject as you have in Unity, in simple words your GameObject name. 
+        /// </summary>
         public string ChildObjectName => "SearchInputField";
 
 
 
+        /// <summary>
+        /// Best practice to use it explicitly, but you can use it by default.
+        /// </summary>
+        /// <param name="executor">Button click executor.</param>
         void IInputField.OnEnterInput(UPlayer executor, string text)
         {
-            // executor is unturnedplayer who called it
-            // text - the text which player enter in input field
+            // executor is UnturnedPlayer - who called it
+            // text - the text which player wrote in the input field
 
-            Rocket.Core.Logging.Logger.Log("Executor Name: " + executor.Player.channel.owner.playerID.characterName);
+            Rocket.Core.Logging.Logger.Log("Executor Character Name: " + executor.Player.channel.owner.playerID.characterName);
 
-            // UnturnedPlayer example
+            // How to get the UnturnedPlayer
             UnturnedPlayer unturnedPlayer = UnturnedPlayer.FromPlayer(executor.Player);
 
-            Rocket.Core.Logging.Logger.Log("Executor Name: " + unturnedPlayer.CharacterName);
-            Rocket.Core.Logging.Logger.Log("Wrote in inputfield next text: " + text);
+            Rocket.Core.Logging.Logger.Log("Executor Character Name: " + unturnedPlayer.CharacterName);
+            Rocket.Core.Logging.Logger.Log("Wrote in input field next text: " + text);
         }
     }
 }

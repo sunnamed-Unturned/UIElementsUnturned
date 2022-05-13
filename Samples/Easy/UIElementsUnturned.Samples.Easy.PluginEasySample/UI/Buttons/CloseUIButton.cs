@@ -1,10 +1,11 @@
-﻿using UIElementsUnturned.UIElementsLib.Core.Player;
+﻿using Rocket.Unturned.Player;
+using UIElementsUnturned.UIElementsLib.Core.Player;
 using UIElementsUnturned.UIElementsLib.Core.UI.Buttons;
 
 namespace UIElementsUnturned.Samples.Easy.PluginEasySample.UI.Buttons
 {
     /// <summary>
-    /// Example usage of Button.
+    /// Sample how to use it with Button.
     /// </summary>
     public sealed class CloseUIButton : IButton
     {
@@ -18,11 +19,11 @@ namespace UIElementsUnturned.Samples.Easy.PluginEasySample.UI.Buttons
         /// <summary>
         /// Best practice to use it explicitly, but you can use it by default.
         /// </summary>
-        /// <param name="executor"></param>
+        /// <param name="executor">Button click executor.</param>
         void IButton.OnClick(UPlayer executor)
         {
-            // Example of using player.
             // executor.Player - this is UnturnedPlayer
+            UnturnedPlayer unturnedPlayer = UnturnedPlayer.FromPlayer(executor.Player);
         }
     }
 }
