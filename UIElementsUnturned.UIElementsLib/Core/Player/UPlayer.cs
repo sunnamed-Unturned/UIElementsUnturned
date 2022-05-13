@@ -3,7 +3,7 @@
 namespace UIElementsUnturned.UIElementsLib.Core.Player
 {
     /// <summary>
-    /// Container of a SDG.Unturned.Player.
+    /// Container of a <see cref="SDG.Unturned.Player"/>
     /// </summary>
     public struct UPlayer
     {
@@ -12,9 +12,9 @@ namespace UIElementsUnturned.UIElementsLib.Core.Player
 
 
         /// <summary>
-        /// Constructor of <see cref="UPlayer"/>
+        /// Initializes a new instance of the of <see cref="UPlayer"/> class using the specified player.
         /// </summary>
-        /// <param name="player"></param>
+        /// <param name="player">The player.</param>
         /// <exception cref="ArgumentNullException"></exception>
         public UPlayer(SDG.Unturned.Player player)
         {
