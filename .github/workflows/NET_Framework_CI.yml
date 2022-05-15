@@ -1,4 +1,4 @@
-name: CI
+name: .NET Framework CI
 
 on:
   push:
