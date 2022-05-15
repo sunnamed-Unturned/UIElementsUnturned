@@ -4,7 +4,7 @@
     <TargetFramework>net472</TargetFramework>
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>disable</Nullable>
-    <BaseOutputPath>D:\repos\UIElementsUnturned\lib\build</BaseOutputPath>
+    <BaseOutputPath></BaseOutputPath>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
 	<GenerateAssemblyInfo>False</GenerateAssemblyInfo>
 	<LangVersion>9.0</LangVersion>
@@ -20,7 +20,7 @@
 	<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 	<Version>3.3.0</Version>
 	<PackageLicenseExpression>MIT</PackageLicenseExpression>
-	<DocumentationFile>D:\Github\UIElementsUnturned\UIElementsUnturned\lib\build\Release\net472\UIElementsUnturned.UIElementsLib.xml</DocumentationFile>
+	<DocumentationFile></DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
