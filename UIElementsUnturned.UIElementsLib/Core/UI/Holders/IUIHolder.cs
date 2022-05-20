@@ -6,96 +6,94 @@ using UIElementsUnturned.UIElementsLib.Core.UI.Elements;
 namespace UIElementsUnturned.UIElementsLib.Core.UI.Holders
 {
     /// <summary>
-    /// Container for UI Elements.
+    /// Provides a container for UI Elements.
     /// </summary>
     public interface IUIHolder<TUIHolder> where TUIHolder : IUIElement
     {
         /// <summary>
-        /// All holders.
+        /// Gets all existing holders.
         /// </summary>
         IEnumerable<TUIHolder> Holders { get; }
 
         /// <summary>
-        /// Adding new holder.
+        /// Adds the holder to the <see cref="Holders"/>.
         /// </summary>
-        /// <param name="item">UI Holder for adding.</param>
+        /// <param name="item">The item to be added to the <see cref="Holders"/>.</param>
         /// <exception cref="System.ArgumentNullException"></exception>
-        void AddNew(TUIHolder item);
+        void Add(TUIHolder item);
 
         /// <summary>
-        /// Adding new holders by calling <see cref="AddNew(TUIHolder)"/>
+        /// Adds the all <paramref name="items"/> to the <see cref="Holders"/>.
         /// </summary>
-        /// <param name="items">UI Holders for adding.</param>
+        /// <param name="items">The items to be added to the <see cref="Holders"/>.</param>
         /// <exception cref="System.ArgumentNullException"></exception>
         /// <exception cref="System.InvalidOperationException"></exception>
-        void AddNew(IEnumerable<TUIHolder> items);
+        void Add(IEnumerable<TUIHolder> items);
 
         /// <summary>
-        /// Removing holder.
+        /// Removes the <see cref="TUIHolder"/> with the specified <paramref name="item"/> from the <see cref="Holders"/>.
         /// </summary>
-        /// <param name="item">UI Holder for removing.</param>
+        /// <param name="item">The item to be removed from the <see cref="Holders"/>.</param>
         /// <exception cref="System.ArgumentNullException"></exception>
         void Remove(TUIHolder item);
 
         /// <summary>
-        /// Removing holders by calling <see cref="Remove(TUIHolder)"/>
+        /// Removes the <paramref name="items"/> from the <see cref="Holders"/>.
         /// </summary>
-        /// <param name="items">UI Holders for removing.</param>
+        /// <param name="items">The items to be removed from the <see cref="Holders"/>.</param>
         /// <exception cref="System.ArgumentNullException"></exception>
         /// <exception cref="System.InvalidOperationException"></exception>
         void Remove(IEnumerable<TUIHolder> items);
 
         /// <summary>
-        /// Trying to find item safely with <paramref name="predicate"/> by calling <see cref="FindItem(Predicate{TUIHolder})"/>
+        /// Gets the <paramref name="holder"/> associated with the specified <paramref name="predicate"/>.
         /// </summary>
-        /// <param name="predicate">Predicate.</param>
-        /// <param name="holder">Found UI Holder.</param>
-        /// <returns>Success of searching.</returns>
+        /// <param name="predicate">The predicate.</param>
+        /// <param name="holder">The found UI Holder.</param>
+        /// <returns><see langword="true"/> if the <see cref="Holders"/> contains an element with the specified <paramref name="predicate"/>; otherwise, false.</returns>
         /// <exception cref="System.ArgumentNullException"></exception>
-        bool TryFindItem(Predicate<TUIHolder> predicate, out TUIHolder holder);
+        bool TryGetItem(Predicate<TUIHolder> predicate, out TUIHolder holder);
 
         /// <summary>
-        /// Trying to find item safely. 
-        /// Working same as <see cref="TryFindItemByName(string, out TUIHolder)"/>, but parameter <paramref name="childObjectNameString"/> doing visible exactly what needs to be used.
+        /// Gets the <paramref name="holder"/> associated with the specified <paramref name="childObjectNameString"/>.
         /// </summary>
-        /// <param name="childObjectNameString">Child object name string for searching.</param>
-        /// <param name="holder">Found UI Holder.</param>
-        /// <returns>Success of searching.</returns>
+        /// <param name="childObjectNameString">The child object name string for searching.</param>
+        /// <param name="holder">The found UI Holder.</param>
+        /// <returns><see langword="true"/> if the <see cref="Holders"/> contains an element with the specified <paramref name="childObjectNameString"/>; otherwise, false.</returns>
         /// <exception cref="System.ArgumentNullException"></exception>
-        bool TryFindItemByName(IChildObjectNameString childObjectNameString, out TUIHolder holder);
+        bool TryGetItemByName(IChildObjectNameString childObjectNameString, out TUIHolder holder);
 
         /// <summary>
-        /// Trying to find item safely by calling <see cref="TryFindItemByName(IChildObjectNameString, out TUIHolder)"/>.
+        /// Gets the <paramref name="holder"/> associated with the specified <paramref name="childObjectName"/>.
         /// </summary>
-        /// <param name="childObjectName">Child object name for searching.</param>
-        /// <param name="holder">Found UI Holder.</param>
-        /// <returns>Success of searching.</returns>
+        /// <param name="childObjectName">The child object name for searching.</param>
+        /// <param name="holder">The found UI Holder.</param>
+        /// <returns><see langword="true"/> if the <see cref="Holders"/> contains an element with the specified <paramref name="childObjectName"/>; otherwise, false.</returns>
         /// <exception cref="System.ArgumentException"></exception>
-        bool TryFindItemByName(string childObjectName, out TUIHolder holder);
+        bool TryGetItemByName(string childObjectName, out TUIHolder holder);
 
         /// <summary>
-        /// Searching an item with <paramref name="predicate"/> 
+        /// Gets the holder associated with the specified <paramref name="predicate"/>.
         /// </summary>
-        /// <param name="predicate">Predicate.</param>
-        /// <returns>Found UI Holder.</returns>
+        /// <param name="predicate">The predicate.</param>
+        /// <returns>The found UI Holder.</returns>
         /// <exception cref="System.ArgumentNullException"></exception>
-        TUIHolder FindItem(Predicate<TUIHolder> predicate);
+        TUIHolder GetItem(Predicate<TUIHolder> predicate);
 
         /// <summary>
-        /// Searching an item.
-        /// Working same as <see cref="FindItemByName(string)"/>, but parameter <paramref name="childObjectNameString"/> doing visible exactly what needs to be used.
+        /// Gets the holder associated with the specified <paramref name="childObjectNameString"/>.
         /// </summary>
-        /// <param name="childObjectNameString">Child object name string for searching.</param>
-        /// <returns>Found UI Holder.</returns>
+        /// <param name="childObjectNameString">The child object name string for searching.</param>
+        /// <returns>The found UI Holder.</returns>
         /// <exception cref="System.ArgumentNullException"></exception>
-        TUIHolder FindItemByName(IChildObjectNameString childObjectNameString);
+        TUIHolder GetItemByName(IChildObjectNameString childObjectNameString);
 
         /// <summary>
-        /// Searching an item by calling <see cref="FindItemByName(IChildObjectNameString)"/>
+        /// Gets the holder associated with the specified <paramref name="childObjectName"/>.
         /// </summary>
-        /// <param name="childObjectName">Child object name for searching.</param>
-        /// <returns>Found UI Holder.</returns>
+        /// <param name="childObjectName">The child object name for searching.</param>
+        /// <returns>The found UI Holder.</returns>
         /// <exception cref="System.ArgumentException"></exception>
-        TUIHolder FindItemByName(string childObjectName);
+        TUIHolder GetItemByName(string childObjectName);
     }
 }
