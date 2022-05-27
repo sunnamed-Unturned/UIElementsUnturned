@@ -3,7 +3,7 @@
 namespace UIElementsUnturned.UIElementsLib.Core.Player
 {
     /// <summary>
-    /// Container of a <see cref="SDG.Unturned.Player"/>
+    /// Represents a container of a <see cref="SDG.Unturned.Player"/>
     /// </summary>
     public struct UPlayer
     {

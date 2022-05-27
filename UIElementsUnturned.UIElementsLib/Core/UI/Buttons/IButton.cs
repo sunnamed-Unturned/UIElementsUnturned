@@ -4,7 +4,7 @@ using UIElementsUnturned.UIElementsLib.Core.UI.Elements;
 namespace UIElementsUnturned.UIElementsLib.Core.UI.Buttons
 {
     /// <summary>
-    /// Button UI Element.
+    /// Represents a Button UI Element.
     /// </summary>
     public interface IButton : IUIElement
     {

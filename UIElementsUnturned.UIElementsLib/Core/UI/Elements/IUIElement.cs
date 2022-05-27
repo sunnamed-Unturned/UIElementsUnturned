@@ -3,7 +3,7 @@
 namespace UIElementsUnturned.UIElementsLib.Core.UI.Elements
 {
     /// <summary>
-    /// UI Element which describes model of data.
+    /// Represents a UI object data.
     /// </summary>
     public interface IUIElement : IUIObjectDataContainer
     {

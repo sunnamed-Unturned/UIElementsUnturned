@@ -1,7 +1,7 @@
 ﻿namespace UIElementsUnturned.UIElementsLib.Core.UI.Arguments
 {
     /// <summary>
-    /// Model of Effect Arguments.
+    /// Represents a data of Effect Arguments.
     /// </summary>
     public interface IEffectArguments
     {

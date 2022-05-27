@@ -4,7 +4,7 @@ using UIElementsUnturned.UIElementsLib.Core.UI.Elements;
 namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackables
 {
     /// <summary>
-    /// Empty Callback for UI Elements.
+    /// Encapsulates a a method that has no parameters and does not return a value;
     /// </summary>
     public interface IActionableUIElement : IUIElement
     {
@@ -12,7 +12,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackables
     }
 
     /// <summary>
-    /// Callback for UI Elements with 1 generic parameters.
+    /// Encapsulates a method that has a single parameter and does not return a value.
     /// </summary>
     public interface IActionableUIElement<in TCallbackArgument1> : IUIElement
     {
@@ -20,7 +20,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackables
     }
 
     /// <summary>
-    /// Callback for UI Elements with 2 generic parameters.
+    /// Encapsulates a method that has two parameters and does not return a value.
     /// </summary>
     public interface IActionableUIElement<in TCallbackArgument1, in TCallbackArgument2> : IUIElement
     {
@@ -28,7 +28,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackables
     }
 
     /// <summary>
-    /// Callback for UI Elements with 3 generic parameters.
+    /// Encapsulates a method that has three parameters and does not return a value.
     /// </summary>
     public interface IActionableUIElement<in TCallbackArgument1, in TCallbackArgument2, in TCallbackArgument3> : IUIElement
     {
@@ -36,7 +36,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackables
     }
 
     /// <summary>
-    /// Callback for UI Elements with 4 generic parameters.
+    /// Encapsulates a method that has four parameters and does not return a value.
     /// </summary>
     public interface IActionableUIElement<in TCallbackArgument1, in TCallbackArgument2, in TCallbackArgument3, in TCallbackArgument4> : IUIElement
     {
@@ -44,7 +44,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackables
     }
 
     /// <summary>
-    /// Callback for UI Elements with 5 generic parameters.
+    /// Encapsulates a method that has five parameters and does not return a value.
     /// </summary>
     public interface IActionableUIElement<in TCallbackArgument1, in TCallbackArgument2, in TCallbackArgument3, in TCallbackArgument4, in TCallbackArgument5> : IUIElement
     {
@@ -52,7 +52,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackables
     }
 
     /// <summary>
-    /// Callback for UI Elements with 6 generic parameters.
+    /// Encapsulates a method that has six parameters and does not return a value.
     /// </summary>
     public interface IActionableUIElement<in TCallbackArgument1, in TCallbackArgument2, in TCallbackArgument3, in TCallbackArgument4, in TCallbackArgument5, in TCallbackArgument6> : IUIElement
     {
@@ -60,7 +60,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackables
     }
 
     /// <summary>
-    /// Callback for UI Elements with 7 generic parameters.
+    /// Encapsulates a method that has seven parameters and does not return a value.
     /// </summary>
     public interface IActionableUIElement<in TCallbackArgument1, in TCallbackArgument2, in TCallbackArgument3, in TCallbackArgument4, in TCallbackArgument5, in TCallbackArgument6, in TCallbackArgument7> : IUIElement
     {
@@ -68,7 +68,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackables
     }
 
     /// <summary>
-    /// Callback for UI Elements with 8 generic parameters.
+    /// Encapsulates a method that has eight parameters and does not return a value.
     /// </summary>
     public interface IActionableUIElement<in TCallbackArgument1, in TCallbackArgument2, in TCallbackArgument3, in TCallbackArgument4, in TCallbackArgument5, in TCallbackArgument6, in TCallbackArgument7, in TCallbackArgument8> : IUIElement
     {
@@ -76,7 +76,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackables
     }
 
     /// <summary>
-    /// Callback for UI Elements with 9 generic parameters.
+    /// Encapsulates a method that has nine parameters and does not return a value.
     /// </summary>
     public interface IActionableUIElement<in TCallbackArgument1, in TCallbackArgument2, in TCallbackArgument3, in TCallbackArgument4, in TCallbackArgument5, in TCallbackArgument6, in TCallbackArgument7, in TCallbackArgument8, in TCallbackArgument9> : IUIElement
     {
@@ -84,7 +84,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackables
     }
 
     /// <summary>
-    /// Callback for UI Elements with 10 generic parameters.
+    /// Encapsulates a method that has 10 parameters and does not return a value.
     /// </summary>
     public interface IActionableUIElement<in TCallbackArgument1, in TCallbackArgument2, in TCallbackArgument3, in TCallbackArgument4, in TCallbackArgument5, in TCallbackArgument6, in TCallbackArgument7, in TCallbackArgument8, in TCallbackArgument9, in TCallbackArgument10> : IUIElement
     {
@@ -92,7 +92,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackables
     }
 
     /// <summary>
-    /// Callback for UI Elements with 11 generic parameters.
+    /// Encapsulates a method that has 11 parameters and does not return a value.
     /// </summary>
     public interface IActionableUIElement<in TCallbackArgument1, in TCallbackArgument2, in TCallbackArgument3, in TCallbackArgument4, in TCallbackArgument5, in TCallbackArgument6, in TCallbackArgument7, in TCallbackArgument8, in TCallbackArgument9, in TCallbackArgument10, in TCallbackArgument11> : IUIElement
     {
@@ -100,7 +100,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackables
     }
 
     /// <summary>
-    /// Callback for UI Elements with 12 generic parameters.
+    /// Encapsulates a method that has 12 parameters and does not return a value.
     /// </summary>
     public interface IActionableUIElement<in TCallbackArgument1, in TCallbackArgument2, in TCallbackArgument3, in TCallbackArgument4, in TCallbackArgument5, in TCallbackArgument6, in TCallbackArgument7, in TCallbackArgument8, in TCallbackArgument9, in TCallbackArgument10, in TCallbackArgument11, in TCallbackArgument12> : IUIElement
     {
@@ -108,7 +108,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackables
     }
 
     /// <summary>
-    /// Callback for UI Elements with 13 generic parameters.
+    /// Encapsulates a method that has 13 parameters and does not return a value.
     /// </summary>
     public interface IActionableUIElement<in TCallbackArgument1, in TCallbackArgument2, in TCallbackArgument3, in TCallbackArgument4, in TCallbackArgument5, in TCallbackArgument6, in TCallbackArgument7, in TCallbackArgument8, in TCallbackArgument9, in TCallbackArgument10, in TCallbackArgument11, in TCallbackArgument12, in TCallbackArgument13> : IUIElement
     {
@@ -116,7 +116,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackables
     }
 
     /// <summary>
-    /// Callback for UI Elements with 14 generic parameters.
+    /// Encapsulates a method that has 14 parameters and does not return a value.
     /// </summary>
     public interface IActionableUIElement<in TCallbackArgument1, in TCallbackArgument2, in TCallbackArgument3, in TCallbackArgument4, in TCallbackArgument5, in TCallbackArgument6, in TCallbackArgument7, in TCallbackArgument8, in TCallbackArgument9, in TCallbackArgument10, in TCallbackArgument11, in TCallbackArgument12, in TCallbackArgument13, in TCallbackArgument14> : IUIElement
     {
@@ -124,7 +124,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackables
     }
 
     /// <summary>
-    /// Callback for UI Elements with 15 generic parameters.
+    /// Encapsulates a method that has 15 parameters and does not return a value.
     /// </summary>
     public interface IActionableUIElement<in TCallbackArgument1, in TCallbackArgument2, in TCallbackArgument3, in TCallbackArgument4, in TCallbackArgument5, in TCallbackArgument6, in TCallbackArgument7, in TCallbackArgument8, in TCallbackArgument9, in TCallbackArgument10, in TCallbackArgument11, in TCallbackArgument12, in TCallbackArgument13, in TCallbackArgument14, in TCallbackArgument15> : IUIElement
     {
@@ -132,7 +132,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackables
     }
 
     /// <summary>
-    /// Callback for UI Elements with 16 generic parameters.
+    /// Encapsulates a method that has 16 parameters and does not return a value.
     /// </summary>
     public interface IActionableUIElement<in TCallbackArgument1, in TCallbackArgument2, in TCallbackArgument3, in TCallbackArgument4, in TCallbackArgument5, in TCallbackArgument6, in TCallbackArgument7, in TCallbackArgument8, in TCallbackArgument9, in TCallbackArgument10, in TCallbackArgument11, in TCallbackArgument12, in TCallbackArgument13, in TCallbackArgument14, in TCallbackArgument15, in TCallbackArgument16> : IUIElement
     {
