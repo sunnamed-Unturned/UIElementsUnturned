@@ -12,13 +12,14 @@
 	<PackageProjectUrl>https://github.com/sunnamed434/UIElementsUnturned</PackageProjectUrl>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
 	<RepositoryUrl>https://github.com/sunnamed434/UIElementsUnturned</RepositoryUrl>
+	<RepositoryType>git</RepositoryType>
 	<Authors>sunnamed434</Authors>
 	<Description>Powerful lib to easy communicate with UI in Unturned with RocketMod and OpenMod!</Description>
 	<Copyright>Copyright 2022</Copyright>
 	<PackageTags>ui lib rocketmod openmod unturned effect plugins nuget</PackageTags>
 	<PackageReleaseNotes>Changelog here: https://github.com/sunnamed434/UIElementsUnturned/blob/main/CHANGELOG.md</PackageReleaseNotes>
 	<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-	<Version>3.3.0</Version>
+	<Version>3.4.0</Version>
 	<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	<DocumentationFile></DocumentationFile>
   </PropertyGroup>

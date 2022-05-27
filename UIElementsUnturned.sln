@@ -25,9 +25,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RocketModHardSample", "Samp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RocketModEasySample", "Samples\RocketMod\Easy\RocketModEasyTemplate\RocketModEasySample.csproj", "{5A2B87D4-EB1B-4565-954F-95BA0EBBB3A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenModEasySample", "Samples\OpenMod\Easy\OpenModEasyTemplate\OpenModEasySample.csproj", "{A935C78D-B9A1-4FAF-AE54-482D13669175}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIElementsUnturned.UIElementsLib.OpenMod", "UIElementsUnturned.UIElementsLib.OpenMod\UIElementsUnturned.UIElementsLib.OpenMod.csproj", "{AA3F5033-9883-4198-819B-BB983C7A5AD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIElementsUnturned.UIElementsLib.OpenMod", "UIElementsUnturned.UIElementsLib.OpenMod\UIElementsUnturned.UIElementsLib.OpenMod.csproj", "{11E82066-9733-44A4-BDDE-C5EAECE02109}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OpenModEasySample", "OpenModEasySample", "{A126A0D9-CC6D-4DE9-B738-C0EE7540E6C6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenModEasySample", "Samples\OpenMod\Easy\OpenModEasySample\OpenModEasySample.csproj", "{9303A0D4-D896-4D2B-AD50-361E437FCAB0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,14 +49,14 @@ Global
 		{5A2B87D4-EB1B-4565-954F-95BA0EBBB3A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A2B87D4-EB1B-4565-954F-95BA0EBBB3A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A2B87D4-EB1B-4565-954F-95BA0EBBB3A2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A935C78D-B9A1-4FAF-AE54-482D13669175}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A935C78D-B9A1-4FAF-AE54-482D13669175}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A935C78D-B9A1-4FAF-AE54-482D13669175}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A935C78D-B9A1-4FAF-AE54-482D13669175}.Release|Any CPU.Build.0 = Release|Any CPU
-		{11E82066-9733-44A4-BDDE-C5EAECE02109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{11E82066-9733-44A4-BDDE-C5EAECE02109}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{11E82066-9733-44A4-BDDE-C5EAECE02109}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{11E82066-9733-44A4-BDDE-C5EAECE02109}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA3F5033-9883-4198-819B-BB983C7A5AD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA3F5033-9883-4198-819B-BB983C7A5AD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA3F5033-9883-4198-819B-BB983C7A5AD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA3F5033-9883-4198-819B-BB983C7A5AD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9303A0D4-D896-4D2B-AD50-361E437FCAB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9303A0D4-D896-4D2B-AD50-361E437FCAB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9303A0D4-D896-4D2B-AD50-361E437FCAB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9303A0D4-D896-4D2B-AD50-361E437FCAB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,7 +71,8 @@ Global
 		{1FB01704-A3C8-4A5C-AF0E-1F03CFD3CED8} = {8C640734-1FB9-4D0A-8DF3-8811A5BF58D8}
 		{EDF7034A-9392-4475-B651-4B15F5C447E2} = {1FB01704-A3C8-4A5C-AF0E-1F03CFD3CED8}
 		{5A2B87D4-EB1B-4565-954F-95BA0EBBB3A2} = {6B240203-0B0D-424B-9C15-8FCAD2D2FBE4}
-		{A935C78D-B9A1-4FAF-AE54-482D13669175} = {CFCC285C-C09E-4292-BAC3-9B7F8981C15C}
+		{A126A0D9-CC6D-4DE9-B738-C0EE7540E6C6} = {CFCC285C-C09E-4292-BAC3-9B7F8981C15C}
+		{9303A0D4-D896-4D2B-AD50-361E437FCAB0} = {A126A0D9-CC6D-4DE9-B738-C0EE7540E6C6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D977BBF7-2076-42DB-BECB-D525E4072D8C}
