@@ -10,7 +10,7 @@
 
 ---
 
-### 3.4.0:
+### v3.4.0:
 #### Added: 
 * Create new sample with OpenMod [issue #35](https://github.com/sunnamed434/UIElementsUnturned/issues/35).
 * IUIHolder should be a bit refactored [issue #33](https://github.com/sunnamed434/UIElementsUnturned/issues/33).
