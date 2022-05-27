@@ -4,15 +4,15 @@ using UIElementsUnturned.UIElementsLib.Core.UI.Elements;
 namespace UIElementsUnturned.UIElementsLib.Core.UI.InputFields
 {
     /// <summary>
-    /// InputField UI Element.
+    /// Provides a mechanism for input fields.
     /// </summary>
     public interface IInputField : IUIElement
     {
         /// <summary>
-        /// Executes when player input text.
+        /// Executes when player enters text in input field.
         /// </summary>
-        /// <param name="executor">Container of a player.</param>
-        /// <param name="text">Written text in inputfield.</param>
+        /// <param name="executor">The player.</param>
+        /// <param name="text">The text in inputfield.</param>
         void OnEnterInput(UPlayer executor, string text);
     }
 }

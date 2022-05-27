@@ -17,7 +17,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Holders.Base
             holders = new List<TUIHolder>();
 
             if (items != null && items.Any())
-                AddNew(items);
+                Add(items);
         }
 
         public UIHolderBase() : this(null)
@@ -30,7 +30,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Holders.Base
 
 
 
-        public virtual void AddNew(TUIHolder item)
+        public virtual void Add(TUIHolder item)
         {
             if (item == null)
                 throw new ArgumentNullException(nameof(item));
@@ -38,7 +38,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Holders.Base
             holders.Add(item);
         }
 
-        public void AddNew(IEnumerable<TUIHolder> items)
+        public void Add(IEnumerable<TUIHolder> items)
         {
             if (items == null)
                 throw new ArgumentNullException(nameof(items));
@@ -47,7 +47,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Holders.Base
                 throw new InvalidOperationException(nameof(items));
 
             foreach (TUIHolder holder in items)
-                AddNew(holder);
+                Add(holder);
         }
 
         public virtual void Remove(TUIHolder item)
@@ -71,31 +71,31 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Holders.Base
                 Remove(holder);
         }
 
-        public bool TryFindItem(Predicate<TUIHolder> predicate, out TUIHolder holder)
+        public bool TryGetItem(Predicate<TUIHolder> predicate, out TUIHolder holder)
         {
             if (predicate == null)
                 throw new ArgumentNullException(nameof(predicate));
 
-            return (holder = FindItem(predicate)) != null;
+            return (holder = GetItem(predicate)) != null;
         }
 
-        public bool TryFindItemByName(IChildObjectNameString childObjectNameString, out TUIHolder holder)
+        public bool TryGetItemByName(IChildObjectNameString childObjectNameString, out TUIHolder holder)
         {
             if (childObjectNameString == null)
                 throw new ArgumentNullException(nameof(childObjectNameString));
 
-            return (holder = FindItemByName(childObjectNameString)) != null;
+            return (holder = GetItemByName(childObjectNameString)) != null;
         }
 
-        public bool TryFindItemByName(string childObjectName, out TUIHolder holder)
+        public bool TryGetItemByName(string childObjectName, out TUIHolder holder)
         {
             if (string.IsNullOrWhiteSpace(childObjectName))
                 throw new ArgumentException(nameof(childObjectName));
 
-            return TryFindItemByName(new ChildObjectNameString(childObjectName), out holder);
+            return TryGetItemByName(new ChildObjectNameString(childObjectName), out holder);
         }
 
-        public TUIHolder FindItem(Predicate<TUIHolder> predicate)
+        public TUIHolder GetItem(Predicate<TUIHolder> predicate)
         {
             if (predicate == null)
                 throw new ArgumentNullException(nameof(predicate));
@@ -107,20 +107,20 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Holders.Base
             return default(TUIHolder);
         }
 
-        public TUIHolder FindItemByName(IChildObjectNameString childObjectNameString)
+        public TUIHolder GetItemByName(IChildObjectNameString childObjectNameString)
         {
             if (childObjectNameString == null)
                 throw new ArgumentNullException(nameof(childObjectNameString));
 
-            return FindItem(p => string.Equals(p.ChildObjectName, childObjectNameString.Name));
+            return GetItem(p => string.Equals(p.ChildObjectName, childObjectNameString.Name));
         }
 
-        public TUIHolder FindItemByName(string childObjectName)
+        public TUIHolder GetItemByName(string childObjectName)
         {
             if (string.IsNullOrWhiteSpace(childObjectName))
                 throw new ArgumentException(nameof(childObjectName));
 
-            return FindItemByName(new ChildObjectNameString(childObjectName));
+            return GetItemByName(new ChildObjectNameString(childObjectName));
         }
     }
 }

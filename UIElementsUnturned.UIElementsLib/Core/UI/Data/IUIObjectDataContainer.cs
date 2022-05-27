@@ -1,7 +1,7 @@
 ﻿namespace UIElementsUnturned.UIElementsLib.Core.UI.Data
 {
     /// <summary>
-    /// Describes a simple model of data with Child object name of gameobject in Unity.
+    /// Represents a data with Child object name of gameobject in Unity.
     /// </summary>
     public interface IUIObjectDataContainer
     {

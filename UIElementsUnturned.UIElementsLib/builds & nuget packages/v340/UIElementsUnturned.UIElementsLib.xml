@@ -1,0 +1,311 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UIElementsUnturned.UIElementsLib</name>
+    </assembly>
+    <members>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.Player.UPlayer">
+            <summary>
+            Represents a container of a <see cref="T:SDG.Unturned.Player"/>
+            </summary>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.Player.UPlayer.#ctor(SDG.Unturned.Player)">
+            <summary>
+            Initializes a new instance of the of <see cref="T:UIElementsUnturned.UIElementsLib.Core.Player.UPlayer"/> class using the specified player.
+            </summary>
+            <param name="player">The player.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Arguments.IEffectArguments">
+            <summary>
+            Represents a data of Effect Arguments.
+            </summary>
+        </member>
+        <member name="P:UIElementsUnturned.UIElementsLib.Core.UI.Arguments.IEffectArguments.Id">
+            <summary>
+            Effect id.
+            </summary>
+        </member>
+        <member name="P:UIElementsUnturned.UIElementsLib.Core.UI.Arguments.IEffectArguments.Key">
+            <summary>
+            Effect key.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Buttons.IButton">
+            <summary>
+            Represents a Button UI Element.
+            </summary>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Buttons.IButton.OnClick(UIElementsUnturned.UIElementsLib.Core.Player.UPlayer)">
+            <summary>
+            Executes when player clicks.
+            </summary>
+            <param name="executor">Container of a player.</param>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.Buttons.ActionableButton.#ctor(UIElementsUnturned.UIElementsLib.Core.UI.ChildObjectName.String.ChildObjectNameString,System.Action{System.Object,UIElementsUnturned.UIElementsLib.Core.Player.UPlayer})">
+            <summary>
+            Initializes a new instance of the of <see cref="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.Buttons.ActionableButton"/> class.
+            <br>Working same as another constructor, but parameter <paramref name="childObjectNameString"/> doing visible exactly what needs to be given and used.</br>
+            </summary>
+            <param name="childObjectNameString">Child object name string.</param>
+            <param name="callback">Callback.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.Buttons.ActionableButton.#ctor(System.String,System.Action{System.Object,UIElementsUnturned.UIElementsLib.Core.Player.UPlayer})">
+            <summary>
+            Initializes a new instance of the of <see cref="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.Buttons.ActionableButton"/> class.
+            </summary>
+            <param name="childObjectName">Child object name.</param>
+            <param name="callback">Callback.</param>
+            <exception cref="T:System.ArgumentException"></exception>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.IActionableUIElement">
+            <summary>
+            Encapsulates a a method that has no parameters and does not return a value;
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.IActionableUIElement`1">
+            <summary>
+            Encapsulates a method that has a single parameter and does not return a value.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.IActionableUIElement`2">
+            <summary>
+            Encapsulates a method that has two parameters and does not return a value.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.IActionableUIElement`3">
+            <summary>
+            Encapsulates a method that has three parameters and does not return a value.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.IActionableUIElement`4">
+            <summary>
+            Encapsulates a method that has four parameters and does not return a value.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.IActionableUIElement`5">
+            <summary>
+            Encapsulates a method that has five parameters and does not return a value.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.IActionableUIElement`6">
+            <summary>
+            Encapsulates a method that has six parameters and does not return a value.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.IActionableUIElement`7">
+            <summary>
+            Encapsulates a method that has seven parameters and does not return a value.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.IActionableUIElement`8">
+            <summary>
+            Encapsulates a method that has eight parameters and does not return a value.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.IActionableUIElement`9">
+            <summary>
+            Encapsulates a method that has nine parameters and does not return a value.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.IActionableUIElement`10">
+            <summary>
+            Encapsulates a method that has 10 parameters and does not return a value.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.IActionableUIElement`11">
+            <summary>
+            Encapsulates a method that has 11 parameters and does not return a value.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.IActionableUIElement`12">
+            <summary>
+            Encapsulates a method that has 12 parameters and does not return a value.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.IActionableUIElement`13">
+            <summary>
+            Encapsulates a method that has 13 parameters and does not return a value.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.IActionableUIElement`14">
+            <summary>
+            Encapsulates a method that has 14 parameters and does not return a value.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.IActionableUIElement`15">
+            <summary>
+            Encapsulates a method that has 15 parameters and does not return a value.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.IActionableUIElement`16">
+            <summary>
+            Encapsulates a method that has 16 parameters and does not return a value.
+            </summary>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.InputFields.ActionableInputField.#ctor(UIElementsUnturned.UIElementsLib.Core.UI.ChildObjectName.String.ChildObjectNameString,System.Action{System.Object,UIElementsUnturned.UIElementsLib.Core.Player.UPlayer,System.String})">
+            <summary>
+            Initializes a new instance of the of <see cref="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.InputFields.ActionableInputField"/> class.
+            <br>Working same as another constructor, but parameter <paramref name="childObjectNameString"/> doing visible exactly what needs to be given and used.</br>
+            </summary>
+            <param name="childObjectNameString">Child object name string.</param>
+            <param name="callback">Callback.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.InputFields.ActionableInputField.#ctor(System.String,System.Action{System.Object,UIElementsUnturned.UIElementsLib.Core.Player.UPlayer,System.String})">
+            <summary>
+            Initializes a new instance of the of <see cref="T:UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.InputFields.ActionableInputField"/> class.
+            </summary>
+            <param name="childObjectName">Child object name.</param>
+            <param name="callback">Callback.</param>
+            <exception cref="T:System.ArgumentException"></exception>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.ChildObjectName.String.IChildObjectNameString">
+            <summary>
+            Represents a data with name of child object.
+            </summary>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="P:UIElementsUnturned.UIElementsLib.Core.UI.ChildObjectName.String.IChildObjectNameString.Name">
+            <summary>
+            Name of child object.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Data.IUIObjectDataContainer">
+            <summary>
+            Represents a data with Child object name of gameobject in Unity.
+            </summary>
+        </member>
+        <member name="P:UIElementsUnturned.UIElementsLib.Core.UI.Data.IUIObjectDataContainer.ChildObjectName">
+            <summary>
+            Child GameObject name in Unity.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Elements.IUIElement">
+            <summary>
+            Represents a UI object data.
+            </summary>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.Holders.IUIHolder`1">
+            <summary>
+            Provides a container for UI Elements.
+            </summary>
+        </member>
+        <member name="P:UIElementsUnturned.UIElementsLib.Core.UI.Holders.IUIHolder`1.Holders">
+            <summary>
+            Gets all existing holders.
+            </summary>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Holders.IUIHolder`1.Add(`0)">
+            <summary>
+            Adds the holder to the <see cref="P:UIElementsUnturned.UIElementsLib.Core.UI.Holders.IUIHolder`1.Holders"/>.
+            </summary>
+            <param name="item">The item to be added to the <see cref="P:UIElementsUnturned.UIElementsLib.Core.UI.Holders.IUIHolder`1.Holders"/>.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Holders.IUIHolder`1.Add(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Adds the all <paramref name="items"/> to the <see cref="P:UIElementsUnturned.UIElementsLib.Core.UI.Holders.IUIHolder`1.Holders"/>.
+            </summary>
+            <param name="items">The items to be added to the <see cref="P:UIElementsUnturned.UIElementsLib.Core.UI.Holders.IUIHolder`1.Holders"/>.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Holders.IUIHolder`1.Remove(`0)">
+            <summary>
+            Removes the <see cref="!:TUIHolder"/> with the specified <paramref name="item"/> from the <see cref="P:UIElementsUnturned.UIElementsLib.Core.UI.Holders.IUIHolder`1.Holders"/>.
+            </summary>
+            <param name="item">The item to be removed from the <see cref="P:UIElementsUnturned.UIElementsLib.Core.UI.Holders.IUIHolder`1.Holders"/>.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Holders.IUIHolder`1.Remove(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Removes the <paramref name="items"/> from the <see cref="P:UIElementsUnturned.UIElementsLib.Core.UI.Holders.IUIHolder`1.Holders"/>.
+            </summary>
+            <param name="items">The items to be removed from the <see cref="P:UIElementsUnturned.UIElementsLib.Core.UI.Holders.IUIHolder`1.Holders"/>.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Holders.IUIHolder`1.TryGetItem(System.Predicate{`0},`0@)">
+            <summary>
+            Gets the <paramref name="holder"/> associated with the specified <paramref name="predicate"/>.
+            </summary>
+            <param name="predicate">The predicate.</param>
+            <param name="holder">The found UI Holder.</param>
+            <returns><see langword="true"/> if the <see cref="P:UIElementsUnturned.UIElementsLib.Core.UI.Holders.IUIHolder`1.Holders"/> contains an element with the specified <paramref name="predicate"/>; otherwise, false.</returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Holders.IUIHolder`1.TryGetItemByName(UIElementsUnturned.UIElementsLib.Core.UI.ChildObjectName.String.IChildObjectNameString,`0@)">
+            <summary>
+            Gets the <paramref name="holder"/> associated with the specified <paramref name="childObjectNameString"/>.
+            </summary>
+            <param name="childObjectNameString">The child object name string for searching.</param>
+            <param name="holder">The found UI Holder.</param>
+            <returns><see langword="true"/> if the <see cref="P:UIElementsUnturned.UIElementsLib.Core.UI.Holders.IUIHolder`1.Holders"/> contains an element with the specified <paramref name="childObjectNameString"/>; otherwise, false.</returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Holders.IUIHolder`1.TryGetItemByName(System.String,`0@)">
+            <summary>
+            Gets the <paramref name="holder"/> associated with the specified <paramref name="childObjectName"/>.
+            </summary>
+            <param name="childObjectName">The child object name for searching.</param>
+            <param name="holder">The found UI Holder.</param>
+            <returns><see langword="true"/> if the <see cref="P:UIElementsUnturned.UIElementsLib.Core.UI.Holders.IUIHolder`1.Holders"/> contains an element with the specified <paramref name="childObjectName"/>; otherwise, false.</returns>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Holders.IUIHolder`1.GetItem(System.Predicate{`0})">
+            <summary>
+            Gets the holder associated with the specified <paramref name="predicate"/>.
+            </summary>
+            <param name="predicate">The predicate.</param>
+            <returns>The found UI Holder.</returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Holders.IUIHolder`1.GetItemByName(UIElementsUnturned.UIElementsLib.Core.UI.ChildObjectName.String.IChildObjectNameString)">
+            <summary>
+            Gets the holder associated with the specified <paramref name="childObjectNameString"/>.
+            </summary>
+            <param name="childObjectNameString">The child object name string for searching.</param>
+            <returns>The found UI Holder.</returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.Holders.IUIHolder`1.GetItemByName(System.String)">
+            <summary>
+            Gets the holder associated with the specified <paramref name="childObjectName"/>.
+            </summary>
+            <param name="childObjectName">The child object name for searching.</param>
+            <returns>The found UI Holder.</returns>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.InputFields.IInputField">
+            <summary>
+            Provides a mechanism for input fields.
+            </summary>
+        </member>
+        <member name="M:UIElementsUnturned.UIElementsLib.Core.UI.InputFields.IInputField.OnEnterInput(UIElementsUnturned.UIElementsLib.Core.Player.UPlayer,System.String)">
+            <summary>
+            Executes when player enters text in input field.
+            </summary>
+            <param name="executor">The player.</param>
+            <param name="text">The text in inputfield.</param>
+        </member>
+        <member name="T:UIElementsUnturned.UIElementsLib.Core.UI.User.Containers.IUIElementsContainer">
+            <summary>
+            Provides a container of UI Elements.
+            </summary>
+        </member>
+        <member name="P:UIElementsUnturned.UIElementsLib.Core.UI.User.Containers.IUIElementsContainer.InputFieldsHolder">
+            <summary>
+            Gets the Input Field Holder.
+            </summary>
+        </member>
+        <member name="P:UIElementsUnturned.UIElementsLib.Core.UI.User.Containers.IUIElementsContainer.ButtonsHolder">
+            <summary>
+            Gets the Buttons Holder.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -4,112 +4,108 @@
     <TargetFramework>net472</TargetFramework>
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>disable</Nullable>
-    <BaseOutputPath></BaseOutputPath>
-    <GenerateDocumentationFile>True</GenerateDocumentationFile>
-	<GenerateAssemblyInfo>False</GenerateAssemblyInfo>
 	<LangVersion>9.0</LangVersion>
-	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	<PackageProjectUrl>https://github.com/sunnamed434/UIElementsUnturned</PackageProjectUrl>
-	<PackageReadmeFile>README.md</PackageReadmeFile>
-	<RepositoryUrl>https://github.com/sunnamed434/UIElementsUnturned</RepositoryUrl>
-	<RepositoryType>git</RepositoryType>
-	<Authors>sunnamed434</Authors>
-	<Description>Powerful lib to easy communicate with UI in Unturned with RocketMod and OpenMod!</Description>
-	<Copyright>Copyright 2022</Copyright>
-	<PackageTags>ui lib rocketmod openmod unturned effect plugins nuget</PackageTags>
-	<PackageReleaseNotes>Changelog here: https://github.com/sunnamed434/UIElementsUnturned/blob/main/CHANGELOG.md</PackageReleaseNotes>
-	<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-	<Version>3.4.0</Version>
-	<PackageLicenseExpression>MIT</PackageLicenseExpression>
-	<DocumentationFile></DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
+    <ProjectReference Include="..\..\..\..\UIElementsUnturned.UIElementsLib\UIElementsUnturned.UIElementsLib.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\lib\Unturned\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\..\..\..\lib\Unturned\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
-      <CopyLocal>False</CopyLocal>
     </Reference>
     <Reference Include="com.rlabrecque.steamworks.net">
-      <HintPath>..\lib\Unturned\com.rlabrecque.steamworks.net.dll</HintPath>
+      <HintPath>..\..\..\..\lib\Unturned\com.rlabrecque.steamworks.net.dll</HintPath>
       <Private>False</Private>
-      <CopyLocal>False</CopyLocal>
+    </Reference>
+    <Reference Include="Rocket.API">
+      <HintPath>..\..\..\..\lib\Rocket\Rocket.API.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Rocket.Core">
+      <HintPath>..\..\..\..\lib\Rocket\Rocket.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Rocket.Unturned">
+      <HintPath>..\..\..\..\lib\Rocket\Rocket.Unturned.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="SDG.NetTransport">
-      <HintPath>..\lib\Unturned\SDG.NetTransport.dll</HintPath>
+      <HintPath>..\..\..\..\lib\Unturned\SDG.NetTransport.dll</HintPath>
       <Private>False</Private>
-      <CopyLocal>False</CopyLocal>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>..\lib\Unity\UnityEngine.dll</HintPath>
+      <HintPath>..\..\..\..\lib\Unity\UnityEngine.dll</HintPath>
       <Private>False</Private>
-      <CopyLocal>False</CopyLocal>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\lib\Unity\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>..\..\..\..\lib\Unity\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
-      <CopyLocal>False</CopyLocal>
     </Reference>
   </ItemGroup>
 
   <ItemGroup>
     <Reference Update="System">
       <CopyLocal>False</CopyLocal>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
 
   <ItemGroup>
     <Reference Update="System.Core">
       <CopyLocal>False</CopyLocal>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
 
   <ItemGroup>
     <Reference Update="System.Data">
       <CopyLocal>False</CopyLocal>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
 
   <ItemGroup>
     <Reference Update="System.Drawing">
       <CopyLocal>False</CopyLocal>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
 
   <ItemGroup>
     <Reference Update="System.IO.Compression.FileSystem">
       <CopyLocal>False</CopyLocal>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
 
   <ItemGroup>
     <Reference Update="System.Numerics">
       <CopyLocal>False</CopyLocal>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
 
   <ItemGroup>
     <Reference Update="System.Runtime.Serialization">
       <CopyLocal>False</CopyLocal>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
 
   <ItemGroup>
     <Reference Update="System.Xml">
       <CopyLocal>False</CopyLocal>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
 
   <ItemGroup>
     <Reference Update="System.Xml.Linq">
       <CopyLocal>False</CopyLocal>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
 

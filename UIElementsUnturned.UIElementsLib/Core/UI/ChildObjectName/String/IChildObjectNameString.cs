@@ -1,7 +1,7 @@
 ﻿namespace UIElementsUnturned.UIElementsLib.Core.UI.ChildObjectName.String
 {
     /// <summary>
-    /// Describes a model with name of child object.
+    /// Represents a data with name of child object.
     /// </summary>
     /// <exception cref="System.ArgumentException"></exception>
     public interface IChildObjectNameString
