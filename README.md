@@ -10,8 +10,8 @@ Please check out the [documentation](https://sunnamed.gitbook.io/uielementsuntur
 ### Real Plugins Samples
 See all samples [here](https://github.com/sunnamed434/UIElementsUnturned/tree/main/Samples).
 
-- [RocketMod](https://github.com/sunnamed434/UIElementsUnturned/tree/main/Samples/RocketMod/Easy)
-- [OpenMod](https://github.com/sunnamed434/UIElementsUnturned/tree/main/Samples/OpenMod/Easy)
+- [RocketMod](https://github.com/sunnamed434/UIElementsUnturned/tree/main/Samples/RocketMod)
+- [OpenMod](https://github.com/sunnamed434/UIElementsUnturned/tree/main/Samples/OpenMod)
 
 ### Installation
 ## RocketMod:
