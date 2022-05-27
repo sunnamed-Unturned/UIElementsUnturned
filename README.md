@@ -10,14 +10,12 @@ Please check out the [documentation](https://sunnamed.gitbook.io/uielementsuntur
 ### Real Plugins Samples
 See all samples [here](https://github.com/sunnamed434/UIElementsUnturned/tree/main/Samples).
 
-- [Easy](https://github.com/sunnamed434/UIElementsUnturned/tree/main/Samples/Easy/UIElementsUnturned.Samples.Easy.PluginEasySample)
-- [Hard](https://github.com/sunnamed434/UIElementsUnturned/tree/main/Samples/Hard/UIElementsUnturned.PluginHardSample)
+- [RocketMod](https://github.com/sunnamed434/UIElementsUnturned/tree/main/Samples/RocketMod/Easy)
+- [OpenMod](https://github.com/sunnamed434/UIElementsUnturned/tree/main/Samples/OpenMod/Easy)
 
 ### Installation
+## RocketMod:
 Download lib here [UIElementsUnturned.UIElementsLib.dll](https://github.com/sunnamed434/UIElementsUnturned/releases) or by using the [UIElementsUnturned.UIElementsLib](https://www.nuget.org/packages/UIElementsUnturned.UIElementsLib/) nuget package.
-
-### Install the Library from NuGet
-See the library in the NuGet gallery [here](https://www.nuget.org/packages/UIElementsUnturned.UIElementsLib/).
 
 Package Manager:
 ````
@@ -27,6 +25,19 @@ Install-Package UIElementsUnturned.UIElementsLib
 .NET CLI:
 ````
 dotnet add package UIElementsUnturned.UIElementsLib
+````
+
+## OpenMod
+Download lib here [UIElementsUnturned.UIElementsLib.OpenMod.dll](https://github.com/sunnamed434/UIElementsUnturned/releases) or by using the [UIElementsUnturned.UIElementsLib.OpenMod](https://www.nuget.org/packages/UIElementsUnturned.UIElementsLib.OpenMod) nuget package.
+
+Package Manager:
+````
+Install-Package UIElementsUnturned.UIElementsLib.OpenMod
+````
+
+.NET CLI:
+````
+dotnet add package UIElementsUnturned.UIElementsLib.OpenMod
 ````
 
 ### Contributing!
