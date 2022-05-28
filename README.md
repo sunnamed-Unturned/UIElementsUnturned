@@ -14,7 +14,7 @@ See all samples [here](https://github.com/sunnamed434/UIElementsUnturned/tree/ma
 - [OpenMod](https://github.com/sunnamed434/UIElementsUnturned/tree/main/Samples/OpenMod)
 
 ### Installation
-## RocketMod:
+## RocketMod and other
 Download lib here [UIElementsUnturned.UIElementsLib.dll](https://github.com/sunnamed434/UIElementsUnturned/releases) or by using the [UIElementsUnturned.UIElementsLib](https://www.nuget.org/packages/UIElementsUnturned.UIElementsLib/) nuget package.
 
 Package Manager:
@@ -27,7 +27,7 @@ Install-Package UIElementsUnturned.UIElementsLib
 dotnet add package UIElementsUnturned.UIElementsLib
 ````
 
-## OpenMod
+## OpenMod 
 Download lib here [UIElementsUnturned.UIElementsLib.OpenMod.dll](https://github.com/sunnamed434/UIElementsUnturned/releases) or by using the [UIElementsUnturned.UIElementsLib.OpenMod](https://www.nuget.org/packages/UIElementsUnturned.UIElementsLib.OpenMod) nuget package.
 
 Package Manager:
