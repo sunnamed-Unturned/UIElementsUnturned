@@ -6,17 +6,18 @@ using OpenMod.Core.Users;
 using OpenMod.Unturned.Plugins;
 using OpenMod.Unturned.Users;
 using System;
-using System.Threading.Tasks;
 using UIElementsUnturned.Samples.OpenMod.Hard.OpenModEasyHard.UI.Buttons;
 using UIElementsUnturned.Samples.OpenMod.Hard.OpenModEasyHard.UI.InputFields;
 using UIElementsUnturned.UIElementsLib.Core.Player;
+using UIElementsUnturned.UIElementsLib.Core.UI.Arguments;
 using UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.Buttons;
 using UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.InputFields;
 using UIElementsUnturned.UIElementsLib.Core.UI.Data;
 using UIElementsUnturned.UIElementsLib.Core.UI.User.Containers;
+using UIElementsUnturned.UIElementsLib.OpenMod.UI.Arguments.Configuration;
 using UIElementsUnturned.UIElementsLib.OpenMod.UI.EventsListeners;
 
-[assembly: PluginMetadata("UIElementsLib.OpenModEasySample",
+[assembly: PluginMetadata("UIElementsLib.OpenModHardSample",
     Author = "https://github.com/sunnamed434/",
     Description = "Plugin template that shows how to use UIElementsLib with OpenMod.",
     Website = "https://github.com/sunnamed434/UIElementsUnturned")]
@@ -29,11 +30,14 @@ namespace UIElementsUnturned.Samples.OpenMod.Hard.OpenModEasyHard
     {
         private readonly IUserManager userManager;
 
+        private readonly IEffectArguments effectArguments;
+
 
 
         public Plugin(IServiceProvider serviceProvider, IUserManager userManager) : base(serviceProvider)
         {
             this.userManager = userManager;
+            effectArguments = new ConfigurationEffectArguments(Configuration, "effectConfiguration");
         }
 
 
