@@ -7,7 +7,7 @@
     public interface IChildObjectNameString
     {
         /// <summary>
-        /// Name of child object.
+        /// Gets the name of child object.
         /// </summary>
         string Name { get; }
     }

@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="config.yaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="config.yaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenMod.Unturned" Version="3.2.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\UIElementsUnturned.UIElementsLib.OpenMod\UIElementsUnturned.UIElementsLib.OpenMod.csproj" />
+    <ProjectReference Include="..\..\..\..\..\UIElementsUnturned.UIElementsLib\UIElementsUnturned.UIElementsLib.csproj" />
+  </ItemGroup>
+
+</Project>

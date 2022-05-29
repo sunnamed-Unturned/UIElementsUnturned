@@ -17,10 +17,14 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.InputFields
         public ActionableInputField(ChildObjectNameString childObjectNameString, Action<object, UPlayer, string> callback)
         {
             if (childObjectNameString == null)
+            {
                 throw new ArgumentNullException(nameof(childObjectNameString));
+            }
 
             if (callback == null)
+            {
                 throw new ArgumentNullException(nameof(callback));
+            }
 
             ChildObjectName = childObjectNameString.Name;
             Callback = callback;

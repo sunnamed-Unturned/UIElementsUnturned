@@ -9,6 +9,9 @@ using UIElementsUnturned.UIElementsLib.Core.UI.User.Containers;
 
 namespace UIElementsUnturned.UIElementsLib.OpenMod.UI.EventsListeners
 {
+    /// <summary>
+    /// Provides a UI events listener for UI Holders.
+    /// </summary>
     public sealed class UIEventListenerContainer : IUIElementsContainer, IEventListener<UnturnedPlayerTextInputtedEvent>, IEventListener<UnturnedPlayerButtonClickedEvent>
     {
         public UIEventListenerContainer()
@@ -25,24 +28,24 @@ namespace UIElementsUnturned.UIElementsLib.OpenMod.UI.EventsListeners
 
 
 
-        public async Task HandleEventAsync(object sender, UnturnedPlayerButtonClickedEvent @event)
-        {
-            if (ButtonsHolder.TryGetItemByName(@event.ButtonName, out IButton button))
-            {
-                button.OnClick(new UPlayer(@event.Player.Player));
-            }
-
-            await Task.CompletedTask;
-        }
-
-        public async Task HandleEventAsync(object sender, UnturnedPlayerTextInputtedEvent @event)
+        Task IEventListener<UnturnedPlayerTextInputtedEvent>.HandleEventAsync(object sender, UnturnedPlayerTextInputtedEvent @event)
         {
             if (InputFieldsHolder.TryGetItemByName(@event.TextInputName, out IInputField inputField))
             {
                 inputField.OnEnterInput(new UPlayer(@event.Player.Player), @event.Text);
             }
 
-            await Task.CompletedTask;
+            return Task.CompletedTask;
+        }
+
+        Task IEventListener<UnturnedPlayerButtonClickedEvent>.HandleEventAsync(object sender, UnturnedPlayerButtonClickedEvent @event)
+        {
+            if (ButtonsHolder.TryGetItemByName(@event.ButtonName, out IButton button))
+            {
+                button.OnClick(new UPlayer(@event.Player.Player));
+            }
+
+            return Task.CompletedTask;
         }
     }
 }

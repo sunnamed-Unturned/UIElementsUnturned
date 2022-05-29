@@ -6,12 +6,12 @@
     public interface IEffectArguments
     {
         /// <summary>
-        /// Effect id.
+        /// Gets the Effect Id.
         /// </summary>
         ushort Id { get; }
 
         /// <summary>
-        /// Effect key.
+        /// Gets the Effect key.
         /// </summary>
         short Key { get; }
     }
