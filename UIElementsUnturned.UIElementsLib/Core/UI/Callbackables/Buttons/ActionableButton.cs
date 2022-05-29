@@ -8,7 +8,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.Buttons
     public sealed class ActionableButton : IActionableUIElement<object, UPlayer>, IButton
     {
         /// <summary>
-        /// Initializes a new instance of the of <see cref="ActionableButton"/> class.
+        /// Initializes a new instance of the <see cref="ActionableButton"/> class.
         /// <br>Working same as another constructor, but parameter <paramref name="childObjectNameString"/> doing visible exactly what needs to be given and used.</br>
         /// </summary>
         /// <param name="childObjectNameString">Child object name string.</param>
@@ -17,10 +17,14 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.Buttons
         public ActionableButton(ChildObjectNameString childObjectNameString, Action<object, UPlayer> callback)
         {
             if (childObjectNameString == null)
+            {
                 throw new ArgumentNullException(nameof(childObjectNameString));
+            }
 
             if (callback == null)
+            {
                 throw new ArgumentNullException(nameof(callback));
+            }
 
             ChildObjectName = childObjectNameString.Name;
             Callback = callback;

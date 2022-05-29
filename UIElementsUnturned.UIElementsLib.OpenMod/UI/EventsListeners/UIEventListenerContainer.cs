@@ -28,24 +28,24 @@ namespace UIElementsUnturned.UIElementsLib.OpenMod.UI.EventsListeners
 
 
 
-        async Task IEventListener<UnturnedPlayerTextInputtedEvent>.HandleEventAsync(object sender, UnturnedPlayerTextInputtedEvent @event)
+        Task IEventListener<UnturnedPlayerTextInputtedEvent>.HandleEventAsync(object sender, UnturnedPlayerTextInputtedEvent @event)
         {
             if (InputFieldsHolder.TryGetItemByName(@event.TextInputName, out IInputField inputField))
             {
                 inputField.OnEnterInput(new UPlayer(@event.Player.Player), @event.Text);
             }
 
-            await Task.CompletedTask;
+            return Task.CompletedTask;
         }
 
-        async Task IEventListener<UnturnedPlayerButtonClickedEvent>.HandleEventAsync(object sender, UnturnedPlayerButtonClickedEvent @event)
+        Task IEventListener<UnturnedPlayerButtonClickedEvent>.HandleEventAsync(object sender, UnturnedPlayerButtonClickedEvent @event)
         {
             if (ButtonsHolder.TryGetItemByName(@event.ButtonName, out IButton button))
             {
                 button.OnClick(new UPlayer(@event.Player.Player));
             }
 
-            await Task.CompletedTask;
+            return Task.CompletedTask;
         }
     }
 }
