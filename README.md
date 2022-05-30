@@ -1,4 +1,4 @@
-# UIElementsUnturned
+# UIElementsUnturned [![Discord](https://img.shields.io/discord/964476306647568454?label=DISCORD&style=for-the-badge)](https://discord.gg/zB5wumHDnP)
 This lib will help you easy communicate with UI in Unturned!
 
 ### About this library
@@ -35,9 +35,6 @@ For more info click [here](https://github.com/sunnamed434/UIElementsUnturned/blo
 	</a>
 	<a href="https://lgtm.com/projects/g/sunnamed434/UIElementsUnturned/alerts/">
 		<img src="https://img.shields.io/lgtm/alerts/g/sunnamed434/UIElementsUnturned.svg?logo=lgtm&logoWidth=18" />
-	</a>
-	<a href="https://discord.gg/UXwAZdzD">
-		<img src="https://img.shields.io/discord/964476306647568454.svg?style=flat&logo=discord&label=discord" />
 	</a>
 	<a href="../../blob/master/LICENSE/">
 		<img src="https://img.shields.io/github/license/sunnamed434/UIElementsUnturned?style=flat" />
