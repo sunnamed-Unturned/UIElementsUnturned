@@ -13,7 +13,9 @@ Install-Package UIElementsUnturned.UIElementsLib.RocketMod
 dotnet add package UIElementsUnturned.UIElementsLib.RocketMod
 ````
 
-### See all samples [here](https://github.com/sunnamed434/UIElementsUnturned/tree/main/Samples/RocketMod).
+### Samples
+All sample are [here](https://github.com/sunnamed434/UIElementsUnturned/tree/main/Samples/RocketMod).
 
 ### Documentation
-Please check out the [documentation](https://sunnamed.gitbook.io/uielementsunturned/).
+Please check out the [documentation](https://sunnamed.gitbook.io/uielementsunturned/documentation/rocketmod-and-other) for this mod.
+And please learn the [UIElements Core](https://sunnamed.gitbook.io/uielementsunturned/documentation/core)
