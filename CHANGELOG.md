@@ -1,5 +1,6 @@
 | Versions: |
 | - |
+| [v3.5.0](#v350) |
 | [v3.4.0](#v340) |
 | [v3.3.0](#v330) |
 | [v1.1.0](#v110) |
@@ -9,6 +10,18 @@
 | [v1.0.0](#v100) |
 
 ---
+
+### v3.5.0:
+#### Added:
+* Now UIElementsLib is a full Core of a library.
+* RocketMod version.
+
+#### Removed:
+* PlayerUIElementsListenerContainer and moved to RocketMod version.
+
+#### Changed:
+* Documentation.
+* Summaries.
 
 ### v3.4.0:
 #### Added: 
@@ -46,9 +59,6 @@
 * Nuget updated.
 * Lib version reset from 1.0.3 to v1.1.0.0.
 
----
-
-## [!] Here is old versions, please see upper versions.
 ### v.1.0.2:
 #### Changed:
 * UPlayer constructor accepts only SDG.Unturned.Player. (its makes lib independent from RocketMod)
