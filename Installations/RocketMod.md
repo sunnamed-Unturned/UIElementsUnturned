@@ -18,4 +18,4 @@ All sample are [here](https://github.com/sunnamed434/UIElementsUnturned/tree/mai
 
 ### Documentation
 Please check out the [documentation](https://sunnamed.gitbook.io/uielementsunturned/documentation/rocketmod-and-other) for this mod.
-And please learn the [UIElements Core](https://sunnamed.gitbook.io/uielementsunturned/documentation/core)
+And please learn the [UIElements Core](https://sunnamed.gitbook.io/uielementsunturned/documentation/core).
