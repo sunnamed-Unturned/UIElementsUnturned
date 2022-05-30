@@ -13,7 +13,9 @@ Install-Package UIElementsUnturned.UIElementsLib.OpenMod
 dotnet add package UIElementsUnturned.UIElementsLib.OpenMod
 ````
 
-### See all samples [here](https://github.com/sunnamed434/UIElementsUnturned/tree/main/Samples/OpenMod).
+### Samples
+All sample are [here](https://github.com/sunnamed434/UIElementsUnturned/tree/main/Samples/OpenMod).
 
 ### Documentation
-Please check out the [documentation](https://sunnamed.gitbook.io/uielementsunturned/).
+Please check out the [documentation](https://sunnamed.gitbook.io/uielementsunturned/documentation/openmod) for this mod.
+And please learn the [UIElements Core](https://sunnamed.gitbook.io/uielementsunturned/documentation/core)
