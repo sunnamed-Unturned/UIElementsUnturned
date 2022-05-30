@@ -9,7 +9,6 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.Buttons
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="ActionableButton"/> class.
-        /// <br>Working same as another constructor, but parameter <paramref name="childObjectNameString"/> doing visible exactly what needs to be given and used.</br>
         /// </summary>
         /// <param name="childObjectNameString">Child object name string.</param>
         /// <param name="callback">Callback.</param>

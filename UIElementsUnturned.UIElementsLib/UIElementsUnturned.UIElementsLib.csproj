@@ -19,7 +19,7 @@
 	<PackageTags>ui lib rocketmod openmod unturned effect plugins nuget</PackageTags>
 	<PackageReleaseNotes>Changelog here: https://github.com/sunnamed434/UIElementsUnturned/blob/main/CHANGELOG.md</PackageReleaseNotes>
 	<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-	<Version>3.4.0</Version>
+	<Version>3.5.0</Version>
 	<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	<DocumentationFile></DocumentationFile>
   </PropertyGroup>
@@ -44,16 +44,6 @@
     </Reference>
     <Reference Include="SDG.NetTransport">
       <HintPath>..\lib\Unturned\SDG.NetTransport.dll</HintPath>
-      <Private>False</Private>
-      <CopyLocal>False</CopyLocal>
-    </Reference>
-    <Reference Include="UnityEngine">
-      <HintPath>..\lib\Unity\UnityEngine.dll</HintPath>
-      <Private>False</Private>
-      <CopyLocal>False</CopyLocal>
-    </Reference>
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\lib\Unity\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
       <CopyLocal>False</CopyLocal>
     </Reference>

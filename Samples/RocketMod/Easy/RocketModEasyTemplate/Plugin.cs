@@ -6,7 +6,7 @@ using UIElementsUnturned.UIElementsLib.Core.Player;
 using UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.Buttons;
 using UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.InputFields;
 using UIElementsUnturned.UIElementsLib.Core.UI.Data;
-using UIElementsUnturned.UIElementsLib.Core.UI.User.Containers.Components;
+using UIElementsUnturned.UIElementsLib.RocketMod.UI.Containers;
 
 namespace UIElementsUnturned.Samples.RocketMod.Easy.RocketModEasySample
 {

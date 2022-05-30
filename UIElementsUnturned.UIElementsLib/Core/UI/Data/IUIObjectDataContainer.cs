@@ -6,7 +6,7 @@
     public interface IUIObjectDataContainer
     {
         /// <summary>
-        /// Child GameObject name in Unity.
+        /// Gets the child GameObject name in Unity.
         /// </summary>
         string ChildObjectName { get; }
     }
