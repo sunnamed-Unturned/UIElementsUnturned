@@ -30,7 +30,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.Buttons
         }
 
         /// <summary>
-        /// Initializes a new instance of the of <see cref="ActionableButton"/> class.
+        /// Initializes a new instance of the <see cref="ActionableButton"/> class.
         /// </summary>
         /// <param name="childObjectName">Child object name.</param>
         /// <param name="callback">Callback.</param>

@@ -8,7 +8,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.InputFields
     public sealed class ActionableInputField : IActionableUIElement<object, UPlayer, string>, IInputField
     {
         /// <summary>
-        /// Initializes a new instance of the of <see cref="ActionableInputField"/> class.
+        /// Initializes a new instance of the <see cref="ActionableInputField"/> class.
         /// </summary>
         /// <param name="childObjectNameString">Child object name string.</param>
         /// <param name="callback">Callback.</param>
@@ -30,7 +30,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Callbackables.InputFields
         }
 
         /// <summary>
-        /// Initializes a new instance of the of <see cref="ActionableInputField"/> class.
+        /// Initializes a new instance of the <see cref="ActionableInputField"/> class.
         /// </summary>
         /// <param name="childObjectName">Child object name.</param>
         /// <param name="callback">Callback.</param>
