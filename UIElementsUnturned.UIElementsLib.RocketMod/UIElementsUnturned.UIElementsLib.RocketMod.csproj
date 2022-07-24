@@ -1,0 +1,58 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>net472</TargetFramework>
+	  <ImplicitUsings>disable</ImplicitUsings>
+	  <Nullable>disable</Nullable>
+	  <BaseOutputPath></BaseOutputPath>
+	  <GenerateDocumentationFile>True</GenerateDocumentationFile>
+	  <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+	  <LangVersion>9.0</LangVersion>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <PackageProjectUrl>https://github.com/sunnamed434/UIElementsUnturned</PackageProjectUrl>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <RepositoryUrl>https://github.com/sunnamed434/UIElementsUnturned</RepositoryUrl>
+	  <RepositoryType>git</RepositoryType>
+	  <Authors>sunnamed434</Authors>
+	  <Description>Powerful lib to easy communicate with UI in Unturned with OpenMod!</Description>
+	  <Copyright>Copyright 2022</Copyright>
+	  <PackageTags>ui lib openmod unturned effect plugins nuget</PackageTags>
+	  <PackageReleaseNotes>Changelog here: https://github.com/sunnamed434/UIElementsUnturned/blob/main/CHANGELOG.md</PackageReleaseNotes>
+	  <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+	  <Version>1.0.0</Version>
+	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
+	  <DocumentationFile></DocumentationFile>
+	  <AssemblyVersion>1.0.0</AssemblyVersion>
+	  <FileVersion>1.0.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UIElementsUnturned.UIElementsLib\UIElementsUnturned.UIElementsLib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\lib\Unturned\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="com.rlabrecque.steamworks.net">
+      <HintPath>..\lib\Unturned\com.rlabrecque.steamworks.net.dll</HintPath>
+    </Reference>
+    <Reference Include="SDG.NetTransport">
+      <HintPath>..\lib\Unturned\SDG.NetTransport.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\lib\Unity\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\lib\Unity\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

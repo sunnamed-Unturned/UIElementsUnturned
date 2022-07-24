@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\UIElementsUnturned.UIElementsLib.RocketMod\UIElementsUnturned.UIElementsLib.RocketMod.csproj" />
     <ProjectReference Include="..\..\..\..\UIElementsUnturned.UIElementsLib\UIElementsUnturned.UIElementsLib.csproj" />
   </ItemGroup>
 

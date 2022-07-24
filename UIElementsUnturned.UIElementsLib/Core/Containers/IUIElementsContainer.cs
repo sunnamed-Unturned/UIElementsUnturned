@@ -2,7 +2,7 @@
 using UIElementsUnturned.UIElementsLib.Core.UI.Holders;
 using UIElementsUnturned.UIElementsLib.Core.UI.InputFields;
 
-namespace UIElementsUnturned.UIElementsLib.Core.UI.User.Containers
+namespace UIElementsUnturned.UIElementsLib.Core.UI.Containers
 {
     /// <summary>
     /// Provides a container of UI Elements.

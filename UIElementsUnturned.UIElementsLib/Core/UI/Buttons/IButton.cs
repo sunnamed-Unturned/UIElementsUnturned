@@ -11,7 +11,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Buttons
         /// <summary>
         /// Executes when player clicks.
         /// </summary>
-        /// <param name="executor">Container of a player.</param>
+        /// <param name="executor">Container of the player.</param>
         void OnClick(UPlayer executor);
     }
 }

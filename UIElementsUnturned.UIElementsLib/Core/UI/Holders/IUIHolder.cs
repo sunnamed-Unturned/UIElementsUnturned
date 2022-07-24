@@ -78,7 +78,7 @@ namespace UIElementsUnturned.UIElementsLib.Core.UI.Holders
         /// <param name="predicate">The predicate.</param>
         /// <returns>The found UI Holder.</returns>
         /// <exception cref="System.ArgumentNullException"></exception>
-        TUIHolder GetItem(Predicate<TUIHolder> predicate);
+        TUIHolder GetItemOrDefault(Predicate<TUIHolder> predicate);
 
         /// <summary>
         /// Gets the holder associated with the specified <paramref name="childObjectNameString"/>.

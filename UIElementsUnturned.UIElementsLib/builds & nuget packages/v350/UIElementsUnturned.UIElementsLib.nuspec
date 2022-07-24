@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>3.5.0</version>
+    <title>UIElementsUnturned</title>
+    <authors>sunnamed434</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/sunnamed434/UIElementsUnturned/</projectUrl>
+    <repository type="git" url="https://github.com/sunnamed434/UIElementsUnturned.git"></repository>
+    <description>Powerful lib to easy communicate with UI in Unturned with RocketMod and OpenMod!</description>
+    <releaseNotes>Changelog here: https://github.com/sunnamed434/UIElementsUnturned/blob/main/CHANGELOG.md</releaseNotes>
+    <copyright>Copyright 2022</copyright>
+    <tags>ui lib rocketmod openmod unturned effect plugins nuget</tags>
+  </metadata>
+</package>
