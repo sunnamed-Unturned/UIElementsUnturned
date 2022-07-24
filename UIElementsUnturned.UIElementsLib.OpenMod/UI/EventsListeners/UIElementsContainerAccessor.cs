@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using OpenMod.API.Ioc;
-using UIElementsUnturned.UIElementsLib.Core.UI.User.Containers;
+using UIElementsUnturned.UIElementsLib.Core.UI.Containers;
 
 namespace UIElementsUnturned.UIElementsLib.OpenMod.UI.EventsListeners
 {
