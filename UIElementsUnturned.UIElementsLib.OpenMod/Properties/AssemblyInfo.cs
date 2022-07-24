@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using OpenMod.API.Plugins;
+using System.Reflection;
 using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("UIElementsUnturned.UIElementsLib.OpenMod")]
@@ -13,3 +14,5 @@ using System.Runtime.InteropServices;
 
 [assembly: AssemblyVersion("1.0.0")]
 [assembly: AssemblyFileVersion("1.0.0")]
+
+[assembly: PluginMetadata("UIElementsUnturned.UIElementsLib.OpenMod")]

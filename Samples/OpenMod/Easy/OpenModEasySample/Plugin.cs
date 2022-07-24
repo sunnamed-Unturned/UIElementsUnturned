@@ -6,7 +6,6 @@ using OpenMod.Core.Users;
 using OpenMod.Unturned.Plugins;
 using OpenMod.Unturned.Users;
 using System;
-using System.Threading.Tasks;
 using UIElementsUnturned.Samples.OpenMod.Hard.OpenModEasyHard.UI.Buttons;
 using UIElementsUnturned.Samples.OpenMod.Hard.OpenModEasyHard.UI.InputFields;
 using UIElementsUnturned.UIElementsLib.Core.Player;
@@ -29,19 +28,19 @@ namespace UIElementsUnturned.Samples.OpenMod.Hard.OpenModEasyHard
     {
         private readonly IUserManager userManager;
 
+        private readonly IUIElementsContainer container;
 
 
-        public Plugin(IServiceProvider serviceProvider, IUserManager userManager) : base(serviceProvider)
+        public Plugin(IServiceProvider serviceProvider, IUserManager userManager, IUIElementsContainerAccessor uIElementsContainerAccessor) : base(serviceProvider)
         {
             this.userManager = userManager;
+            container = uIElementsContainerAccessor.Instance;
         }
 
 
 
         protected override UniTask OnLoadAsync()
         {
-            IUIElementsContainer container = new UIEventListenerContainer();
-
             // Adding button in holder
             container.ButtonsHolder.Add(new CloseUIButton(this.userManager, Logger));
 

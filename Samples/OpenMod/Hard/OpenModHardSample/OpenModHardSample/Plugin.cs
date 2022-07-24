@@ -32,20 +32,20 @@ namespace UIElementsUnturned.Samples.OpenMod.Hard.OpenModEasyHard
 
         private readonly IEffectArguments effectArguments;
 
+        private readonly IUIElementsContainer container;
 
 
-        public Plugin(IServiceProvider serviceProvider, IUserManager userManager) : base(serviceProvider)
+        public Plugin(IServiceProvider serviceProvider, IUserManager userManager, IUIElementsContainerAccessor uIElementsContainerAccessor) : base(serviceProvider)
         {
             this.userManager = userManager;
             effectArguments = new ConfigurationEffectArguments(Configuration, "effectConfiguration");
+            container = uIElementsContainerAccessor.Instance;
         }
 
 
 
         protected override UniTask OnLoadAsync()
         {
-            IUIElementsContainer container = new UIEventListenerContainer();
-
             // Adding button in holder
             container.ButtonsHolder.Add(new CloseUIButton(this.userManager, Logger));
 

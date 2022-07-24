@@ -8,8 +8,6 @@ namespace UIElementsUnturned.UIElementsLib.OpenMod.UI.Arguments.Configuration
     {
         private readonly IConfiguration configuration;
 
-
-
         public ConfigurationEffectArguments(IConfiguration configuration, string sectionName)
         {
             if (configuration == null)
