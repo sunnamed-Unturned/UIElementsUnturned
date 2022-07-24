@@ -10,7 +10,6 @@ namespace UIElementsUnturned.UIElementsLib.OpenMod.UI.EventsListeners
         IUIElementsContainer Instance { get; }
     }
 
-
     [ServiceImplementation(Lifetime = ServiceLifetime.Singleton)]
     public class UIElementsContainerAccessor : IUIElementsContainerAccessor
     {

@@ -18,7 +18,7 @@ namespace UIElementsUnturned.UIElementsLib.OpenMod.UI.EventsListeners
         }
 
 
-        public Task HandleEventAsync(object sender, UnturnedPlayerTextInputtedEvent @event)
+        Task IEventListener<UnturnedPlayerTextInputtedEvent>.HandleEventAsync(object sender, UnturnedPlayerTextInputtedEvent @event)
         {
             if (container.InputFieldsHolder.TryGetItemByName(@event.TextInputName, out IInputField inputFiend))
             {
@@ -28,7 +28,7 @@ namespace UIElementsUnturned.UIElementsLib.OpenMod.UI.EventsListeners
             return Task.CompletedTask;
         }
 
-        public Task HandleEventAsync(object sender, UnturnedPlayerButtonClickedEvent @event)
+        Task IEventListener<UnturnedPlayerButtonClickedEvent>.HandleEventAsync(object sender, UnturnedPlayerButtonClickedEvent @event)
         {
             if (container.ButtonsHolder.TryGetItemByName(@event.ButtonName, out IButton button))
             {
