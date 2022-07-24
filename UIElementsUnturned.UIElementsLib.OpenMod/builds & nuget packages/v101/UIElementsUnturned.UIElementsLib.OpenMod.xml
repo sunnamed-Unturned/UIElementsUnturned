@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UIElementsUnturned.UIElementsLib.OpenMod</name>
+    </assembly>
+    <members>
+        <member name="T:UIElementsUnturned.UIElementsLib.OpenMod.UI.EventsListeners.UIEventListenerContainer">
+            <summary>
+            Provides a UI events listener for UI Holders.
+            </summary>
+        </member>
+    </members>
+</doc>

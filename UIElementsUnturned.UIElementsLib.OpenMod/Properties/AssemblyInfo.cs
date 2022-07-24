@@ -12,7 +12,7 @@ using System.Runtime.InteropServices;
 
 [assembly: Guid("07514b51-a058-421a-84fa-a20c32b5f355")]
 
-[assembly: AssemblyVersion("1.0.0")]
-[assembly: AssemblyFileVersion("1.0.0")]
+[assembly: AssemblyVersion("1.0.2")]
+[assembly: AssemblyFileVersion("1.0.2")]
 
 [assembly: PluginMetadata("UIElementsUnturned.UIElementsLib.OpenMod")]

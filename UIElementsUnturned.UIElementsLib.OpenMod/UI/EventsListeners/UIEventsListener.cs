@@ -12,9 +12,9 @@ namespace UIElementsUnturned.UIElementsLib.OpenMod.UI.EventsListeners
     {
         private readonly IUIElementsContainer container;
 
-        public UIEventsListener(IUIElementsContainerAccessor uiElementsContainerAccessor)
+        public UIEventsListener(IUIElementsContainerAccessor containerAccessor)
         {
-            container = uiElementsContainerAccessor.Instance;
+            container = containerAccessor.Instance;
         }
 
 

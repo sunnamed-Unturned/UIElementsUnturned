@@ -37,7 +37,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OpenModHardSample", "OpenMo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenModHardSample", "Samples\OpenMod\Hard\OpenModHardSample\OpenModHardSample\OpenModHardSample.csproj", "{C64DBD17-9ED2-4F40-8555-E4ED452351A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIElementsUnturned.UIElementsLib.RocketMod", "UIElementsUnturned.UIElementsLib.RocketMod\UIElementsUnturned.UIElementsLib.RocketMod.csproj", "{AA7282BE-2063-413A-AFFB-C285DD1D89E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UIElementsUnturned.UIElementsLib.RocketMod", "UIElementsUnturned.UIElementsLib.RocketMod\UIElementsUnturned.UIElementsLib.RocketMod.csproj", "{AA7282BE-2063-413A-AFFB-C285DD1D89E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

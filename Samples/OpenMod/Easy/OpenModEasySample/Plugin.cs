@@ -31,10 +31,11 @@ namespace UIElementsUnturned.Samples.OpenMod.Hard.OpenModEasyHard
         private readonly IUIElementsContainer container;
 
 
-        public Plugin(IServiceProvider serviceProvider, IUserManager userManager, IUIElementsContainerAccessor uIElementsContainerAccessor) : base(serviceProvider)
+
+        public Plugin(IServiceProvider serviceProvider, IUserManager userManager, IUIElementsContainerAccessor accessor) : base(serviceProvider)
         {
             this.userManager = userManager;
-            container = uIElementsContainerAccessor.Instance;
+            container = accessor.Instance;
         }
 
 

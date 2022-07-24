@@ -1,5 +1,4 @@
-﻿using Cysharp.Threading.Tasks;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Logging;
 using OpenMod.API.Plugins;
 using OpenMod.API.Users;
 using OpenMod.Core.Users;
@@ -35,17 +34,13 @@ namespace UIElementsUnturned.Samples.OpenMod.Hard.OpenModEasyHard
         private readonly IUIElementsContainer container;
 
 
-        public Plugin(IServiceProvider serviceProvider, IUserManager userManager, IUIElementsContainerAccessor uIElementsContainerAccessor) : base(serviceProvider)
+
+        public Plugin(IServiceProvider serviceProvider, IUserManager userManager, IUIElementsContainerAccessor accessor) : base(serviceProvider)
         {
             this.userManager = userManager;
             effectArguments = new ConfigurationEffectArguments(Configuration, "effectConfiguration");
-            container = uIElementsContainerAccessor.Instance;
-        }
+            container = accessor.Instance;
 
-
-
-        protected override UniTask OnLoadAsync()
-        {
             // Adding button in holder
             container.ButtonsHolder.Add(new CloseUIButton(this.userManager, Logger));
 
@@ -67,8 +62,6 @@ namespace UIElementsUnturned.Samples.OpenMod.Hard.OpenModEasyHard
             }));
 
             container.InputFieldsHolder.Add(new ActionableInputField(childObjectName: "MyUITest", callback: onEnterInputInMyUIObjectInputField));
-
-            return UniTask.CompletedTask;
         }
 
 
