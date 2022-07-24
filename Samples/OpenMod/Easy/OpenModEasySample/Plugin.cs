@@ -28,19 +28,19 @@ namespace UIElementsUnturned.Samples.OpenMod.Hard.OpenModEasyHard
     {
         private readonly IUserManager userManager;
 
+        private readonly IUIElementsContainer container;
 
 
-        public Plugin(IServiceProvider serviceProvider, IUserManager userManager) : base(serviceProvider)
+        public Plugin(IServiceProvider serviceProvider, IUserManager userManager, IUIElementsContainerAccessor uIElementsContainerAccessor) : base(serviceProvider)
         {
             this.userManager = userManager;
+            container = uIElementsContainerAccessor.Instance;
         }
 
 
 
         protected override UniTask OnLoadAsync()
         {
-            IUIElementsContainer container = new UIEventListenerContainer();
-
             // Adding button in holder
             container.ButtonsHolder.Add(new CloseUIButton(this.userManager, Logger));
 
